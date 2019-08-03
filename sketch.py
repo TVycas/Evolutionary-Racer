@@ -10,7 +10,7 @@ walls = []
 ctrl_key_pressed = False  # l for now
 wall_to_add = []
 pop = None
-lifespan = 150
+lifespan = 300
 life_counter = 0
 checkpoints = []
 checkpoint_blocks = None
@@ -97,7 +97,7 @@ def setup():
 
     finish_line = [(360, 519), (360, 591)]
     starting_line = [(375, 519), (375, 591)]
-    pop = Population(space, lifespan, starting_line, finish_line, 0.2, 2)
+    pop = Population(space, lifespan, starting_line, finish_line, 0.2, 15)
 
 
 def draw():
@@ -113,7 +113,7 @@ def draw():
         pop.evaluate()
         pop.generate()
 
-    space.step(1 / 100.0)
+    space.step(1 / 300.0)
 
     background(255)
 
@@ -126,6 +126,11 @@ def draw():
 
     # track walls
     draw_walls(walls)
+
+    print((life_counter % 10))
+    if (life_counter % 10) == 0:
+        print(life_counter)
+        pop.apply_force = True
 
     pop.draw_cars(mouse_x, mouse_y)
 

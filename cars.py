@@ -11,6 +11,7 @@ collision_types = {
 class Car:
 
     def __init__(self, start_point, target_line, space, num_of_forces, id):
+        print("cars num = " + str(num_of_forces))
         self.space = space
         self.target_line = target_line
         self.start_point = start_point
@@ -46,9 +47,10 @@ class Car:
         handler.begin = self.touched_wall
 
     def touched_wall(self, arbiter, space, data):
-        self.is_dead = True
-        car_shape = arbiter.shapes[0]
-        space.remove(car_shape.body)
+        car_body = arbiter.shapes[0].body
+        if self.body.position == car_body.position:
+            self.is_dead = True
+        space.remove(car_body)
         return True
 
     def set_dna(self, dna):
@@ -78,6 +80,8 @@ class Car:
 
         self.force_count = 0
 
+        self.body.velocity = 0, 0
+
         if self.body not in self.space.bodies:
             self.space.add(self.body)
 
@@ -96,7 +100,7 @@ class Car:
         if not self.is_dead:
             genes = self.dna.get_genes()
 
-            if self.force_count <= len(genes):
+            if self.force_count < len(genes):
                 self.apply_force(genes[self.force_count])
 
                 pos = (self.body.position.x, self.body.position.y)

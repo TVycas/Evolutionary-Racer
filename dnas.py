@@ -16,6 +16,7 @@ class DNA:
 
     # makes a random DNA
     def __init__(self, num, genes=None, id=-1):
+        print("dna num = " + str(num))
         self.fitness = 0
         self.polys = self.create_checkpoint_polys(read_track_files(
             'checkpoints.txt'))
@@ -32,7 +33,7 @@ class DNA:
         if genes is None:
             # The genetic sequence
             self.genes = []
-            for x in range(0, num):
+            for x in range(0, int(num)):
                 vec = Vector.random_2D()
                 # TODO these should be variables
                 vec.limit(5000, 3000)
@@ -151,7 +152,7 @@ class DNA:
             print("removes vector")
             new_genes.pop()
 
-        print("\nnew_genes for id - " + str(self.id) + "\n")
+        print("\nnew_genes\n")
 
         for gene in new_genes:
             print(gene)

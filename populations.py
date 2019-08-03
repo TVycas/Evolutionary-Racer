@@ -13,13 +13,13 @@ class Population:
         self.finished = False           # Are we finished evolving?
         self.target_line = target_line            # Finish line
         self.mutation_rate = mut        # Mutation rate
-        self.perfect_score = 0
+        self.apply_force = False
         self.start_line = start_line
         self.start_point = self.pick_start_point(start_line)
 
         for id in range(0, num):
             self.population.append(
-                Car(self.start_point, target_line, space, lifespan, id))
+                Car(self.start_point, target_line, space, lifespan / 10, id))
 
     def calculate_fitness(self):
         for car in self.population:
@@ -85,9 +85,16 @@ class Population:
                 best = car.dna.fitness
 
         print("\nbest fitness = " + str(best) + "\n")
+        pos = (self.population[0].body.position.x, self.population[0].body.position.y)
+        print("final location = " + str(pos))
+
+    # def set_apply_force(self, apply_force):
+    #     self.apply_force = apply_force
 
     def draw_cars(self, mouse_x, mouse_y):
         for car in self.population:
-            car.next_force()
+            if self.apply_force:
+                car.next_force()
             # car.seek((mouse_x, mouse_y))
             car.display()
+        self.apply_force = False
