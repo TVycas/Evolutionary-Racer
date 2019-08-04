@@ -104,7 +104,6 @@ class DNA:
             self.fitness += 1 - remap(dist_to_next_chpt, (0, 500), (0, 1))
             self.fitness *= self.fitness
 
-        print(self.fitness)
         # print("fitness = " + str(self.fitness))
 
     def add_to_path_list(self, pos, current_vector):
@@ -121,29 +120,33 @@ class DNA:
     def crossover(self, partner):
         new_genes = []
 
-        # print("\nmy_id = " + str(self.id) + " partner_id = " + str(partner.id))
+        print("\nMy id = " + str(self.id) + " my partner's id = " + str(partner.id))
 
-        # print("\nmy_path_list - " + str(self.id) + "\n")
-        # for i, lst in enumerate(self.path_list):
-        #     print("#" + str(i))
-        #     for gene in lst:
-        #         print(gene)
+        print("\nmy_path_list - " + str(self.id) + "\n")
+        for i, lst in enumerate(self.path_list):
+            print("#" + str(i))
+            for gene in lst:
+                print(gene)
 
-        # print("\npartner_path_list - " + str(partner.id) + "\n")
-        # for i, lst in enumerate(partner.path_list):
-        #     print("#" + str(i))
-        #     for gene in lst:
-        #         print(gene)
+        print("\npartner_path_list - " + str(partner.id) + "\n")
+        for i, lst in enumerate(partner.path_list):
+            print("#" + str(i))
+            for gene in lst:
+                print(gene)
 
-        # print("\nboth genes \n")
-        # for i, gene in enumerate(self.genes):
-        #     print(str(gene) + " - " + str(partner.genes[i]))
+        print("\nboth genes \n")
+        for i, gene in enumerate(self.genes):
+            print(str(gene) + " - " + str(partner.genes[i]))
 
         for i, gene_block in enumerate(self.path_list):
             if len(partner.path_list[i]) == 0 and len(gene_block) == 0:
                 break
 
             new_genes.extend(choice([gene_block, partner.path_list[i]]))
+            if new_genes == gene_block:
+                print("chosen block from id = " + str(self.id))
+            else:
+                print("chosen block from id = " + str(partner.id))
 
         # Pad the rest of the genes with random vectors
         while len(new_genes) < len(self.genes):
@@ -156,9 +159,9 @@ class DNA:
             # print("removes vector")
             new_genes.pop()
 
-        # print("\nnew_genes\n")
-        # for gene in new_genes:
-        #     print(gene)
+        print("\nnew_genes\n")
+        for gene in new_genes:
+            print(gene)
 
         return DNA(len(self.genes), new_genes)
 

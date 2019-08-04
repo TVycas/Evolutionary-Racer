@@ -51,7 +51,7 @@ def setup():
     # Create the population
     finish_line = [(360, 519), (360, 591)]
     starting_line = [(375, 519), (375, 591)]
-    pop = Population(space, lifespan, starting_line, finish_line, 0.5, 1)
+    pop = Population(space, lifespan, starting_line, finish_line, 0, 4)
 
 
 def draw():
@@ -60,7 +60,6 @@ def draw():
     global end_points
 
     life_counter += 1
-    pop.calculate_fitness()
     if life_counter == lifespan or len(space.bodies) == num_of_walls:
         life_counter = 0
         pop.calculate_fitness()
@@ -68,7 +67,7 @@ def draw():
         end_points.append(pop.evaluate())
         pop.generate()
 
-    space.step(1 / 300.0)
+    space.step(1 / 1000.0)
 
     background(255)
 
