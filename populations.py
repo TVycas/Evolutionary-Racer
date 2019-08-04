@@ -11,25 +11,25 @@ class Population:
         self.mating_pool = []           # ArrayList which we will use for our "mating pool"
         self.generations = 0            # Number of generations
         self.finished = False           # Are we finished evolving?
-        self.target_line = target_line            # Finish line
+        self.target_line = target_line  # Finish line
         self.mutation_rate = mut        # Mutation rate
-        self.apply_force = False
+        self.apply_force = True
         self.start_line = start_line
         self.start_point = self.pick_start_point(start_line)
 
         for id in range(0, num):
             self.population.append(
-                Car(self.start_point, target_line, space, lifespan / 10, id))
+                Car(self.start_point, target_line, space, lifespan, id))
 
-    def calculate_fitness(self):
-        for car in self.population:
-            car.calculate_fitness(self.start_line)
-
-        # Finds the midpoint of the line
+    # Finds the midpoint of the line
     def pick_start_point(self, start_line):
         xs_avg = (start_line[0][0] + start_line[1][0]) / 2
         ys_avg = (start_line[0][1] + start_line[1][1]) / 2
         return (xs_avg, ys_avg)
+
+    def calculate_fitness(self):
+        for car in self.population:
+            car.calculate_fitness(self.start_line)
 
     def natural_selection(self):
         # Clear the ArrayList
@@ -88,13 +88,12 @@ class Population:
         pos = (self.population[0].body.position.x, self.population[0].body.position.y)
         print("final location = " + str(pos))
 
-    # def set_apply_force(self, apply_force):
-    #     self.apply_force = apply_force
-
+    # Updates and draws the cars
     def draw_cars(self, mouse_x, mouse_y):
         for car in self.population:
-            if self.apply_force:
-                car.next_force()
-            # car.seek((mouse_x, mouse_y))
+            # TODO remove this check?
+            # if self.apply_force:
+            car.next_force()
+            #   car.seek((mouse_x, mouse_y))
             car.display()
-        self.apply_force = False
+        # self.apply_force = False

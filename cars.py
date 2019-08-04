@@ -2,6 +2,7 @@ from p5 import *
 import pymunk
 from dnas import DNA
 
+# TODO move this to map_handler
 collision_types = {
     "car": 1,
     "wall": 2
@@ -11,16 +12,21 @@ collision_types = {
 class Car:
 
     def __init__(self, start_point, target_line, space, num_of_forces, id):
-        print("cars num = " + str(num_of_forces))
         self.space = space
+
         self.target_line = target_line
         self.start_point = start_point
+
         self.id = id
+
         self.w = 16
         self.h = 16
+
         self.max_speed = 1000
         self.max_force = 1000
+
         self.dna = DNA(num_of_forces, id=id)
+
         self.force_count = 0
         self.is_dead = False
 
@@ -30,8 +36,8 @@ class Car:
                        (0, self.h / 2), (self.w / 2, -self.h / 2)]
         # self.points_fake = [(-1, -1), (0, 1), (1, -1)]
 
-        # moment = pymunk.moment_for_poly(mass, self.points)
-        moment = 32.0
+        moment = pymunk.moment_for_poly(mass, self.points)
+        # moment = 32.0
 
         self.body = pymunk.Body(mass, moment)
         self.body.position = start_point[0], start_point[1]
@@ -46,13 +52,17 @@ class Car:
         handler = space.add_collision_handler(collision_types["car"], collision_types["wall"])
         handler.begin = self.touched_wall
 
+    # If the car touches the wall, it's dead and no longer moves in the lifecycle
     def touched_wall(self, arbiter, space, data):
         car_body = arbiter.shapes[0].body
+
         if self.body.position == car_body.position:
             self.is_dead = True
+
         space.remove(car_body)
         return True
 
+    # Set new dna and ID
     def set_dna(self, dna):
         self.dna = dna
         self.dna.id = self.id
@@ -75,6 +85,8 @@ class Car:
 
         reset_matrix()
 
+    # When the lifecycle ends, the car's position is set to the start line and velocity is
+    # set to 0
     def reset_to_start(self):
         self.body.position = self.start_point[0] + 5, self.start_point[1] + 5
 
@@ -91,11 +103,14 @@ class Car:
     # [+, 0] - right; [-, 0] - left
     # [0, +] - down; [0, -] - up
     def apply_force(self, force):
-        self.body.apply_force_at_world_point(
+        self.body.apply_force_at_local_point(
             (force.x, force.y), self.body.position)
 
+    # def apply_foce(self, force):
+
+
     def next_force(self):
-        # TODO maybe in the DNA we should just pop the first item each time instaed of this
+        # TODO maybe in the DNA we should just pop the first item each time instead of this
         # force_count
         if not self.is_dead:
             genes = self.dna.get_genes()
