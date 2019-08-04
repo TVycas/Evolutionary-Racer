@@ -16,6 +16,7 @@ def draw_walls(walls):
         fill(0)
         line(p1, p2)
 
+    #TODO this shouldn't be hard-codded
     # finish line
     fill(0)
     line((364, 519), (364, 591))

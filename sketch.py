@@ -16,6 +16,8 @@ checkpoint_blocks = None
 display_checkpoint_blocks = False
 num_of_walls = 0
 
+end_points = []
+
 
 def setup():
     global cars
@@ -49,19 +51,21 @@ def setup():
     # Create the population
     finish_line = [(360, 519), (360, 591)]
     starting_line = [(375, 519), (375, 591)]
-    pop = Population(space, lifespan, starting_line, finish_line, 0, 2)
+    pop = Population(space, lifespan, starting_line, finish_line, 0.5, 1)
 
 
 def draw():
     global cars
     global life_counter
+    global end_points
 
     life_counter += 1
+    pop.calculate_fitness()
     if life_counter == lifespan or len(space.bodies) == num_of_walls:
         life_counter = 0
         pop.calculate_fitness()
         pop.natural_selection()
-        pop.evaluate()
+        end_points.append(pop.evaluate())
         pop.generate()
 
     space.step(1 / 300.0)
@@ -70,6 +74,11 @@ def draw():
 
     # Draw walls
     map_handler.draw_walls(walls)
+
+    # draw ends points
+    for point in end_points:
+        fill(255, 204, 0)
+        circle(point, 5)
 
     # print((life_counter % 10))
     # if (life_counter % 10) == 0:

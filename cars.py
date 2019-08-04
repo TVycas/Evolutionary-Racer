@@ -103,11 +103,8 @@ class Car:
     # [+, 0] - right; [-, 0] - left
     # [0, +] - down; [0, -] - up
     def apply_force(self, force):
-        self.body.apply_force_at_local_point(
+        self.body.apply_force_at_world_point(
             (force.x, force.y), self.body.position)
-
-    # def apply_foce(self, force):
-
 
     def next_force(self):
         # TODO maybe in the DNA we should just pop the first item each time instead of this
@@ -116,6 +113,7 @@ class Car:
             genes = self.dna.get_genes()
 
             if self.force_count < len(genes):
+                # print(genes[self.force_count])
                 self.apply_force(genes[self.force_count])
 
                 pos = (self.body.position.x, self.body.position.y)

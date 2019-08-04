@@ -16,14 +16,13 @@ class DNA:
 
     # makes a random DNA
     def __init__(self, num, genes=None, id=-1):
-        print("dna num = " + str(num))
+        # print("dna num = " + str(num))
         self.fitness = 0
         self.polys = self.create_checkpoint_polys(read_track_files(
             'checkpoints.txt'))
         self.path_list = []
         self.farthest_poly_reached = 0
         self.id = id
-
 
         # Add enough empty lists to the path_list so that the vectors in genes could be
         # devided to seperate to each polygon
@@ -66,17 +65,21 @@ class DNA:
         y = point2[1] - point1[1]
         return Vector(x, y)
 
+    # |AC x AB| / |AB| where AB is the line and C is the point
     def find_dist_to_next_poly(self, pos, current_polygon):
         current_poly_coords = list(current_polygon.exterior.coords)
         if len(current_poly_coords) > 3:
-            pol_end = DNA.vector_from_two_points(
-                current_poly_coords[2], current_poly_coords[3])
-            point_to_start_of_line = DNA.vector_from_two_points(
-                current_poly_coords[2], pos)
-            cross = pol_end.cross(point_to_start_of_line)
-            mag_of_cross = cross.magnitude
-            mag_of_point_to_start = point_to_start_of_line.magnitude
-            distance = mag_of_cross / mag_of_point_to_start
+            ab = DNA.vector_from_two_points(current_poly_coords[2], current_poly_coords[3])
+
+            ac = DNA.vector_from_two_points(current_poly_coords[2], pos)
+
+            ac_ab_cross = ac.cross(ab)
+
+            mag_of_ac_ab_cross = ac_ab_cross.magnitude
+            mag_of_ab = ab.magnitude
+
+            distance = mag_of_ac_ab_cross / mag_of_ab
+
             return distance
         else:
             return 0
@@ -101,6 +104,7 @@ class DNA:
             self.fitness += 1 - remap(dist_to_next_chpt, (0, 500), (0, 1))
             self.fitness *= self.fitness
 
+        print(self.fitness)
         # print("fitness = " + str(self.fitness))
 
     def add_to_path_list(self, pos, current_vector):
@@ -117,19 +121,19 @@ class DNA:
     def crossover(self, partner):
         new_genes = []
 
-        print("\nmy_id = " + str(self.id) + " partner_id = " + str(partner.id))
+        # print("\nmy_id = " + str(self.id) + " partner_id = " + str(partner.id))
 
-        print("\nmy_path_list - " + str(self.id) + "\n")
-        for i, lst in enumerate(self.path_list):
-            print("#" + str(i))
-            for gene in lst:
-                print(gene)
+        # print("\nmy_path_list - " + str(self.id) + "\n")
+        # for i, lst in enumerate(self.path_list):
+        #     print("#" + str(i))
+        #     for gene in lst:
+        #         print(gene)
 
-        print("\npartner_path_list - " + str(partner.id) + "\n")
-        for i, lst in enumerate(partner.path_list):
-            print("#" + str(i))
-            for gene in lst:
-                print(gene)
+        # print("\npartner_path_list - " + str(partner.id) + "\n")
+        # for i, lst in enumerate(partner.path_list):
+        #     print("#" + str(i))
+        #     for gene in lst:
+        #         print(gene)
 
         # print("\nboth genes \n")
         # for i, gene in enumerate(self.genes):
@@ -143,19 +147,18 @@ class DNA:
 
         # Pad the rest of the genes with random vectors
         while len(new_genes) < len(self.genes):
-            print("adds random vector")
+            # print("adds random vector")
             vec = Vector.random_2D()
             vec.limit(5000, 3000)
             new_genes.append(vec)
 
         while len(new_genes) > len(self.genes):
-            print("removes vector")
+            # print("removes vector")
             new_genes.pop()
 
-        print("\nnew_genes\n")
-
-        for gene in new_genes:
-            print(gene)
+        # print("\nnew_genes\n")
+        # for gene in new_genes:
+        #     print(gene)
 
         return DNA(len(self.genes), new_genes)
 
