@@ -11,7 +11,7 @@ collision_types = {
 
 class Car:
 
-    def __init__(self, start_point, target_line, space, num_of_forces, id):
+    def __init__(self, start_point, target_line, space, num_of_forces, id, dna=None):
         self.space = space
 
         self.target_line = target_line
@@ -25,7 +25,11 @@ class Car:
         self.max_speed = 1000
         self.max_force = 1000
 
-        self.dna = DNA(num_of_forces, id=id)
+        if dna is None:
+            self.dna = DNA(num_of_forces, id=id)
+        else:
+            self.dna = dna
+            self.dna.id = self.id
 
         self.force_count = 0
         self.is_dead = False
@@ -58,14 +62,18 @@ class Car:
 
         if self.body.position == car_body.position:
             self.is_dead = True
+            # TODO maybe this should be a variable
+            # removes the specified amount of vectors from the path list to
+            # make the car possibly not hit the wall next time
+            self.dna.remove_from_path_list(50)
 
         space.remove(car_body)
         return True
 
-    # Set new dna and ID
-    def set_dna(self, dna):
-        self.dna = dna
-        self.dna.id = self.id
+    # # Set new dna and ID
+    # def set_dna(self, dna):
+    #     self.dna = dna
+    #     self.dna.id = self.id
 
     def calculate_fitness(self, start_line):
         pos = (self.body.position.x, self.body.position.y)
@@ -76,28 +84,28 @@ class Car:
         velocity = self.body.velocity_at_world_point(pos)
         angle = velocity.angle + (PI * 1.5)
 
-        push_matrix()
-        # Using the Vector position and float angle to translate and rotate the shape
-        translate(pos.x, pos.y)
-        rotate(angle)
-        fill(175)
-        triangle(self.points[0], self.points[1], self.points[2])
+        with push_matrix():
+            # Using the Vector position and float angle to translate and rotate the shape
+            translate(pos.x, pos.y)
+            rotate(angle)
+            fill(175)
+            triangle(self.points[0], self.points[1], self.points[2])
 
-        reset_matrix()
+        # reset_matrix()
 
     # When the lifecycle ends, the car's position is set to the start line and velocity is
     # set to 0
-    def reset_to_start(self):
-        self.body.position = self.start_point[0] + 5, self.start_point[1] + 5
+    # def reset_to_start(self):
+    #     self.body.position = self.start_point[0] + 5, self.start_point[1] + 5
 
-        self.force_count = 0
+    #     self.force_count = 0
 
-        self.body.velocity = 0, 0
+    #     self.body.velocity = 0, 0
 
-        if self.body not in self.space.bodies:
-            self.space.add(self.body)
+    #     if self.body not in self.space.bodies:
+    #         self.space.add(self.body)
 
-        self.is_dead = False
+    #     self.is_dead = False
 
     # forces:
     # [+, 0] - right; [-, 0] - left
