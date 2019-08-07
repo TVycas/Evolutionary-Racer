@@ -195,15 +195,15 @@ class DNA:
         return DNA(len(self.genes), new_genes)
 
     # Based on a mutation probability, picks a new random character
-    def mutate(self, genes, mutation_rate):
+    def mutate(self, new_genes, mutation_rate):
         mutation_rate *= 100
         if randrange(0, 101) < mutation_rate:
             print("mutated")
             # mutation only affects the end of the genes
-            start_of_mutation = math.floor(len(genes) - (len(genes) * 0.3))
-            for i in range(start_of_mutation, len(genes)):
+            start_of_mutation = math.floor(len(self.genes) - (len(self.genes) * 0.2))
+            for i in range(start_of_mutation, len(new_genes)):
                 vec = Vector.random_2D()
                 vec.limit(5000, 3000)
-                genes[i] = vec
+                new_genes[i] = vec
 
-            return genes
+            return new_genes

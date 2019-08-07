@@ -52,16 +52,24 @@ class Population:
         #         self.mating_pool.append(car.dna)
 
         fitness_sum = 0
+        max_fitness = 0
         for car in self.population:
             fitness_sum += car.dna.fitness
+            if car.dna.fitness > max_fitness:
+                max_fitness = car.dna.fitness
 
         fitness_sum = fitness_sum / 100
         print(fitness_sum)
 
         for car in self.population:
             n = int(round(car.dna.fitness / fitness_sum))
+            # Add weight to the best performing dna
+            if car.dna.fitness == max_fitness:
+                n += 25
+
             print("\nFor car id - " + str(car.id) + ", with fitness " +
                   str(car.dna.fitness) + " we add " + str(n) + " dnas in the mating_pool")
+                  
             for x in range(0, n):
                 self.mating_pool.append(car.dna)
 

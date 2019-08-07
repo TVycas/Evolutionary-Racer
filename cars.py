@@ -65,7 +65,7 @@ class Car:
             # TODO maybe this should be a variable
             # removes the specified amount of vectors from the path list to
             # make the car possibly not hit the wall next time
-            self.dna.remove_from_path_list(50)
+            self.dna.remove_from_path_list(60)
 
         space.remove(car_body)
         return True

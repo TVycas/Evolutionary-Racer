@@ -1,8765 +1,4131 @@
 Loading chipmunk for Linux (64bit) [/home/tomas/.local/lib/python3.6/site-packages/pymunk/libchipmunk.so]
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+0.05497061653741939
 
+For car id - 0, with fitness 0.3194660617160607 we add 6 dnas in the mating_pool
 
+For car id - 1, with fitness 0.2414966642207103 we add 4 dnas in the mating_pool
 
-Len of end_points = 0
+For car id - 2, with fitness 0.2372166167227491 we add 4 dnas in the mating_pool
 
+For car id - 3, with fitness 0.2428788051935641 we add 4 dnas in the mating_pool
 
+For car id - 4, with fitness 0.43850523789044826 we add 33 dnas in the mating_pool
 
+For car id - 5, with fitness 0.31817208013509074 we add 6 dnas in the mating_pool
 
+For car id - 6, with fitness 0.2805585812111114 we add 5 dnas in the mating_pool
 
+For car id - 7, with fitness 0.2355765093900167 we add 4 dnas in the mating_pool
 
-Len of end_points = 0
+For car id - 8, with fitness 0.2488468879022733 we add 5 dnas in the mating_pool
 
+For car id - 9, with fitness 0.250298101939043 we add 5 dnas in the mating_pool
 
+For car id - 10, with fitness 0.22711272761667253 we add 4 dnas in the mating_pool
 
+For car id - 11, with fitness 0.26464928884114947 we add 5 dnas in the mating_pool
 
+For car id - 12, with fitness 0.24191254945113336 we add 4 dnas in the mating_pool
 
+For car id - 13, with fitness 0.3492311129752808 we add 6 dnas in the mating_pool
 
-Len of end_points = 0
+For car id - 14, with fitness 0.23086120330761253 we add 4 dnas in the mating_pool
 
+For car id - 15, with fitness 0.293091597921808 we add 5 dnas in the mating_pool
 
+For car id - 16, with fitness 0.2449020897670209 we add 4 dnas in the mating_pool
 
+For car id - 17, with fitness 0.374781136753622 we add 7 dnas in the mating_pool
 
+For car id - 18, with fitness 0.2332405530446553 we add 4 dnas in the mating_pool
 
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-
-
-
-Len of end_points = 0
-
-
-
-0.050096896791765204
-
-For car id - 0, with fitness 0.27444741500091724 we add 5 dnas in the mating_pool
-
-For car id - 1, with fitness 0.2292765860301193 we add 5 dnas in the mating_pool
-
-For car id - 2, with fitness 0.23398715381926521 we add 5 dnas in the mating_pool
-
-For car id - 3, with fitness 0.24750529269502364 we add 5 dnas in the mating_pool
-
-For car id - 4, with fitness 0.23274850612884365 we add 5 dnas in the mating_pool
-
-For car id - 5, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 6, with fitness 0.23259791764176055 we add 5 dnas in the mating_pool
-
-For car id - 7, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 8, with fitness 0.23268110039713658 we add 5 dnas in the mating_pool
-
-For car id - 9, with fitness 0.4026335865858283 we add 8 dnas in the mating_pool
-
-For car id - 10, with fitness 0.23170725153359134 we add 5 dnas in the mating_pool
-
-For car id - 11, with fitness 0.23140848780275486 we add 5 dnas in the mating_pool
-
-For car id - 12, with fitness 0.25849506272494116 we add 5 dnas in the mating_pool
-
-For car id - 13, with fitness 0.23630799716936216 we add 5 dnas in the mating_pool
-
-For car id - 14, with fitness 0.2406735859733176 we add 5 dnas in the mating_pool
-
-For car id - 15, with fitness 0.23195359503634325 we add 5 dnas in the mating_pool
-
-For car id - 16, with fitness 0.22458000721240878 we add 4 dnas in the mating_pool
-
-For car id - 17, with fitness 0.22611493416454514 we add 5 dnas in the mating_pool
-
-For car id - 18, with fitness 0.25307986183661213 we add 5 dnas in the mating_pool
-
-For car id - 19, with fitness 0.23368038931965443 we add 5 dnas in the mating_pool
-size of mating_pool = 103
-best fitness0.4026335865858283
+For car id - 19, with fitness 0.22426384774191507 we add 4 dnas in the mating_pool
+size of mating_pool = 123
+best fitness0.43850523789044826
 
 new dna for car - 0
 
 
-My id = 16 my partner's id = 5
+My id = 5 my partner's id = 4
 chosen block from id = 5
+mutated
 
 new dna for car - 1
 
 
-My id = 7 my partner's id = 15
-chosen block from id = 15
-
-new dna for car - 2
-
-
-My id = 4 my partner's id = 18
+My id = 17 my partner's id = 4
 chosen block from id = 4
-
-new dna for car - 3
-
-
-My id = 6 my partner's id = 5
-chosen block from id = 6
-
-new dna for car - 4
-
-
-My id = 7 my partner's id = 12
-chosen block from id = 7
-
-new dna for car - 5
-
-
-My id = 11 my partner's id = 16
-chosen block from id = 11
-
-new dna for car - 6
-
-
-My id = 8 my partner's id = 0
-chosen block from id = 8
-
-new dna for car - 7
-
-
-My id = 14 my partner's id = 10
-chosen block from id = 14
-
-new dna for car - 8
-
-
-My id = 5 my partner's id = 1
-chosen block from id = 1
-
-new dna for car - 9
-
-
-My id = 16 my partner's id = 15
-chosen block from id = 16
-
-new dna for car - 10
-
-
-My id = 17 my partner's id = 19
-chosen block from id = 19
-
-new dna for car - 11
-
-
-My id = 2 my partner's id = 7
-chosen block from id = 7
-
-new dna for car - 12
-
-
-My id = 9 my partner's id = 19
-chosen block from id = 19
-
-new dna for car - 13
-
-
-My id = 19 my partner's id = 7
-chosen block from id = 19
-
-new dna for car - 14
-
-
-My id = 11 my partner's id = 9
-chosen block from id = 11
-
-new dna for car - 15
-
-
-My id = 14 my partner's id = 15
-chosen block from id = 14
 mutated
-
-new dna for car - 16
-
-
-My id = 5 my partner's id = 5
-chosen block from id = 5
-
-new dna for car - 17
-
-
-My id = 7 my partner's id = 9
-chosen block from id = 7
-mutated
-
-new dna for car - 18
-
-
-My id = 11 my partner's id = 19
-chosen block from id = 11
-
-new dna for car - 19
-
-
-My id = 5 my partner's id = 13
-chosen block from id = 13
-
-generation #1
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-
-
-
-Len of end_points = 1
-
-
-
-0.049715072456141485
-
-For car id - 0, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 1, with fitness 0.23195359503634325 we add 5 dnas in the mating_pool
-
-For car id - 2, with fitness 0.23274850612884365 we add 5 dnas in the mating_pool
-
-For car id - 3, with fitness 0.23259791764176055 we add 5 dnas in the mating_pool
-
-For car id - 4, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 5, with fitness 0.23140848780275486 we add 5 dnas in the mating_pool
-
-For car id - 6, with fitness 0.23268110039713658 we add 5 dnas in the mating_pool
-
-For car id - 7, with fitness 0.2406735859733176 we add 5 dnas in the mating_pool
-
-For car id - 8, with fitness 0.2292765860301193 we add 5 dnas in the mating_pool
-
-For car id - 9, with fitness 0.22458000721240878 we add 5 dnas in the mating_pool
-
-For car id - 10, with fitness 0.2988897094787612 we add 6 dnas in the mating_pool
-
-For car id - 11, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 12, with fitness 0.29635138054717636 we add 6 dnas in the mating_pool
-
-For car id - 13, with fitness 0.23437568516317217 we add 5 dnas in the mating_pool
-
-For car id - 14, with fitness 0.23140848780275486 we add 5 dnas in the mating_pool
-
-For car id - 15, with fitness 0.2406735859733176 we add 5 dnas in the mating_pool
-
-For car id - 16, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 17, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 18, with fitness 0.23140848780275486 we add 5 dnas in the mating_pool
-
-For car id - 19, with fitness 0.23630799716936216 we add 5 dnas in the mating_pool
-size of mating_pool = 104
-best fitness0.321260718858119
-
-new dna for car - 0
-
-
-My id = 10 my partner's id = 18
-chosen block from id = 10
-
-new dna for car - 1
-
-
-My id = 12 my partner's id = 0
-chosen block from id = 0
 
 new dna for car - 2
 
 
-My id = 1 my partner's id = 19
-chosen block from id = 19
-
-new dna for car - 3
-
-
-My id = 6 my partner's id = 4
-chosen block from id = 6
-
-new dna for car - 4
-
-
-My id = 13 my partner's id = 11
-chosen block from id = 13
-
-new dna for car - 5
-
-
-My id = 12 my partner's id = 11
-chosen block from id = 11
-
-new dna for car - 6
-
-
-My id = 3 my partner's id = 19
-chosen block from id = 19
-mutated
-
-new dna for car - 7
-
-
-My id = 19 my partner's id = 2
-chosen block from id = 2
-
-new dna for car - 8
-
-
-My id = 9 my partner's id = 12
-chosen block from id = 9
-
-new dna for car - 9
-
-
-My id = 8 my partner's id = 2
-chosen block from id = 8
-
-new dna for car - 10
-
-
-My id = 2 my partner's id = 14
-chosen block from id = 2
-
-new dna for car - 11
-
-
-My id = 10 my partner's id = 6
-chosen block from id = 6
-
-new dna for car - 12
-
-
-My id = 12 my partner's id = 17
-chosen block from id = 17
-
-new dna for car - 13
-
-
-My id = 1 my partner's id = 0
-chosen block from id = 0
-
-new dna for car - 14
-
-
-My id = 4 my partner's id = 11
+My id = 5 my partner's id = 4
 chosen block from id = 4
-
-new dna for car - 15
-
-
-My id = 19 my partner's id = 0
-chosen block from id = 0
-
-new dna for car - 16
-
-
-My id = 10 my partner's id = 7
-chosen block from id = 10
-
-new dna for car - 17
-
-
-My id = 12 my partner's id = 18
-chosen block from id = 18
-
-new dna for car - 18
-
-
-My id = 12 my partner's id = 10
-chosen block from id = 12
-
-new dna for car - 19
-
-
-My id = 7 my partner's id = 15
-chosen block from id = 7
-
-generation #2
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-
-
-
-Len of end_points = 2
-
-
-
-0.05118826732037406
-
-For car id - 0, with fitness 0.2988897094787612 we add 6 dnas in the mating_pool
-
-For car id - 1, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 2, with fitness 0.23476739883424497 we add 5 dnas in the mating_pool
-
-For car id - 3, with fitness 0.23268110039713658 we add 5 dnas in the mating_pool
-
-For car id - 4, with fitness 0.23437568516317217 we add 5 dnas in the mating_pool
-
-For car id - 5, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 6, with fitness 0.2313221241524442 we add 5 dnas in the mating_pool
-
-For car id - 7, with fitness 0.23274850612884365 we add 5 dnas in the mating_pool
-
-For car id - 8, with fitness 0.22458000721240878 we add 4 dnas in the mating_pool
-
-For car id - 9, with fitness 0.2292765860301193 we add 4 dnas in the mating_pool
-
-For car id - 10, with fitness 0.23274850612884365 we add 5 dnas in the mating_pool
-
-For car id - 11, with fitness 0.23268110039713658 we add 5 dnas in the mating_pool
-
-For car id - 12, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 13, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 14, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 15, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 16, with fitness 0.2988897094787612 we add 6 dnas in the mating_pool
-
-For car id - 17, with fitness 0.23140848780275486 we add 5 dnas in the mating_pool
-
-For car id - 18, with fitness 0.29635138054717636 we add 6 dnas in the mating_pool
-
-For car id - 19, with fitness 0.2406735859733176 we add 5 dnas in the mating_pool
-size of mating_pool = 104
-best fitness0.321260718858119
-
-new dna for car - 0
-
-
-My id = 14 my partner's id = 9
-chosen block from id = 14
-
-new dna for car - 1
-
-
-My id = 7 my partner's id = 0
-chosen block from id = 7
-
-new dna for car - 2
-
-
-My id = 3 my partner's id = 6
-chosen block from id = 3
-
-new dna for car - 3
-
-
-My id = 19 my partner's id = 17
-chosen block from id = 19
-
-new dna for car - 4
-
-
-My id = 0 my partner's id = 5
-chosen block from id = 0
-
-new dna for car - 5
-
-
-My id = 2 my partner's id = 15
-chosen block from id = 2
-
-new dna for car - 6
-
-
-My id = 16 my partner's id = 1
-chosen block from id = 1
-
-new dna for car - 7
-
-
-My id = 14 my partner's id = 15
-chosen block from id = 14
-
-new dna for car - 8
-
-
-My id = 12 my partner's id = 18
-chosen block from id = 12
-
-new dna for car - 9
-
-
-My id = 17 my partner's id = 3
-chosen block from id = 17
-
-new dna for car - 10
-
-
-My id = 0 my partner's id = 19
-chosen block from id = 19
-
-new dna for car - 11
-
-
-My id = 6 my partner's id = 12
-chosen block from id = 6
-
-new dna for car - 12
-
-
-My id = 16 my partner's id = 0
-chosen block from id = 16
-mutated
-
-new dna for car - 13
-
-
-My id = 17 my partner's id = 9
-chosen block from id = 9
-
-new dna for car - 14
-
-
-My id = 9 my partner's id = 11
-chosen block from id = 11
-mutated
-
-new dna for car - 15
-
-
-My id = 14 my partner's id = 15
-chosen block from id = 15
-
-new dna for car - 16
-
-
-My id = 12 my partner's id = 2
-chosen block from id = 12
-mutated
-
-new dna for car - 17
-
-
-My id = 0 my partner's id = 11
-chosen block from id = 11
-mutated
-
-new dna for car - 18
-
-
-My id = 0 my partner's id = 17
-chosen block from id = 17
-
-new dna for car - 19
-
-
-My id = 9 my partner's id = 7
-chosen block from id = 7
-mutated
-
-generation #3
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-
-
-
-Len of end_points = 3
-
-
-
-0.0519412837809248
-
-For car id - 0, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 1, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 2, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 3, with fitness 0.37227224780291795 we add 7 dnas in the mating_pool
-
-For car id - 4, with fitness 0.2988897094787612 we add 6 dnas in the mating_pool
-
-For car id - 5, with fitness 0.23476739883424497 we add 5 dnas in the mating_pool
-
-For car id - 6, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 7, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 8, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 9, with fitness 0.23140848780275486 we add 4 dnas in the mating_pool
-
-For car id - 10, with fitness 0.32163095856048385 we add 6 dnas in the mating_pool
-
-For car id - 11, with fitness 0.2313221241524442 we add 4 dnas in the mating_pool
-
-For car id - 12, with fitness 0.2988897094787612 we add 6 dnas in the mating_pool
-
-For car id - 13, with fitness 0.2292765860301193 we add 4 dnas in the mating_pool
-
-For car id - 14, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 15, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 16, with fitness 0.23455022924597582 we add 5 dnas in the mating_pool
-
-For car id - 17, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 18, with fitness 0.23140848780275486 we add 4 dnas in the mating_pool
-
-For car id - 19, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-size of mating_pool = 98
-best fitness0.37227224780291795
-
-new dna for car - 0
-
-
-My id = 10 my partner's id = 13
-chosen block from id = 13
-
-new dna for car - 1
-
-
-My id = 7 my partner's id = 3
-chosen block from id = 3
-
-new dna for car - 2
-
-
-My id = 15 my partner's id = 2
-chosen block from id = 15
 
 new dna for car - 3
 
 
 My id = 6 my partner's id = 8
-chosen block from id = 6
+chosen block from id = 8
 
 new dna for car - 4
-
-
-My id = 19 my partner's id = 10
-chosen block from id = 19
-mutated
-
-new dna for car - 5
-
-
-My id = 19 my partner's id = 1
-chosen block from id = 1
-
-new dna for car - 6
-
-
-My id = 6 my partner's id = 6
-chosen block from id = 6
-
-new dna for car - 7
-
-
-My id = 9 my partner's id = 3
-chosen block from id = 9
-
-new dna for car - 8
-
-
-My id = 12 my partner's id = 8
-chosen block from id = 12
-
-new dna for car - 9
-
-
-My id = 14 my partner's id = 16
-chosen block from id = 14
-
-new dna for car - 10
-
-
-My id = 12 my partner's id = 3
-chosen block from id = 3
-
-new dna for car - 11
-
-
-My id = 17 my partner's id = 1
-chosen block from id = 17
-
-new dna for car - 12
-
-
-My id = 5 my partner's id = 2
-chosen block from id = 5
-
-new dna for car - 13
 
 
 My id = 5 my partner's id = 5
 chosen block from id = 5
 
+new dna for car - 5
+
+
+My id = 4 my partner's id = 7
+chosen block from id = 4
+mutated
+
+new dna for car - 6
+
+
+My id = 17 my partner's id = 17
+chosen block from id = 17
+
+new dna for car - 7
+
+
+My id = 7 my partner's id = 14
+chosen block from id = 7
+mutated
+
+new dna for car - 8
+
+
+My id = 16 my partner's id = 4
+chosen block from id = 16
+
+new dna for car - 9
+
+
+My id = 5 my partner's id = 18
+chosen block from id = 5
+
+new dna for car - 10
+
+
+My id = 4 my partner's id = 12
+chosen block from id = 12
+mutated
+
+new dna for car - 11
+
+
+My id = 7 my partner's id = 4
+chosen block from id = 4
+
+new dna for car - 12
+
+
+My id = 17 my partner's id = 0
+chosen block from id = 17
+mutated
+
+new dna for car - 13
+
+
+My id = 4 my partner's id = 12
+chosen block from id = 4
+mutated
+
 new dna for car - 14
 
 
-My id = 12 my partner's id = 6
-chosen block from id = 6
-mutated
+My id = 13 my partner's id = 8
+chosen block from id = 13
 
 new dna for car - 15
 
 
-My id = 6 my partner's id = 5
-chosen block from id = 5
+My id = 11 my partner's id = 4
+chosen block from id = 4
+mutated
 
 new dna for car - 16
 
 
-My id = 10 my partner's id = 0
-chosen block from id = 0
+My id = 10 my partner's id = 4
+chosen block from id = 4
 
 new dna for car - 17
+
+
+My id = 8 my partner's id = 4
+chosen block from id = 8
+
+new dna for car - 18
+
+
+My id = 4 my partner's id = 4
+chosen block from id = 4
+
+new dna for car - 19
+
+
+My id = 0 my partner's id = 5
+chosen block from id = 5
+
+generation #1
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+0.07099608534559192
+
+For car id - 0, with fitness 0.31817208013509074 we add 4 dnas in the mating_pool
+
+For car id - 1, with fitness 0.43850523789044826 we add 31 dnas in the mating_pool
+
+For car id - 2, with fitness 0.43850523789044826 we add 31 dnas in the mating_pool
+
+For car id - 3, with fitness 0.2488468879022733 we add 4 dnas in the mating_pool
+
+For car id - 4, with fitness 0.31817208013509074 we add 4 dnas in the mating_pool
+
+For car id - 5, with fitness 0.43850523789044826 we add 31 dnas in the mating_pool
+
+For car id - 6, with fitness 0.374781136753622 we add 5 dnas in the mating_pool
+
+For car id - 7, with fitness 0.2355765093900167 we add 3 dnas in the mating_pool
+
+For car id - 8, with fitness 0.2449020897670209 we add 3 dnas in the mating_pool
+
+For car id - 9, with fitness 0.31817208013509074 we add 4 dnas in the mating_pool
+
+For car id - 10, with fitness 0.24191254945113336 we add 3 dnas in the mating_pool
+
+For car id - 11, with fitness 0.43850523789044826 we add 31 dnas in the mating_pool
+
+For car id - 12, with fitness 0.374781136753622 we add 5 dnas in the mating_pool
+
+For car id - 13, with fitness 0.43850523789044826 we add 31 dnas in the mating_pool
+
+For car id - 14, with fitness 0.3492311129752808 we add 5 dnas in the mating_pool
+
+For car id - 15, with fitness 0.43850523789044826 we add 31 dnas in the mating_pool
+
+For car id - 16, with fitness 0.43850523789044826 we add 31 dnas in the mating_pool
+
+For car id - 17, with fitness 0.2488468879022733 we add 4 dnas in the mating_pool
+
+For car id - 18, with fitness 0.43850523789044826 we add 31 dnas in the mating_pool
+
+For car id - 19, with fitness 0.31817208013509074 we add 4 dnas in the mating_pool
+size of mating_pool = 296
+best fitness0.43850523789044826
+
+new dna for car - 0
+
+
+My id = 16 my partner's id = 16
+chosen block from id = 16
+
+new dna for car - 1
+
+
+My id = 16 my partner's id = 11
+chosen block from id = 16
+
+new dna for car - 2
+
+
+My id = 14 my partner's id = 11
+chosen block from id = 11
+
+new dna for car - 3
+
+
+My id = 13 my partner's id = 16
+chosen block from id = 13
+mutated
+
+new dna for car - 4
+
+
+My id = 15 my partner's id = 2
+chosen block from id = 15
+mutated
+
+new dna for car - 5
+
+
+My id = 1 my partner's id = 16
+chosen block from id = 1
+mutated
+
+new dna for car - 6
+
+
+My id = 2 my partner's id = 18
+chosen block from id = 2
+
+new dna for car - 7
+
+
+My id = 13 my partner's id = 5
+chosen block from id = 13
+mutated
+
+new dna for car - 8
+
+
+My id = 11 my partner's id = 15
+chosen block from id = 11
+
+new dna for car - 9
+
+
+My id = 1 my partner's id = 16
+chosen block from id = 1
+
+new dna for car - 10
 
 
 My id = 2 my partner's id = 8
 chosen block from id = 8
-
-new dna for car - 18
-
-
-My id = 13 my partner's id = 3
-chosen block from id = 3
-mutated
-
-new dna for car - 19
-
-
-My id = 8 my partner's id = 3
-chosen block from id = 8
-
-generation #4
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-
-
-
-Len of end_points = 4
-
-
-
-0.05435795190910155
-
-For car id - 0, with fitness 0.2292765860301193 we add 4 dnas in the mating_pool
-
-For car id - 1, with fitness 0.37227224780291795 we add 7 dnas in the mating_pool
-
-For car id - 2, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 3, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 4, with fitness 0.23171906374531712 we add 4 dnas in the mating_pool
-
-For car id - 5, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 6, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 7, with fitness 0.23140848780275486 we add 4 dnas in the mating_pool
-
-For car id - 8, with fitness 0.2988897094787612 we add 5 dnas in the mating_pool
-
-For car id - 9, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 10, with fitness 0.37227224780291795 we add 7 dnas in the mating_pool
-
-For car id - 11, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 12, with fitness 0.23476739883424497 we add 4 dnas in the mating_pool
-
-For car id - 13, with fitness 0.23476739883424497 we add 4 dnas in the mating_pool
-
-For car id - 14, with fitness 0.24688094546444236 we add 5 dnas in the mating_pool
-
-For car id - 15, with fitness 0.23476739883424497 we add 4 dnas in the mating_pool
-
-For car id - 16, with fitness 0.23455022924597582 we add 4 dnas in the mating_pool
-
-For car id - 17, with fitness 0.23455022924597582 we add 4 dnas in the mating_pool
-
-For car id - 18, with fitness 0.3832301550447885 we add 7 dnas in the mating_pool
-
-For car id - 19, with fitness 0.23455022924597582 we add 4 dnas in the mating_pool
-size of mating_pool = 97
-best fitness0.3832301550447885
-
-new dna for car - 0
-
-
-My id = 5 my partner's id = 1
-chosen block from id = 5
-
-new dna for car - 1
-
-
-My id = 10 my partner's id = 7
-chosen block from id = 10
-
-new dna for car - 2
-
-
-My id = 0 my partner's id = 2
-chosen block from id = 0
-mutated
-
-new dna for car - 3
-
-
-My id = 10 my partner's id = 14
-chosen block from id = 10
-
-new dna for car - 4
-
-
-My id = 8 my partner's id = 5
-chosen block from id = 5
-
-new dna for car - 5
-
-
-My id = 2 my partner's id = 4
-chosen block from id = 2
-mutated
-
-new dna for car - 6
-
-
-My id = 9 my partner's id = 2
-chosen block from id = 2
-mutated
-
-new dna for car - 7
-
-
-My id = 19 my partner's id = 11
-chosen block from id = 11
-mutated
-
-new dna for car - 8
-
-
-My id = 1 my partner's id = 0
-chosen block from id = 0
-
-new dna for car - 9
-
-
-My id = 6 my partner's id = 5
-chosen block from id = 6
-
-new dna for car - 10
-
-
-My id = 17 my partner's id = 6
-chosen block from id = 17
 mutated
 
 new dna for car - 11
-
-
-My id = 5 my partner's id = 4
-chosen block from id = 5
-
-new dna for car - 12
-
-
-My id = 16 my partner's id = 2
-chosen block from id = 16
-
-new dna for car - 13
-
-
-My id = 0 my partner's id = 3
-chosen block from id = 3
-
-new dna for car - 14
-
-
-My id = 1 my partner's id = 16
-chosen block from id = 16
-
-new dna for car - 15
-
-
-My id = 19 my partner's id = 19
-
-new dna for car - 16
-
-
-My id = 11 my partner's id = 0
-chosen block from id = 11
-
-new dna for car - 17
-
-
-My id = 8 my partner's id = 10
-chosen block from id = 8
-mutated
-
-new dna for car - 18
-
-
-My id = 18 my partner's id = 1
-chosen block from id = 1
-
-new dna for car - 19
-
-
-My id = 7 my partner's id = 10
-chosen block from id = 7
-
-generation #5
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-0.05473921593242208
-
-For car id - 0, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 1, with fitness 0.37227224780291795 we add 7 dnas in the mating_pool
-
-For car id - 2, with fitness 0.2292765860301193 we add 4 dnas in the mating_pool
-
-For car id - 3, with fitness 0.37227224780291795 we add 7 dnas in the mating_pool
-
-For car id - 4, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 5, with fitness 0.29132391258104234 we add 5 dnas in the mating_pool
-
-For car id - 6, with fitness 0.30965881749819313 we add 6 dnas in the mating_pool
-
-For car id - 7, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 8, with fitness 0.2292765860301193 we add 4 dnas in the mating_pool
-
-For car id - 9, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 10, with fitness 0.23455022924597582 we add 4 dnas in the mating_pool
-
-For car id - 11, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 12, with fitness 0.23455022924597582 we add 4 dnas in the mating_pool
-
-For car id - 13, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 14, with fitness 0.23455022924597582 we add 4 dnas in the mating_pool
-
-For car id - 15, with fitness 0.2574909057774946 we add 5 dnas in the mating_pool
-
-For car id - 16, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 17, with fitness 0.2988897094787612 we add 5 dnas in the mating_pool
-
-For car id - 18, with fitness 0.37227224780291795 we add 7 dnas in the mating_pool
-
-For car id - 19, with fitness 0.23140848780275486 we add 4 dnas in the mating_pool
-size of mating_pool = 98
-best fitness0.37227224780291795
-
-new dna for car - 0
-
-
-My id = 18 my partner's id = 13
-chosen block from id = 13
-
-new dna for car - 1
-
-
-My id = 6 my partner's id = 0
-chosen block from id = 0
-mutated
-
-new dna for car - 2
-
-
-My id = 5 my partner's id = 0
-chosen block from id = 5
-
-new dna for car - 3
 
 
 My id = 15 my partner's id = 1
 chosen block from id = 15
-mutated
-
-new dna for car - 4
-
-
-My id = 7 my partner's id = 4
-chosen block from id = 4
-
-new dna for car - 5
-
-
-My id = 5 my partner's id = 19
-chosen block from id = 5
-
-new dna for car - 6
-
-
-My id = 16 my partner's id = 5
-chosen block from id = 16
-
-new dna for car - 7
-
-
-My id = 15 my partner's id = 19
-chosen block from id = 19
-
-new dna for car - 8
-
-
-My id = 17 my partner's id = 12
-chosen block from id = 12
-
-new dna for car - 9
-
-
-My id = 7 my partner's id = 4
-chosen block from id = 4
-
-new dna for car - 10
-
-
-My id = 9 my partner's id = 18
-chosen block from id = 18
-
-new dna for car - 11
-
-
-My id = 11 my partner's id = 3
-chosen block from id = 11
 
 new dna for car - 12
-
-
-My id = 9 my partner's id = 14
-chosen block from id = 9
-
-new dna for car - 13
-
-
-My id = 16 my partner's id = 3
-chosen block from id = 3
-
-new dna for car - 14
-
-
-My id = 9 my partner's id = 12
-chosen block from id = 12
-
-new dna for car - 15
 
 
 My id = 3 my partner's id = 12
 chosen block from id = 3
 
-new dna for car - 16
-
-
-My id = 7 my partner's id = 5
-chosen block from id = 7
-
-new dna for car - 17
-
-
-My id = 8 my partner's id = 3
-chosen block from id = 3
-
-new dna for car - 18
-
-
-My id = 9 my partner's id = 6
-chosen block from id = 9
-mutated
-
-new dna for car - 19
-
-
-My id = 7 my partner's id = 1
-chosen block from id = 1
-mutated
-
-generation #6
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-0.057751024305123105
-
-For car id - 0, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 1, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 2, with fitness 0.29132391258104234 we add 5 dnas in the mating_pool
-
-For car id - 3, with fitness 0.2574909057774946 we add 4 dnas in the mating_pool
-
-For car id - 4, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 5, with fitness 0.29132391258104234 we add 5 dnas in the mating_pool
-
-For car id - 6, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 7, with fitness 0.2637674146978867 we add 5 dnas in the mating_pool
-
-For car id - 8, with fitness 0.23455022924597582 we add 4 dnas in the mating_pool
-
-For car id - 9, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 10, with fitness 0.37227224780291795 we add 6 dnas in the mating_pool
-
-For car id - 11, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 12, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 13, with fitness 0.37227224780291795 we add 6 dnas in the mating_pool
-
-For car id - 14, with fitness 0.23455022924597582 we add 4 dnas in the mating_pool
-
-For car id - 15, with fitness 0.37227224780291795 we add 6 dnas in the mating_pool
-
-For car id - 16, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 17, with fitness 0.37227224780291795 we add 6 dnas in the mating_pool
-
-For car id - 18, with fitness 0.3019894254050606 we add 5 dnas in the mating_pool
-
-For car id - 19, with fitness 0.37213974674027495 we add 6 dnas in the mating_pool
-size of mating_pool = 98
-best fitness0.37227224780291795
-
-new dna for car - 0
-
-
-My id = 17 my partner's id = 7
-chosen block from id = 7
-
-new dna for car - 1
-
-
-My id = 15 my partner's id = 16
-chosen block from id = 15
-
-new dna for car - 2
-
-
-My id = 16 my partner's id = 18
-chosen block from id = 18
-
-new dna for car - 3
-
-
-My id = 7 my partner's id = 0
-chosen block from id = 0
-
-new dna for car - 4
-
-
-My id = 10 my partner's id = 19
-chosen block from id = 19
-
-new dna for car - 5
-
-
-My id = 0 my partner's id = 12
-chosen block from id = 12
-
-new dna for car - 6
-
-
-My id = 9 my partner's id = 0
-chosen block from id = 0
-
-new dna for car - 7
-
-
-My id = 14 my partner's id = 10
-chosen block from id = 10
-
-new dna for car - 8
-
-
-My id = 7 my partner's id = 6
-chosen block from id = 6
-
-new dna for car - 9
-
-
-My id = 6 my partner's id = 9
-chosen block from id = 9
-
-new dna for car - 10
-
-
-My id = 18 my partner's id = 18
-chosen block from id = 18
-
-new dna for car - 11
-
-
-My id = 12 my partner's id = 12
-chosen block from id = 12
-
-new dna for car - 12
-
-
-My id = 12 my partner's id = 2
-chosen block from id = 12
-
 new dna for car - 13
+
+
+My id = 13 my partner's id = 1
+chosen block from id = 13
+mutated
+
+new dna for car - 14
+
+
+My id = 5 my partner's id = 5
+chosen block from id = 5
+
+new dna for car - 15
+
+
+My id = 1 my partner's id = 2
+chosen block from id = 1
+
+new dna for car - 16
 
 
 My id = 14 my partner's id = 15
 chosen block from id = 14
 
+new dna for car - 17
+
+
+My id = 1 my partner's id = 15
+chosen block from id = 1
+
+new dna for car - 18
+
+
+My id = 13 my partner's id = 5
+chosen block from id = 13
+
+new dna for car - 19
+
+
+My id = 1 my partner's id = 15
+chosen block from id = 1
+mutated
+
+generation #2
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+0.08297569134782194
+
+For car id - 0, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 1, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 2, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 3, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 4, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 5, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 6, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 7, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 8, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 9, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 10, with fitness 0.2449020897670209 we add 3 dnas in the mating_pool
+
+For car id - 11, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 12, with fitness 0.2488468879022733 we add 3 dnas in the mating_pool
+
+For car id - 13, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 14, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 15, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 16, with fitness 0.3492311129752808 we add 4 dnas in the mating_pool
+
+For car id - 17, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 18, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 19, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+size of mating_pool = 520
+best fitness0.43850523789044826
+
+new dna for car - 0
+
+
+My id = 0 my partner's id = 13
+chosen block from id = 0
+
+new dna for car - 1
+
+
+My id = 6 my partner's id = 19
+chosen block from id = 6
+mutated
+
+new dna for car - 2
+
+
+My id = 8 my partner's id = 15
+chosen block from id = 8
+
+new dna for car - 3
+
+
+My id = 4 my partner's id = 0
+chosen block from id = 4
+
+new dna for car - 4
+
+
+My id = 6 my partner's id = 0
+chosen block from id = 6
+mutated
+
+new dna for car - 5
+
+
+My id = 12 my partner's id = 18
+chosen block from id = 12
+
+new dna for car - 6
+
+
+My id = 4 my partner's id = 1
+chosen block from id = 4
+
+new dna for car - 7
+
+
+My id = 7 my partner's id = 8
+chosen block from id = 7
+
+new dna for car - 8
+
+
+My id = 9 my partner's id = 1
+chosen block from id = 9
+
+new dna for car - 9
+
+
+My id = 18 my partner's id = 9
+chosen block from id = 18
+
+new dna for car - 10
+
+
+My id = 14 my partner's id = 1
+chosen block from id = 14
+
+new dna for car - 11
+
+
+My id = 19 my partner's id = 14
+chosen block from id = 19
+
+new dna for car - 12
+
+
+My id = 18 my partner's id = 11
+chosen block from id = 18
+
+new dna for car - 13
+
+
+My id = 18 my partner's id = 3
+chosen block from id = 18
+mutated
+
 new dna for car - 14
+
+
+My id = 1 my partner's id = 18
+chosen block from id = 1
+mutated
+
+new dna for car - 15
+
+
+My id = 0 my partner's id = 19
+chosen block from id = 0
+mutated
+
+new dna for car - 16
+
+
+My id = 8 my partner's id = 1
+chosen block from id = 8
+
+new dna for car - 17
+
+
+My id = 12 my partner's id = 6
+chosen block from id = 6
+
+new dna for car - 18
+
+
+My id = 11 my partner's id = 4
+chosen block from id = 11
+mutated
+
+new dna for car - 19
+
+
+My id = 7 my partner's id = 5
+chosen block from id = 7
+
+generation #3
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+0.08374571222439336
+
+For car id - 0, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 1, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 2, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 3, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 4, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 5, with fitness 0.2488468879022733 we add 3 dnas in the mating_pool
+
+For car id - 6, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 7, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 8, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 9, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 10, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 11, with fitness 0.23263005250899596 we add 3 dnas in the mating_pool
+
+For car id - 12, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 13, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 14, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 15, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 16, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 17, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 18, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 19, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+size of mating_pool = 546
+best fitness0.43850523789044826
+
+new dna for car - 0
+
+
+My id = 17 my partner's id = 8
+chosen block from id = 17
+
+new dna for car - 1
+
+
+My id = 0 my partner's id = 17
+chosen block from id = 0
+
+new dna for car - 2
+
+
+My id = 13 my partner's id = 18
+chosen block from id = 13
+
+new dna for car - 3
+
+
+My id = 6 my partner's id = 13
+chosen block from id = 6
+mutated
+
+new dna for car - 4
+
+
+My id = 6 my partner's id = 0
+chosen block from id = 6
+mutated
+
+new dna for car - 5
+
+
+My id = 3 my partner's id = 18
+chosen block from id = 3
+
+new dna for car - 6
+
+
+My id = 12 my partner's id = 12
+chosen block from id = 12
+
+new dna for car - 7
+
+
+My id = 13 my partner's id = 4
+chosen block from id = 13
+
+new dna for car - 8
+
+
+My id = 19 my partner's id = 15
+chosen block from id = 15
+
+new dna for car - 9
+
+
+My id = 6 my partner's id = 9
+chosen block from id = 6
+
+new dna for car - 10
+
+
+My id = 10 my partner's id = 6
+chosen block from id = 10
+mutated
+
+new dna for car - 11
+
+
+My id = 13 my partner's id = 4
+chosen block from id = 13
+
+new dna for car - 12
+
+
+My id = 15 my partner's id = 7
+chosen block from id = 15
+mutated
+
+new dna for car - 13
+
+
+My id = 8 my partner's id = 14
+chosen block from id = 8
+
+new dna for car - 14
+
+
+My id = 0 my partner's id = 18
+chosen block from id = 0
+
+new dna for car - 15
+
+
+My id = 12 my partner's id = 17
+chosen block from id = 12
+mutated
+
+new dna for car - 16
+
+
+My id = 4 my partner's id = 17
+chosen block from id = 4
+
+new dna for car - 17
+
+
+My id = 0 my partner's id = 10
+chosen block from id = 0
+
+new dna for car - 18
+
+
+My id = 14 my partner's id = 15
+chosen block from id = 14
+
+new dna for car - 19
+
+
+My id = 15 my partner's id = 10
+chosen block from id = 15
+
+generation #4
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+0.08770104757808962
+
+For car id - 0, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 1, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 2, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 3, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 4, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 5, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 6, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 7, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 8, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 9, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 10, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 11, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 12, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 13, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 14, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 15, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 16, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 17, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 18, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 19, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+size of mating_pool = 600
+best fitness0.43850523789044826
+
+new dna for car - 0
+
+
+My id = 0 my partner's id = 9
+chosen block from id = 0
+
+new dna for car - 1
+
+
+My id = 11 my partner's id = 6
+chosen block from id = 11
+
+new dna for car - 2
+
+
+My id = 7 my partner's id = 6
+chosen block from id = 7
+
+new dna for car - 3
+
+
+My id = 0 my partner's id = 6
+chosen block from id = 0
+
+new dna for car - 4
+
+
+My id = 6 my partner's id = 13
+chosen block from id = 6
+mutated
+
+new dna for car - 5
+
+
+My id = 1 my partner's id = 17
+chosen block from id = 1
+
+new dna for car - 6
+
+
+My id = 7 my partner's id = 3
+chosen block from id = 7
+mutated
+
+new dna for car - 7
+
+
+My id = 11 my partner's id = 18
+chosen block from id = 11
+
+new dna for car - 8
+
+
+My id = 0 my partner's id = 0
+chosen block from id = 0
+
+new dna for car - 9
+
+
+My id = 7 my partner's id = 9
+chosen block from id = 7
+
+new dna for car - 10
+
+
+My id = 9 my partner's id = 14
+chosen block from id = 9
+
+new dna for car - 11
+
+
+My id = 8 my partner's id = 4
+chosen block from id = 8
+
+new dna for car - 12
+
+
+My id = 18 my partner's id = 16
+chosen block from id = 18
+
+new dna for car - 13
+
+
+My id = 13 my partner's id = 4
+chosen block from id = 13
+
+new dna for car - 14
+
+
+My id = 15 my partner's id = 15
+chosen block from id = 15
+mutated
+
+new dna for car - 15
+
+
+My id = 2 my partner's id = 8
+chosen block from id = 2
+
+new dna for car - 16
+
+
+My id = 9 my partner's id = 4
+chosen block from id = 9
+
+new dna for car - 17
 
 
 My id = 2 my partner's id = 19
 chosen block from id = 19
 mutated
 
-new dna for car - 15
-
-
-My id = 5 my partner's id = 2
-chosen block from id = 5
-
-new dna for car - 16
-
-
-My id = 17 my partner's id = 12
-chosen block from id = 17
-mutated
-
-new dna for car - 17
-
-
-My id = 1 my partner's id = 7
-chosen block from id = 7
-
 new dna for car - 18
 
 
-My id = 6 my partner's id = 16
-chosen block from id = 6
+My id = 2 my partner's id = 12
+chosen block from id = 2
 
 new dna for car - 19
 
 
-My id = 10 my partner's id = 9
-chosen block from id = 10
-
-generation #7
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-0.05988625521384064
-
-For car id - 0, with fitness 0.2637674146978867 we add 4 dnas in the mating_pool
-
-For car id - 1, with fitness 0.37227224780291795 we add 6 dnas in the mating_pool
-
-For car id - 2, with fitness 0.3019894254050606 we add 5 dnas in the mating_pool
-
-For car id - 3, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 4, with fitness 0.2782820433031957 we add 5 dnas in the mating_pool
-
-For car id - 5, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 6, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 7, with fitness 0.37227224780291795 we add 6 dnas in the mating_pool
-
-For car id - 8, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 9, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 10, with fitness 0.3019894254050606 we add 5 dnas in the mating_pool
-
-For car id - 11, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 12, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 13, with fitness 0.23455022924597582 we add 4 dnas in the mating_pool
-
-For car id - 14, with fitness 0.2607323789236229 we add 4 dnas in the mating_pool
-
-For car id - 15, with fitness 0.29132391258104234 we add 5 dnas in the mating_pool
-
-For car id - 16, with fitness 0.37099223250186736 we add 6 dnas in the mating_pool
-
-For car id - 17, with fitness 0.2637674146978867 we add 4 dnas in the mating_pool
-
-For car id - 18, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 19, with fitness 0.37227224780291795 we add 6 dnas in the mating_pool
-size of mating_pool = 97
-best fitness0.37227224780291795
+My id = 6 my partner's id = 18
+chosen block from id = 6
+
+generation #5
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+0.08562394095758272
+
+For car id - 0, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 1, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 2, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 3, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 4, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 5, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 6, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 7, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 8, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 9, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 10, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 11, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 12, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 13, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 14, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 15, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 16, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 17, with fitness 0.23079457583975724 we add 3 dnas in the mating_pool
+
+For car id - 18, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+
+For car id - 19, with fitness 0.43850523789044826 we add 30 dnas in the mating_pool
+size of mating_pool = 573
+best fitness0.43850523789044826
 
 new dna for car - 0
 
 
-My id = 6 my partner's id = 1
-chosen block from id = 1
+My id = 4 my partner's id = 18
+chosen block from id = 4
 
 new dna for car - 1
 
 
-My id = 11 my partner's id = 3
-chosen block from id = 11
-mutated
+My id = 4 my partner's id = 12
+chosen block from id = 4
 
 new dna for car - 2
 
 
-My id = 7 my partner's id = 6
-chosen block from id = 6
+My id = 19 my partner's id = 3
+chosen block from id = 3
 
 new dna for car - 3
 
 
-My id = 1 my partner's id = 14
-chosen block from id = 1
+My id = 4 my partner's id = 15
+chosen block from id = 4
+
+new dna for car - 4
+
+
+My id = 11 my partner's id = 7
+chosen block from id = 11
+
+new dna for car - 5
+
+
+My id = 4 my partner's id = 19
+chosen block from id = 4
+
+new dna for car - 6
+
+
+My id = 8 my partner's id = 1
+chosen block from id = 8
+mutated
+
+new dna for car - 7
+
+
+My id = 19 my partner's id = 0
+chosen block from id = 19
+mutated
+
+new dna for car - 8
+
+
+My id = 4 my partner's id = 1
+chosen block from id = 4
+mutated
+
+new dna for car - 9
+
+
+My id = 12 my partner's id = 0
+chosen block from id = 12
+
+new dna for car - 10
+
+
+My id = 9 my partner's id = 18
+chosen block from id = 9
+
+new dna for car - 11
+
+
+My id = 4 my partner's id = 5
+chosen block from id = 4
+
+new dna for car - 12
+
+
+My id = 3 my partner's id = 5
+chosen block from id = 3
+
+new dna for car - 13
+
+
+My id = 8 my partner's id = 13
+chosen block from id = 8
+
+new dna for car - 14
+
+
+My id = 2 my partner's id = 6
+chosen block from id = 2
+mutated
+
+new dna for car - 15
+
+
+My id = 14 my partner's id = 7
+chosen block from id = 14
+mutated
+
+new dna for car - 16
+
+
+My id = 11 my partner's id = 9
+chosen block from id = 11
+
+new dna for car - 17
+
+
+My id = 16 my partner's id = 5
+chosen block from id = 16
+
+new dna for car - 18
+
+
+My id = 0 my partner's id = 5
+chosen block from id = 0
+
+new dna for car - 19
+
+
+My id = 15 my partner's id = 7
+chosen block from id = 15
+
+generation #6
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+0.14734894962940967
+
+For car id - 0, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 1, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 2, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 3, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 4, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 5, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 6, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 7, with fitness 6.403295443022453 we add 68 dnas in the mating_pool
+
+For car id - 8, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 9, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 10, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 11, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 12, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 13, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 14, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 15, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 16, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 17, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 18, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+
+For car id - 19, with fitness 0.43850523789044826 we add 3 dnas in the mating_pool
+size of mating_pool = 125
+best fitness6.403295443022453
+
+new dna for car - 0
+
+
+My id = 7 my partner's id = 14
+chosen block from id = 14
+chosen block from id = 14
+mutated
+
+new dna for car - 1
+
+
+My id = 2 my partner's id = 2
+chosen block from id = 2
+
+new dna for car - 2
+
+
+My id = 18 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
+
+new dna for car - 3
+
+
+My id = 10 my partner's id = 18
+chosen block from id = 18
 mutated
 
 new dna for car - 4
 
 
-My id = 11 my partner's id = 8
-chosen block from id = 8
+My id = 7 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
 
 new dna for car - 5
 
 
-My id = 2 my partner's id = 3
-chosen block from id = 3
+My id = 7 my partner's id = 13
+chosen block from id = 13
+chosen block from id = 13
 
 new dna for car - 6
 
 
-My id = 10 my partner's id = 19
-chosen block from id = 19
+My id = 7 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
 
 new dna for car - 7
 
 
-My id = 3 my partner's id = 6
-chosen block from id = 3
+My id = 7 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
 
 new dna for car - 8
 
 
-My id = 15 my partner's id = 2
+My id = 7 my partner's id = 15
+chosen block from id = 7
 chosen block from id = 15
 
 new dna for car - 9
 
 
-My id = 5 my partner's id = 13
-chosen block from id = 5
+My id = 7 my partner's id = 17
+chosen block from id = 7
+chosen block from id = 17
 
 new dna for car - 10
 
 
-My id = 16 my partner's id = 12
-chosen block from id = 16
+My id = 7 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
 
 new dna for car - 11
 
 
-My id = 9 my partner's id = 4
-chosen block from id = 9
+My id = 15 my partner's id = 1
+chosen block from id = 15
 mutated
 
 new dna for car - 12
 
 
-My id = 14 my partner's id = 5
-chosen block from id = 5
+My id = 7 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
+mutated
 
 new dna for car - 13
 
 
-My id = 18 my partner's id = 11
-chosen block from id = 18
+My id = 19 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
 
 new dna for car - 14
 
 
-My id = 8 my partner's id = 11
+My id = 11 my partner's id = 7
 chosen block from id = 11
+chosen block from id = 7
 mutated
 
 new dna for car - 15
 
 
-My id = 3 my partner's id = 16
-chosen block from id = 3
+My id = 7 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
+mutated
 
 new dna for car - 16
 
 
-My id = 19 my partner's id = 3
-chosen block from id = 19
+My id = 12 my partner's id = 1
+chosen block from id = 12
 
 new dna for car - 17
 
 
-My id = 4 my partner's id = 10
-chosen block from id = 10
+My id = 15 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
 
 new dna for car - 18
 
 
-My id = 15 my partner's id = 19
-chosen block from id = 19
-mutated
+My id = 7 my partner's id = 4
+chosen block from id = 4
+chosen block from id = 4
 
 new dna for car - 19
 
 
-My id = 8 my partner's id = 15
-chosen block from id = 15
+My id = 19 my partner's id = 7
+chosen block from id = 19
+chosen block from id = 19
 
-generation #8
+generation #7
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+0.6766700470550444
 
+For car id - 0, with fitness 0.43850523789044826 we add 1 dnas in the mating_pool
 
+For car id - 1, with fitness 0.43850523789044826 we add 1 dnas in the mating_pool
 
-Len of end_points = 5
+For car id - 2, with fitness 6.284231177836794 we add 9 dnas in the mating_pool
 
+For car id - 3, with fitness 0.43850523789044826 we add 1 dnas in the mating_pool
 
+For car id - 4, with fitness 6.403295443022453 we add 9 dnas in the mating_pool
 
+For car id - 5, with fitness 0.43850523789044826 we add 1 dnas in the mating_pool
 
+For car id - 6, with fitness 6.403295443022453 we add 9 dnas in the mating_pool
 
+For car id - 7, with fitness 6.403295443022453 we add 9 dnas in the mating_pool
 
-Len of end_points = 5
+For car id - 8, with fitness 6.403295443022453 we add 9 dnas in the mating_pool
 
+For car id - 9, with fitness -1 we add -1 dnas in the mating_pool
 
+For car id - 10, with fitness 6.403295443022453 we add 9 dnas in the mating_pool
 
+For car id - 11, with fitness 0.43850523789044826 we add 1 dnas in the mating_pool
 
+For car id - 12, with fitness 6.403295443022453 we add 9 dnas in the mating_pool
 
+For car id - 13, with fitness 6.043263131745662 we add 9 dnas in the mating_pool
 
-Len of end_points = 5
+For car id - 14, with fitness 0.43850523789044826 we add 1 dnas in the mating_pool
 
+For car id - 15, with fitness 6.403295443022453 we add 9 dnas in the mating_pool
 
+For car id - 16, with fitness 0.43850523789044826 we add 1 dnas in the mating_pool
 
+For car id - 17, with fitness 7.779939665660087 we add 36 dnas in the mating_pool
 
+For car id - 18, with fitness 0.43850523789044826 we add 1 dnas in the mating_pool
 
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-0.05890390059892179
-
-For car id - 0, with fitness 0.37227224780291795 we add 6 dnas in the mating_pool
-
-For car id - 1, with fitness 0.29200535642872066 we add 5 dnas in the mating_pool
-
-For car id - 2, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 3, with fitness 0.3715365706936803 we add 6 dnas in the mating_pool
-
-For car id - 4, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 5, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 6, with fitness 0.2355283559504101 we add 4 dnas in the mating_pool
-
-For car id - 7, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 8, with fitness 0.29132391258104234 we add 5 dnas in the mating_pool
-
-For car id - 9, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 10, with fitness 0.37099223250186736 we add 6 dnas in the mating_pool
-
-For car id - 11, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 12, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 13, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 14, with fitness 0.28154546734866476 we add 5 dnas in the mating_pool
-
-For car id - 15, with fitness 0.321260718858119 we add 5 dnas in the mating_pool
-
-For car id - 16, with fitness 0.2255206346297747 we add 4 dnas in the mating_pool
-
-For car id - 17, with fitness 0.3019894254050606 we add 5 dnas in the mating_pool
-
-For car id - 18, with fitness 0.23067692389716712 we add 4 dnas in the mating_pool
-
-For car id - 19, with fitness 0.29132391258104234 we add 5 dnas in the mating_pool
-size of mating_pool = 97
-best fitness0.37227224780291795
+For car id - 19, with fitness 0.22846072598114406 we add 0 dnas in the mating_pool
+size of mating_pool = 125
+best fitness7.779939665660087
 
 new dna for car - 0
 
 
-My id = 14 my partner's id = 16
-chosen block from id = 16
+My id = 5 my partner's id = 17
+chosen block from id = 5
+chosen block from id = 17
 
 new dna for car - 1
 
 
-My id = 18 my partner's id = 13
-chosen block from id = 18
+My id = 5 my partner's id = 14
+chosen block from id = 5
 
 new dna for car - 2
 
 
-My id = 15 my partner's id = 13
+My id = 17 my partner's id = 15
+chosen block from id = 17
 chosen block from id = 15
 
 new dna for car - 3
 
 
-My id = 1 my partner's id = 14
-chosen block from id = 14
+My id = 0 my partner's id = 17
+chosen block from id = 17
+chosen block from id = 17
 
 new dna for car - 4
 
 
-My id = 7 my partner's id = 12
+My id = 8 my partner's id = 17
+chosen block from id = 8
+chosen block from id = 17
+
+new dna for car - 5
+
+
+My id = 15 my partner's id = 15
+chosen block from id = 15
+chosen block from id = 15
+
+new dna for car - 6
+
+
+My id = 0 my partner's id = 4
+chosen block from id = 0
+chosen block from id = 4
+mutated
+
+new dna for car - 7
+
+
+My id = 13 my partner's id = 15
+chosen block from id = 13
+chosen block from id = 15
+
+new dna for car - 8
+
+
+My id = 15 my partner's id = 10
+chosen block from id = 15
+chosen block from id = 10
+mutated
+
+new dna for car - 9
+
+
+My id = 17 my partner's id = 17
+chosen block from id = 17
+chosen block from id = 17
+
+new dna for car - 10
+
+
+My id = 2 my partner's id = 5
+chosen block from id = 5
+chosen block from id = 5
+
+new dna for car - 11
+
+
+My id = 7 my partner's id = 10
+chosen block from id = 7
+chosen block from id = 10
+
+new dna for car - 12
+
+
+My id = 15 my partner's id = 17
+chosen block from id = 15
+chosen block from id = 17
+
+new dna for car - 13
+
+
+My id = 16 my partner's id = 4
+chosen block from id = 16
+chosen block from id = 4
+mutated
+
+new dna for car - 14
+
+
+My id = 13 my partner's id = 15
+chosen block from id = 13
+chosen block from id = 15
+mutated
+
+new dna for car - 15
+
+
+My id = 12 my partner's id = 17
 chosen block from id = 12
+chosen block from id = 17
+mutated
+
+new dna for car - 16
+
+
+My id = 17 my partner's id = 13
+chosen block from id = 17
+chosen block from id = 13
+
+new dna for car - 17
+
+
+My id = 2 my partner's id = 6
+chosen block from id = 2
+chosen block from id = 6
+mutated
+
+new dna for car - 18
+
+
+My id = 13 my partner's id = 15
+chosen block from id = 13
+chosen block from id = 15
+mutated
+
+new dna for car - 19
+
+
+My id = 17 my partner's id = 17
+chosen block from id = 17
+chosen block from id = 17
+
+generation #8
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+1.0254937352632354
+
+For car id - 0, with fitness 0.43850523789044826 we add 0 dnas in the mating_pool
+
+For car id - 1, with fitness 0.43850523789044826 we add 0 dnas in the mating_pool
+
+For car id - 2, with fitness 6.403295443022453 we add 6 dnas in the mating_pool
+
+For car id - 3, with fitness 7.779939665660087 we add 33 dnas in the mating_pool
+
+For car id - 4, with fitness 6.403295443022453 we add 6 dnas in the mating_pool
+
+For car id - 5, with fitness 6.403295443022453 we add 6 dnas in the mating_pool
+
+For car id - 6, with fitness 0.43850523789044826 we add 0 dnas in the mating_pool
+
+For car id - 7, with fitness 6.043263131745662 we add 6 dnas in the mating_pool
+
+For car id - 8, with fitness 6.403295443022453 we add 6 dnas in the mating_pool
+
+For car id - 9, with fitness 7.779939665660087 we add 33 dnas in the mating_pool
+
+For car id - 10, with fitness 0.43850523789044826 we add 0 dnas in the mating_pool
+
+For car id - 11, with fitness 6.403295443022453 we add 6 dnas in the mating_pool
+
+For car id - 12, with fitness 7.779939665660087 we add 33 dnas in the mating_pool
+
+For car id - 13, with fitness 0.43850523789044826 we add 0 dnas in the mating_pool
+
+For car id - 14, with fitness 6.043263131745662 we add 6 dnas in the mating_pool
+
+For car id - 15, with fitness 6.403295443022453 we add 6 dnas in the mating_pool
+
+For car id - 16, with fitness 6.043263131745662 we add 6 dnas in the mating_pool
+
+For car id - 17, with fitness 6.284231177836794 we add 6 dnas in the mating_pool
+
+For car id - 18, with fitness 6.403295443022453 we add 6 dnas in the mating_pool
+
+For car id - 19, with fitness 7.779939665660087 we add 33 dnas in the mating_pool
+size of mating_pool = 198
+best fitness7.779939665660087
+
+new dna for car - 0
+
+
+My id = 8 my partner's id = 17
+chosen block from id = 8
+chosen block from id = 17
+
+new dna for car - 1
+
+
+My id = 14 my partner's id = 11
+chosen block from id = 14
+chosen block from id = 11
+
+new dna for car - 2
+
+
+My id = 11 my partner's id = 12
+chosen block from id = 11
+chosen block from id = 12
+
+new dna for car - 3
+
+
+My id = 16 my partner's id = 19
+chosen block from id = 16
+chosen block from id = 19
+
+new dna for car - 4
+
+
+My id = 19 my partner's id = 9
+chosen block from id = 19
+chosen block from id = 9
 mutated
 
 new dna for car - 5
 
 
-My id = 1 my partner's id = 8
-chosen block from id = 1
+My id = 12 my partner's id = 3
+chosen block from id = 12
+chosen block from id = 3
 
 new dna for car - 6
 
 
-My id = 10 my partner's id = 10
-chosen block from id = 10
+My id = 3 my partner's id = 12
+chosen block from id = 3
+chosen block from id = 12
 
 new dna for car - 7
 
 
-My id = 11 my partner's id = 2
-chosen block from id = 2
+My id = 19 my partner's id = 19
+chosen block from id = 19
 
 new dna for car - 8
 
 
+My id = 9 my partner's id = 11
+chosen block from id = 9
+chosen block from id = 11
+
+new dna for car - 9
+
+
+My id = 16 my partner's id = 9
+chosen block from id = 16
+chosen block from id = 9
+
+new dna for car - 10
+
+
+My id = 12 my partner's id = 9
+chosen block from id = 12
+chosen block from id = 9
+
+new dna for car - 11
+
+
+My id = 9 my partner's id = 19
+chosen block from id = 9
+chosen block from id = 19
+
+new dna for car - 12
+
+
+My id = 18 my partner's id = 19
+chosen block from id = 18
+chosen block from id = 19
+
+new dna for car - 13
+
+
+My id = 3 my partner's id = 3
+chosen block from id = 3
+chosen block from id = 3
+
+new dna for car - 14
+
+
+My id = 3 my partner's id = 17
+chosen block from id = 3
+chosen block from id = 17
+
+new dna for car - 15
+
+
+My id = 8 my partner's id = 5
+chosen block from id = 8
+chosen block from id = 5
+
+new dna for car - 16
+
+
+My id = 5 my partner's id = 12
+chosen block from id = 5
+chosen block from id = 12
+mutated
+
+new dna for car - 17
+
+
+My id = 3 my partner's id = 12
+chosen block from id = 3
+chosen block from id = 12
+
+new dna for car - 18
+
+
+My id = 12 my partner's id = 9
+chosen block from id = 12
+chosen block from id = 9
+
+new dna for car - 19
+
+
+My id = 19 my partner's id = 19
+chosen block from id = 19
+mutated
+
+generation #9
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+1.9419233267821931
+
+For car id - 0, with fitness 6.284231177836794 we add 3 dnas in the mating_pool
+
+For car id - 1, with fitness 6.043263131745662 we add 3 dnas in the mating_pool
+
+For car id - 2, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 3, with fitness 7.910394154333032 we add 4 dnas in the mating_pool
+
+For car id - 4, with fitness 6.669241698188717 we add 3 dnas in the mating_pool
+
+For car id - 5, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 6, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 7, with fitness 6.800593747582479 we add 4 dnas in the mating_pool
+
+For car id - 8, with fitness 6.403295443022453 we add 3 dnas in the mating_pool
+
+For car id - 9, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 10, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 11, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 12, with fitness -1 we add -1 dnas in the mating_pool
+
+For car id - 13, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 14, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 15, with fitness 6.403295443022453 we add 3 dnas in the mating_pool
+
+For car id - 16, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 17, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 18, with fitness 7.779939665660087 we add 4 dnas in the mating_pool
+
+For car id - 19, with fitness 63.0986815602268 we add 57 dnas in the mating_pool
+size of mating_pool = 124
+best fitness63.0986815602268
+
+new dna for car - 0
+
+
+My id = 17 my partner's id = 19
+chosen block from id = 17
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+mutated
+
+new dna for car - 1
+
+
+My id = 11 my partner's id = 6
+chosen block from id = 11
+chosen block from id = 6
+
+new dna for car - 2
+
+
+My id = 19 my partner's id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+
+new dna for car - 3
+
+
+My id = 17 my partner's id = 18
+chosen block from id = 17
+chosen block from id = 18
+
+new dna for car - 4
+
+
+My id = 11 my partner's id = 19
+chosen block from id = 11
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+mutated
+
+new dna for car - 5
+
+
+My id = 6 my partner's id = 11
+chosen block from id = 6
+chosen block from id = 11
+mutated
+
+new dna for car - 6
+
+
+My id = 3 my partner's id = 14
+chosen block from id = 3
+chosen block from id = 14
+mutated
+
+new dna for car - 7
+
+
+My id = 10 my partner's id = 3
+chosen block from id = 10
+chosen block from id = 3
+mutated
+
+new dna for car - 8
+
+
+My id = 2 my partner's id = 19
+chosen block from id = 2
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+mutated
+
+new dna for car - 9
+
+
+My id = 11 my partner's id = 19
+chosen block from id = 11
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+
+new dna for car - 10
+
+
+My id = 16 my partner's id = 5
+chosen block from id = 16
+chosen block from id = 5
+
+new dna for car - 11
+
+
+My id = 19 my partner's id = 8
+chosen block from id = 19
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+mutated
+
+new dna for car - 12
+
+
+My id = 9 my partner's id = 11
+chosen block from id = 9
+chosen block from id = 11
+
+new dna for car - 13
+
+
+My id = 19 my partner's id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+
+new dna for car - 14
+
+
+My id = 16 my partner's id = 2
+chosen block from id = 16
+chosen block from id = 2
+mutated
+
+new dna for car - 15
+
+
+My id = 19 my partner's id = 4
+chosen block from id = 19
+chosen block from id = 4
+chosen block from id = 4
+chosen block from id = 4
+
+new dna for car - 16
+
+
+My id = 15 my partner's id = 4
+chosen block from id = 15
+chosen block from id = 4
+mutated
+
+new dna for car - 17
+
+
+My id = 19 my partner's id = 15
+chosen block from id = 19
+chosen block from id = 15
+chosen block from id = 15
+chosen block from id = 15
+
+new dna for car - 18
+
+
+My id = 11 my partner's id = 13
+chosen block from id = 11
+chosen block from id = 13
+mutated
+
+new dna for car - 19
+
+
+My id = 15 my partner's id = 19
+chosen block from id = 15
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+
+generation #10
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+4.50448401995422
+
+For car id - 0, with fitness 60.46068241624608 we add 13 dnas in the mating_pool
+
+For car id - 1, with fitness 7.779939665660087 we add 2 dnas in the mating_pool
+
+For car id - 2, with fitness 56.34852837175398 we add 13 dnas in the mating_pool
+
+For car id - 3, with fitness 7.779939665660087 we add 2 dnas in the mating_pool
+
+For car id - 4, with fitness 57.959819376363264 we add 13 dnas in the mating_pool
+
+For car id - 5, with fitness 7.779939665660087 we add 2 dnas in the mating_pool
+
+For car id - 6, with fitness 7.779939665660087 we add 2 dnas in the mating_pool
+
+For car id - 7, with fitness 7.910394154333032 we add 2 dnas in the mating_pool
+
+For car id - 8, with fitness 55.17255408103523 we add 12 dnas in the mating_pool
+
+For car id - 9, with fitness 7.779939665660087 we add 2 dnas in the mating_pool
+
+For car id - 10, with fitness 7.779939665660087 we add 2 dnas in the mating_pool
+
+For car id - 11, with fitness 6.403295443022453 we add 1 dnas in the mating_pool
+
+For car id - 12, with fitness 7.779939665660087 we add 2 dnas in the mating_pool
+
+For car id - 13, with fitness 61.092370474341806 we add 39 dnas in the mating_pool
+
+For car id - 14, with fitness 7.779939665660087 we add 2 dnas in the mating_pool
+
+For car id - 15, with fitness 6.669241698188717 we add 1 dnas in the mating_pool
+
+For car id - 16, with fitness 6.669241698188717 we add 1 dnas in the mating_pool
+
+For car id - 17, with fitness 55.339521847985466 we add 12 dnas in the mating_pool
+
+For car id - 18, with fitness 7.779939665660087 we add 2 dnas in the mating_pool
+
+For car id - 19, with fitness 6.403295443022453 we add 1 dnas in the mating_pool
+size of mating_pool = 126
+best fitness61.092370474341806
+
+new dna for car - 0
+
+
+My id = 6 my partner's id = 2
+chosen block from id = 6
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+mutated
+
+new dna for car - 1
+
+
+My id = 12 my partner's id = 8
+chosen block from id = 12
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+
+new dna for car - 2
+
+
+My id = 10 my partner's id = 17
+chosen block from id = 10
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+
+new dna for car - 3
+
+
+My id = 13 my partner's id = 8
+chosen block from id = 13
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+mutated
+
+new dna for car - 4
+
+
+My id = 2 my partner's id = 2
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+mutated
+
+new dna for car - 5
+
+
+My id = 4 my partner's id = 17
+chosen block from id = 4
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+
+new dna for car - 6
+
+
+My id = 11 my partner's id = 13
+chosen block from id = 11
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+
+new dna for car - 7
+
+
+My id = 3 my partner's id = 13
+chosen block from id = 3
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+
+new dna for car - 8
+
+
+My id = 8 my partner's id = 13
+chosen block from id = 8
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+
+new dna for car - 9
+
+
+My id = 13 my partner's id = 4
+chosen block from id = 13
+chosen block from id = 4
+chosen block from id = 4
+chosen block from id = 4
+
+new dna for car - 10
+
+
+My id = 0 my partner's id = 17
+chosen block from id = 0
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+mutated
+
+new dna for car - 11
+
+
+My id = 3 my partner's id = 13
+chosen block from id = 3
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+mutated
+
+new dna for car - 12
+
+
+My id = 15 my partner's id = 10
+chosen block from id = 15
+chosen block from id = 10
+
+new dna for car - 13
+
+
 My id = 17 my partner's id = 13
 chosen block from id = 17
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+
+new dna for car - 14
+
+
+My id = 13 my partner's id = 14
+chosen block from id = 13
+chosen block from id = 14
+chosen block from id = 14
+chosen block from id = 14
+
+new dna for car - 15
+
+
+My id = 13 my partner's id = 4
+chosen block from id = 13
+chosen block from id = 4
+chosen block from id = 4
+chosen block from id = 4
+
+new dna for car - 16
+
+
+My id = 13 my partner's id = 8
+chosen block from id = 13
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+
+new dna for car - 17
+
+
+My id = 4 my partner's id = 17
+chosen block from id = 4
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+
+new dna for car - 18
+
+
+My id = 13 my partner's id = 13
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+mutated
+
+new dna for car - 19
+
+
+My id = 13 my partner's id = 0
+chosen block from id = 13
+chosen block from id = 0
+chosen block from id = 0
+chosen block from id = 0
+
+generation #11
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+8.145027997619389
+
+For car id - 0, with fitness 7.779939665660087 we add 1 dnas in the mating_pool
+
+For car id - 1, with fitness 7.779939665660087 we add 1 dnas in the mating_pool
+
+For car id - 2, with fitness 7.779939665660087 we add 1 dnas in the mating_pool
+
+For car id - 3, with fitness 55.33269304868044 we add 7 dnas in the mating_pool
+
+For car id - 4, with fitness 56.34852837175398 we add 7 dnas in the mating_pool
+
+For car id - 5, with fitness 55.339521847985466 we add 7 dnas in the mating_pool
+
+For car id - 6, with fitness 6.403295443022453 we add 1 dnas in the mating_pool
+
+For car id - 7, with fitness 7.779939665660087 we add 1 dnas in the mating_pool
+
+For car id - 8, with fitness 61.092370474341806 we add 33 dnas in the mating_pool
+
+For car id - 9, with fitness 61.092370474341806 we add 33 dnas in the mating_pool
+
+For car id - 10, with fitness 60.46068241624608 we add 7 dnas in the mating_pool
+
+For car id - 11, with fitness 7.779939665660087 we add 1 dnas in the mating_pool
+
+For car id - 12, with fitness 6.669241698188717 we add 1 dnas in the mating_pool
+
+For car id - 13, with fitness 55.339521847985466 we add 7 dnas in the mating_pool
+
+For car id - 14, with fitness 60.948423163718026 we add 7 dnas in the mating_pool
+
+For car id - 15, with fitness 57.959819376363264 we add 7 dnas in the mating_pool
+
+For car id - 16, with fitness 61.092370474341806 we add 33 dnas in the mating_pool
+
+For car id - 17, with fitness 55.339521847985466 we add 7 dnas in the mating_pool
+
+For car id - 18, with fitness 61.092370474341806 we add 33 dnas in the mating_pool
+
+For car id - 19, with fitness 61.092370474341806 we add 33 dnas in the mating_pool
+size of mating_pool = 228
+best fitness61.092370474341806
+
+new dna for car - 0
+
+
+My id = 9 my partner's id = 16
+chosen block from id = 9
+chosen block from id = 16
+chosen block from id = 16
+chosen block from id = 16
+mutated
+
+new dna for car - 1
+
+
+My id = 16 my partner's id = 9
+chosen block from id = 16
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+
+new dna for car - 2
+
+
+My id = 16 my partner's id = 9
+chosen block from id = 16
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+
+new dna for car - 3
+
+
+My id = 16 my partner's id = 13
+chosen block from id = 16
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+mutated
+
+new dna for car - 4
+
+
+My id = 19 my partner's id = 8
+chosen block from id = 19
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+mutated
+
+new dna for car - 5
+
+
+My id = 9 my partner's id = 17
+chosen block from id = 9
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+
+new dna for car - 6
+
+
+My id = 16 my partner's id = 13
+chosen block from id = 16
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+
+new dna for car - 7
+
+
+My id = 19 my partner's id = 3
+chosen block from id = 19
+chosen block from id = 3
+chosen block from id = 3
+chosen block from id = 3
+
+new dna for car - 8
+
+
+My id = 5 my partner's id = 4
+chosen block from id = 5
+chosen block from id = 4
+chosen block from id = 4
+chosen block from id = 4
+mutated
 
 new dna for car - 9
 
 
 My id = 9 my partner's id = 10
+chosen block from id = 9
 chosen block from id = 10
+chosen block from id = 10
+chosen block from id = 10
+mutated
 
 new dna for car - 10
 
 
-My id = 10 my partner's id = 13
-chosen block from id = 13
-
-new dna for car - 11
-
-
-My id = 1 my partner's id = 18
-chosen block from id = 1
-
-new dna for car - 12
-
-
-My id = 0 my partner's id = 1
-chosen block from id = 0
-
-new dna for car - 13
-
-
-My id = 16 my partner's id = 14
-chosen block from id = 16
-
-new dna for car - 14
-
-
-My id = 0 my partner's id = 2
-chosen block from id = 2
-
-new dna for car - 15
-
-
-My id = 16 my partner's id = 16
-chosen block from id = 16
-
-new dna for car - 16
-
-
-My id = 14 my partner's id = 18
+My id = 11 my partner's id = 18
+chosen block from id = 11
+chosen block from id = 18
+chosen block from id = 18
 chosen block from id = 18
 
-new dna for car - 17
-
-
-My id = 11 my partner's id = 7
-chosen block from id = 11
-
-new dna for car - 18
-
-
-My id = 8 my partner's id = 4
-chosen block from id = 8
-
-new dna for car - 19
-
-
-My id = 1 my partner's id = 8
-chosen block from id = 8
-
-generation #9
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-0.05741384170667528
-
-For car id - 0, with fitness 0.2255206346297747 we add 4 dnas in the mating_pool
-
-For car id - 1, with fitness 0.23067692389716712 we add 4 dnas in the mating_pool
-
-For car id - 2, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 3, with fitness 0.28154546734866476 we add 5 dnas in the mating_pool
-
-For car id - 4, with fitness 0.30980651230362805 we add 5 dnas in the mating_pool
-
-For car id - 5, with fitness 0.29200535642872066 we add 5 dnas in the mating_pool
-
-For car id - 6, with fitness 0.37099223250186736 we add 6 dnas in the mating_pool
-
-For car id - 7, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 8, with fitness 0.3019894254050606 we add 5 dnas in the mating_pool
-
-For car id - 9, with fitness 0.37099223250186736 we add 6 dnas in the mating_pool
-
-For car id - 10, with fitness 0.23268110039713658 we add 4 dnas in the mating_pool
-
-For car id - 11, with fitness 0.29200535642872066 we add 5 dnas in the mating_pool
-
-For car id - 12, with fitness 0.37227224780291795 we add 6 dnas in the mating_pool
-
-For car id - 13, with fitness 0.2255206346297747 we add 4 dnas in the mating_pool
-
-For car id - 14, with fitness 0.321260718858119 we add 6 dnas in the mating_pool
-
-For car id - 15, with fitness 0.2255206346297747 we add 4 dnas in the mating_pool
-
-For car id - 16, with fitness 0.23067692389716712 we add 4 dnas in the mating_pool
-
-For car id - 17, with fitness 0.23274850612884365 we add 4 dnas in the mating_pool
-
-For car id - 18, with fitness 0.29132391258104234 we add 5 dnas in the mating_pool
-
-For car id - 19, with fitness 0.29132391258104234 we add 5 dnas in the mating_pool
-size of mating_pool = 99
-best fitness0.37227224780291795
-
-new dna for car - 0
-
-
-My id = 8 my partner's id = 10
-chosen block from id = 10
-
-new dna for car - 1
-
-
-My id = 16 my partner's id = 7
-chosen block from id = 7
-
-new dna for car - 2
-
-
-My id = 12 my partner's id = 13
-chosen block from id = 13
-
-new dna for car - 3
-
-
-My id = 19 my partner's id = 12
-chosen block from id = 19
-
-new dna for car - 4
-
-
-My id = 7 my partner's id = 18
-chosen block from id = 7
-
-new dna for car - 5
-
-
-My id = 17 my partner's id = 9
-chosen block from id = 9
-
-new dna for car - 6
-
-
-My id = 17 my partner's id = 8
-chosen block from id = 17
-
-new dna for car - 7
-
-
-My id = 17 my partner's id = 1
-chosen block from id = 1
-mutated
-
-new dna for car - 8
-
-
-My id = 11 my partner's id = 4
-chosen block from id = 4
-
-new dna for car - 9
-
-
-My id = 6 my partner's id = 16
-chosen block from id = 6
-mutated
-
-new dna for car - 10
-
-
-My id = 3 my partner's id = 2
-chosen block from id = 3
-
 new dna for car - 11
 
 
-My id = 2 my partner's id = 11
-chosen block from id = 2
+My id = 8 my partner's id = 8
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+mutated
 
 new dna for car - 12
 
 
-My id = 10 my partner's id = 19
+My id = 16 my partner's id = 10
+chosen block from id = 16
+chosen block from id = 10
+chosen block from id = 10
 chosen block from id = 10
 
 new dna for car - 13
 
 
-My id = 11 my partner's id = 8
-chosen block from id = 8
+My id = 18 my partner's id = 17
+chosen block from id = 18
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+mutated
 
 new dna for car - 14
 
 
-My id = 11 my partner's id = 0
-chosen block from id = 11
-mutated
+My id = 19 my partner's id = 16
+chosen block from id = 19
+chosen block from id = 16
+chosen block from id = 16
+chosen block from id = 16
 
 new dna for car - 15
 
 
-My id = 18 my partner's id = 2
-chosen block from id = 2
+My id = 19 my partner's id = 16
+chosen block from id = 19
+chosen block from id = 16
+chosen block from id = 16
+chosen block from id = 16
 
 new dna for car - 16
 
 
-My id = 8 my partner's id = 4
-chosen block from id = 8
-mutated
+My id = 18 my partner's id = 17
+chosen block from id = 18
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
 
 new dna for car - 17
 
 
 My id = 19 my partner's id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
 
 new dna for car - 18
 
 
-My id = 11 my partner's id = 7
-chosen block from id = 11
+My id = 4 my partner's id = 5
+chosen block from id = 4
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
 
 new dna for car - 19
 
 
-My id = 14 my partner's id = 19
-chosen block from id = 19
-mutated
-
-generation #10
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-0.2389035454797784
-
-For car id - 0, with fitness 0.23268110039713658 we add 1 dnas in the mating_pool
-
-For car id - 1, with fitness 0.321260718858119 we add 1 dnas in the mating_pool
-
-For car id - 2, with fitness 0.2255206346297747 we add 1 dnas in the mating_pool
-
-For car id - 3, with fitness 0.23385642988750677 we add 1 dnas in the mating_pool
-
-For car id - 4, with fitness 0.321260718858119 we add 1 dnas in the mating_pool
-
-For car id - 5, with fitness 0.37099223250186736 we add 2 dnas in the mating_pool
-
-For car id - 6, with fitness 0.23274850612884365 we add 1 dnas in the mating_pool
-
-For car id - 7, with fitness 0.23067692389716712 we add 1 dnas in the mating_pool
-
-For car id - 8, with fitness 0.30980651230362805 we add 1 dnas in the mating_pool
-
-For car id - 9, with fitness 0.3715119670484894 we add 2 dnas in the mating_pool
-
-For car id - 10, with fitness 0.28154546734866476 we add 1 dnas in the mating_pool
-
-For car id - 11, with fitness 0.321260718858119 we add 1 dnas in the mating_pool
-
-For car id - 12, with fitness 0.23268110039713658 we add 1 dnas in the mating_pool
-
-For car id - 13, with fitness 0.3019894254050606 we add 1 dnas in the mating_pool
-
-For car id - 14, with fitness 0.2922784892905178 we add 1 dnas in the mating_pool
-
-For car id - 15, with fitness 0.321260718858119 we add 1 dnas in the mating_pool
-
-For car id - 16, with fitness 18.49145682456115 we add 77 dnas in the mating_pool
-
-For car id - 17, with fitness 0.22984585698148577 we add 1 dnas in the mating_pool
-
-For car id - 18, with fitness 0.29200535642872066 we add 1 dnas in the mating_pool
-
-For car id - 19, with fitness 0.275714845338214 we add 1 dnas in the mating_pool
-size of mating_pool = 98
-best fitness18.49145682456115
+My id = 18 my partner's id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+
+generation #12
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+12.576437142978001
+
+For car id - 0, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 1, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 2, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 3, with fitness 55.339521847985466 we add 4 dnas in the mating_pool
+
+For car id - 4, with fitness 58.6934242906375 we add 5 dnas in the mating_pool
+
+For car id - 5, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 6, with fitness 55.339521847985466 we add 4 dnas in the mating_pool
+
+For car id - 7, with fitness 121.74975659051987 we add 35 dnas in the mating_pool
+
+For car id - 8, with fitness 55.339521847985466 we add 4 dnas in the mating_pool
+
+For car id - 9, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 10, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 11, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 12, with fitness 60.46068241624608 we add 5 dnas in the mating_pool
+
+For car id - 13, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 14, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 15, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 16, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+
+For car id - 17, with fitness 62.2733179163533 we add 5 dnas in the mating_pool
+
+For car id - 18, with fitness 55.339521847985466 we add 4 dnas in the mating_pool
+
+For car id - 19, with fitness 61.092370474341806 we add 5 dnas in the mating_pool
+size of mating_pool = 126
+best fitness121.74975659051987
 
 new dna for car - 0
 
 
-My id = 15 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 14 my partner's id = 2
+chosen block from id = 14
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+mutated
 
 new dna for car - 1
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 1 my partner's id = 7
+chosen block from id = 1
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+mutated
 
 new dna for car - 2
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 7 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
 
 new dna for car - 3
 
 
-My id = 16 my partner's id = 11
-chosen block from id = 16
-chosen block from id = 11
-chosen block from id = 11
+My id = 7 my partner's id = 4
+chosen block from id = 7
+chosen block from id = 4
+chosen block from id = 4
+chosen block from id = 4
+chosen block from id = 4
 
 new dna for car - 4
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 6 my partner's id = 15
+chosen block from id = 6
+chosen block from id = 15
+chosen block from id = 15
+chosen block from id = 15
+mutated
 
 new dna for car - 5
 
 
-My id = 3 my partner's id = 16
-chosen block from id = 3
-chosen block from id = 16
-chosen block from id = 16
+My id = 2 my partner's id = 7
+chosen block from id = 2
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
 
 new dna for car - 6
 
 
-My id = 16 my partner's id = 7
-chosen block from id = 7
-chosen block from id = 7
-chosen block from id = 7
+My id = 0 my partner's id = 15
+chosen block from id = 0
+chosen block from id = 15
+chosen block from id = 15
+chosen block from id = 15
+mutated
 
 new dna for car - 7
 
 
-My id = 16 my partner's id = 15
-chosen block from id = 15
-chosen block from id = 15
-chosen block from id = 15
+My id = 4 my partner's id = 5
+chosen block from id = 4
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
 
 new dna for car - 8
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 3 my partner's id = 7
+chosen block from id = 3
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+mutated
 
 new dna for car - 9
 
 
-My id = 7 my partner's id = 16
-chosen block from id = 7
-chosen block from id = 16
-chosen block from id = 16
+My id = 13 my partner's id = 15
+chosen block from id = 13
+chosen block from id = 15
+chosen block from id = 15
+chosen block from id = 15
 mutated
 
 new dna for car - 10
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 14 my partner's id = 0
+chosen block from id = 14
+chosen block from id = 0
+chosen block from id = 0
+chosen block from id = 0
 
 new dna for car - 11
 
 
-My id = 16 my partner's id = 16
+My id = 14 my partner's id = 8
+chosen block from id = 14
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+
+new dna for car - 12
+
+
+My id = 19 my partner's id = 15
+chosen block from id = 19
+chosen block from id = 15
+chosen block from id = 15
+chosen block from id = 15
+
+new dna for car - 13
+
+
+My id = 7 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+
+new dna for car - 14
+
+
+My id = 14 my partner's id = 17
+chosen block from id = 14
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+mutated
+
+new dna for car - 15
+
+
+My id = 17 my partner's id = 0
+chosen block from id = 17
+chosen block from id = 0
+chosen block from id = 0
+chosen block from id = 0
+
+new dna for car - 16
+
+
+My id = 4 my partner's id = 16
+chosen block from id = 4
 chosen block from id = 16
 chosen block from id = 16
 chosen block from id = 16
 
+new dna for car - 17
+
+
+My id = 7 my partner's id = 0
+chosen block from id = 7
+chosen block from id = 0
+chosen block from id = 0
+chosen block from id = 0
+chosen block from id = 0
+mutated
+
+new dna for car - 18
+
+
+My id = 11 my partner's id = 4
+chosen block from id = 11
+chosen block from id = 4
+chosen block from id = 4
+chosen block from id = 4
+
+new dna for car - 19
+
+
+My id = 7 my partner's id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+
+generation #13
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+19.375281867611758
+
+For car id - 0, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 1, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 2, with fitness 121.74975659051987 we add 6 dnas in the mating_pool
+
+For car id - 3, with fitness 121.74975659051987 we add 6 dnas in the mating_pool
+
+For car id - 4, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 5, with fitness 317.8612245210588 we add 41 dnas in the mating_pool
+
+For car id - 6, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 7, with fitness 58.6934242906375 we add 3 dnas in the mating_pool
+
+For car id - 8, with fitness 55.339521847985466 we add 3 dnas in the mating_pool
+
+For car id - 9, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 10, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 11, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 12, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 13, with fitness 121.74975659051987 we add 6 dnas in the mating_pool
+
+For car id - 14, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 15, with fitness 61.092370474341806 we add 3 dnas in the mating_pool
+
+For car id - 16, with fitness 58.6934242906375 we add 3 dnas in the mating_pool
+
+For car id - 17, with fitness 290.3244364147214 we add 15 dnas in the mating_pool
+
+For car id - 18, with fitness 58.6934242906375 we add 3 dnas in the mating_pool
+
+For car id - 19, with fitness 121.74975659051987 we add 6 dnas in the mating_pool
+size of mating_pool = 122
+best fitness317.8612245210588
+
+new dna for car - 0
+
+
+My id = 11 my partner's id = 17
+chosen block from id = 11
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+chosen block from id = 17
+
+new dna for car - 1
+
+
+My id = 8 my partner's id = 16
+chosen block from id = 8
+chosen block from id = 16
+chosen block from id = 16
+chosen block from id = 16
+mutated
+
+new dna for car - 2
+
+
+My id = 6 my partner's id = 5
+chosen block from id = 6
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+
+new dna for car - 3
+
+
+My id = 6 my partner's id = 10
+chosen block from id = 6
+chosen block from id = 10
+chosen block from id = 10
+chosen block from id = 10
+
+new dna for car - 4
+
+
+My id = 11 my partner's id = 19
+chosen block from id = 11
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+
+new dna for car - 5
+
+
+My id = 9 my partner's id = 5
+chosen block from id = 9
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+
+new dna for car - 6
+
+
+My id = 10 my partner's id = 12
+chosen block from id = 10
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+
+new dna for car - 7
+
+
+My id = 18 my partner's id = 2
+chosen block from id = 18
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+mutated
+
+new dna for car - 8
+
+
+My id = 9 my partner's id = 6
+chosen block from id = 9
+chosen block from id = 6
+chosen block from id = 6
+chosen block from id = 6
+mutated
+
+new dna for car - 9
+
+
+My id = 5 my partner's id = 3
+chosen block from id = 5
+chosen block from id = 3
+chosen block from id = 3
+chosen block from id = 3
+chosen block from id = 3
+chosen block from id = 3
+chosen block from id = 3
+
+new dna for car - 10
+
+
+My id = 18 my partner's id = 5
+chosen block from id = 18
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+
+new dna for car - 11
+
+
+My id = 2 my partner's id = 5
+chosen block from id = 2
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+
 new dna for car - 12
+
+
+My id = 17 my partner's id = 5
+chosen block from id = 17
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+
+new dna for car - 13
 
 
 My id = 5 my partner's id = 16
 chosen block from id = 5
 chosen block from id = 16
 chosen block from id = 16
+chosen block from id = 16
+chosen block from id = 16
+chosen block from id = 16
+chosen block from id = 16
+
+new dna for car - 14
+
+
+My id = 15 my partner's id = 14
+chosen block from id = 15
+chosen block from id = 14
+chosen block from id = 14
+chosen block from id = 14
+
+new dna for car - 15
+
+
+My id = 13 my partner's id = 3
+chosen block from id = 13
+chosen block from id = 3
+chosen block from id = 3
+chosen block from id = 3
+chosen block from id = 3
+
+new dna for car - 16
+
+
+My id = 3 my partner's id = 5
+chosen block from id = 3
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+
+new dna for car - 17
+
+
+My id = 5 my partner's id = 8
+chosen block from id = 5
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+chosen block from id = 8
+
+new dna for car - 18
+
+
+My id = 5 my partner's id = 13
+chosen block from id = 5
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+
+new dna for car - 19
+
+
+My id = 5 my partner's id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+mutated
+
+generation #14
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+25.10333187404196
+
+For car id - 0, with fitness 61.092370474341806 we add 2 dnas in the mating_pool
+
+For car id - 1, with fitness 58.6934242906375 we add 2 dnas in the mating_pool
+
+For car id - 2, with fitness 61.092370474341806 we add 2 dnas in the mating_pool
+
+For car id - 3, with fitness 61.092370474341806 we add 2 dnas in the mating_pool
+
+For car id - 4, with fitness 210.17103125966796 we add 8 dnas in the mating_pool
+
+For car id - 5, with fitness 61.092370474341806 we add 2 dnas in the mating_pool
+
+For car id - 6, with fitness 61.092370474341806 we add 2 dnas in the mating_pool
+
+For car id - 7, with fitness 58.6934242906375 we add 2 dnas in the mating_pool
+
+For car id - 8, with fitness 61.092370474341806 we add 2 dnas in the mating_pool
+
+For car id - 9, with fitness 213.9425644221002 we add 9 dnas in the mating_pool
+
+For car id - 10, with fitness 122.70339322649386 we add 5 dnas in the mating_pool
+
+For car id - 11, with fitness 303.4780916419659 we add 12 dnas in the mating_pool
+
+For car id - 12, with fitness 317.8612245210588 we add 38 dnas in the mating_pool
+
+For car id - 13, with fitness 58.6934242906375 we add 2 dnas in the mating_pool
+
+For car id - 14, with fitness 61.092370474341806 we add 2 dnas in the mating_pool
+
+For car id - 15, with fitness 121.74975659051987 we add 5 dnas in the mating_pool
+
+For car id - 16, with fitness 121.74975659051987 we add 5 dnas in the mating_pool
+
+For car id - 17, with fitness 55.339521847985466 we add 2 dnas in the mating_pool
+
+For car id - 18, with fitness 121.74975659051987 we add 5 dnas in the mating_pool
+
+For car id - 19, with fitness 317.8612245210588 we add 38 dnas in the mating_pool
+size of mating_pool = 147
+best fitness317.8612245210588
+
+new dna for car - 0
+
+
+My id = 12 my partner's id = 7
+chosen block from id = 12
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+chosen block from id = 7
+
+new dna for car - 1
+
+
+My id = 12 my partner's id = 19
+chosen block from id = 12
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+mutated
+
+new dna for car - 2
+
+
+My id = 19 my partner's id = 11
+chosen block from id = 19
+chosen block from id = 11
+chosen block from id = 11
+chosen block from id = 11
+chosen block from id = 11
+chosen block from id = 11
+chosen block from id = 11
+mutated
+
+new dna for car - 3
+
+
+My id = 15 my partner's id = 12
+chosen block from id = 15
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+
+new dna for car - 4
+
+
+My id = 16 my partner's id = 12
+chosen block from id = 16
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+
+new dna for car - 5
+
+
+My id = 18 my partner's id = 19
+chosen block from id = 18
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+
+new dna for car - 6
+
+
+My id = 12 my partner's id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+
+new dna for car - 7
+
+
+My id = 12 my partner's id = 19
+chosen block from id = 12
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+chosen block from id = 19
+mutated
+
+new dna for car - 8
+
+
+My id = 19 my partner's id = 12
+chosen block from id = 19
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+
+new dna for car - 9
+
+
+My id = 9 my partner's id = 18
+chosen block from id = 9
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+mutated
+
+new dna for car - 10
+
+
+My id = 7 my partner's id = 9
+chosen block from id = 7
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+
+new dna for car - 11
+
+
+My id = 18 my partner's id = 12
+chosen block from id = 18
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+
+new dna for car - 12
+
+
+My id = 12 my partner's id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
 
 new dna for car - 13
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 12 my partner's id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
 mutated
 
 new dna for car - 14
 
 
-My id = 0 my partner's id = 16
-chosen block from id = 0
-chosen block from id = 16
-chosen block from id = 16
-mutated
+My id = 12 my partner's id = 9
+chosen block from id = 12
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
 
 new dna for car - 15
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 12 my partner's id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
 
 new dna for car - 16
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 18 my partner's id = 12
+chosen block from id = 18
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
 
 new dna for car - 17
 
 
-My id = 16 my partner's id = 16
+My id = 12 my partner's id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+
+new dna for car - 18
+
+
+My id = 19 my partner's id = 12
+chosen block from id = 19
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+mutated
+
+new dna for car - 19
+
+
+My id = 13 my partner's id = 12
+chosen block from id = 13
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+
+generation #15
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+removing from end of list
+52.036287735140355
+
+For car id - 0, with fitness 123.45596972070453 we add 2 dnas in the mating_pool
+
+For car id - 1, with fitness 313.61407259137576 we add 6 dnas in the mating_pool
+
+For car id - 2, with fitness 303.4780916419659 we add 6 dnas in the mating_pool
+
+For car id - 3, with fitness 121.74975659051987 we add 2 dnas in the mating_pool
+
+For car id - 4, with fitness 121.74975659051987 we add 2 dnas in the mating_pool
+
+For car id - 5, with fitness 315.70458341355715 we add 6 dnas in the mating_pool
+
+For car id - 6, with fitness 317.8612245210588 we add 6 dnas in the mating_pool
+
+For car id - 7, with fitness 303.7060588181535 we add 6 dnas in the mating_pool
+
+For car id - 8, with fitness 307.97426088665554 we add 6 dnas in the mating_pool
+
+For car id - 9, with fitness 475.8426112101281 we add 34 dnas in the mating_pool
+
+For car id - 10, with fitness 196.9392950997878 we add 4 dnas in the mating_pool
+
+For car id - 11, with fitness 317.8612245210588 we add 6 dnas in the mating_pool
+
+For car id - 12, with fitness 317.8612245210588 we add 6 dnas in the mating_pool
+
+For car id - 13, with fitness 317.8612245210588 we add 6 dnas in the mating_pool
+
+For car id - 14, with fitness 213.9425644221002 we add 4 dnas in the mating_pool
+
+For car id - 15, with fitness 317.8612245210588 we add 6 dnas in the mating_pool
+
+For car id - 16, with fitness 121.74975659051987 we add 2 dnas in the mating_pool
+
+For car id - 17, with fitness 317.8612245210588 we add 6 dnas in the mating_pool
+
+For car id - 18, with fitness 317.8612245210588 we add 6 dnas in the mating_pool
+
+For car id - 19, with fitness 58.6934242906375 we add 1 dnas in the mating_pool
+size of mating_pool = 123
+best fitness475.8426112101281
+
+new dna for car - 0
+
+
+My id = 6 my partner's id = 13
+chosen block from id = 6
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+chosen block from id = 13
+
+new dna for car - 1
+
+
+My id = 16 my partner's id = 12
+chosen block from id = 16
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+chosen block from id = 12
+
+new dna for car - 2
+
+
+My id = 7 my partner's id = 5
+chosen block from id = 7
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+
+new dna for car - 3
+
+
+My id = 5 my partner's id = 16
+chosen block from id = 5
+chosen block from id = 16
+chosen block from id = 16
+chosen block from id = 16
 chosen block from id = 16
 chosen block from id = 16
 chosen block from id = 16
 mutated
 
+new dna for car - 4
+
+
+My id = 7 my partner's id = 9
+chosen block from id = 7
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+
+new dna for car - 5
+
+
+My id = 9 my partner's id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+mutated
+
+new dna for car - 6
+
+
+My id = 8 my partner's id = 15
+chosen block from id = 8
+chosen block from id = 15
+chosen block from id = 15
+chosen block from id = 15
+chosen block from id = 15
+chosen block from id = 15
+chosen block from id = 15
+mutated
+
+new dna for car - 7
+
+
+My id = 4 my partner's id = 5
+chosen block from id = 4
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+chosen block from id = 5
+
+new dna for car - 8
+
+
+My id = 6 my partner's id = 6
+chosen block from id = 6
+chosen block from id = 6
+chosen block from id = 6
+chosen block from id = 6
+chosen block from id = 6
+chosen block from id = 6
+chosen block from id = 6
+
+new dna for car - 9
+
+
+My id = 1 my partner's id = 9
+chosen block from id = 1
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+
+new dna for car - 10
+
+
+My id = 9 my partner's id = 2
+chosen block from id = 9
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+chosen block from id = 2
+mutated
+
+new dna for car - 11
+
+
+My id = 9 my partner's id = 1
+chosen block from id = 9
+chosen block from id = 1
+chosen block from id = 1
+chosen block from id = 1
+chosen block from id = 1
+chosen block from id = 1
+chosen block from id = 1
+chosen block from id = 1
+
+new dna for car - 12
+
+
+My id = 18 my partner's id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+
+new dna for car - 13
+
+
+My id = 6 my partner's id = 18
+chosen block from id = 6
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+chosen block from id = 18
+mutated
+
+new dna for car - 14
+
+
+My id = 17 my partner's id = 14
+chosen block from id = 17
+chosen block from id = 14
+chosen block from id = 14
+chosen block from id = 14
+chosen block from id = 14
+chosen block from id = 14
+chosen block from id = 14
+
+new dna for car - 15
+
+
+My id = 11 my partner's id = 9
+chosen block from id = 11
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+mutated
+
+new dna for car - 16
+
+
+My id = 11 my partner's id = 9
+chosen block from id = 11
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+
+new dna for car - 17
+
+
+My id = 8 my partner's id = 9
+chosen block from id = 8
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+
 new dna for car - 18
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
+My id = 9 my partner's id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+chosen block from id = 9
+mutated
 
 new dna for car - 19
 
 
-My id = 16 my partner's id = 16
-chosen block from id = 16
-chosen block from id = 16
-chosen block from id = 16
-
-generation #11
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
-
-
-
-
-Len of end_points = 5
-
-
+My id = 9 my partner's id = 5

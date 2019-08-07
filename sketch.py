@@ -51,7 +51,7 @@ def setup():
     # Create the population
     finish_line = [(360, 519), (360, 591)]
     starting_line = [(375, 519), (375, 591)]
-    pop = Population(space, lifespan, starting_line, finish_line, 0.2, 20)
+    pop = Population(space, lifespan, starting_line, finish_line, 0.3, 20)
 
 
 def draw():
@@ -76,7 +76,6 @@ def draw():
 
     # draw ends points
     end_points = end_points[-5:]
-    print('\n\n\nLen of end_points = ' + str(len(end_points)) + "\n\n\n")
     for point in end_points:
         fill(255, 204, 0)
         circle(point, 5)
