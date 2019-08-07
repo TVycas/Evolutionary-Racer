@@ -1,6 +1,6 @@
 import numpy as np
 
-
+# TODO move to map_handler?
 def read_track_files(file):
     read_walls = []
     track_walls = np.genfromtxt(file, delimiter=',', comments='#')

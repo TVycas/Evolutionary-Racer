@@ -2,7 +2,6 @@ from p5 import *
 import pymunk
 from dnas import DNA
 
-# TODO move this to map_handler
 collision_types = {
     "car": 1,
     "wall": 2
@@ -11,10 +10,10 @@ collision_types = {
 
 class Car:
 
-    def __init__(self, checkpoint_polys, start_point, target_line, space, num_of_forces, id, dna=None):
-        self.space = space
+    def __init__(self, m_handler, start_point, num_of_forces, id, dna=None):
+        self.space = m_handler.space
 
-        self.target_line = target_line
+        self.finish_line = m_handler.finish_line
         self.start_point = start_point
 
         self.id = id
@@ -26,7 +25,7 @@ class Car:
         self.max_force = 1000
 
         if dna is None:
-            self.dna = DNA(checkpoint_polys, num_of_forces, id=id)
+            self.dna = DNA(m_handler.checkpoint_polys, num_of_forces, id=id)
         else:
             self.dna = dna
             self.dna.id = self.id
@@ -51,7 +50,7 @@ class Car:
 
         self.space.add(self.body, self.shape)
 
-        handler = space.add_collision_handler(collision_types["car"], collision_types["wall"])
+        handler = self.space.add_collision_handler(collision_types["car"], collision_types["wall"])
         handler.begin = self.touched_wall
 
     # If the car touches the wall, it's dead and no longer moves in the lifecycle
@@ -68,7 +67,7 @@ class Car:
         space.remove(car_body)
         return True
 
-    def calculate_fitness(self, start_line):
+    def calculate_fitness(self):
         pos = (self.body.position.x, self.body.position.y)
         self.dna.calculate_fitness(pos)
 

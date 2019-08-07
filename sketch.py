@@ -1,31 +1,23 @@
 import pymunk as pm
-import map_handler as map_handler
+from map_handlers import Map_handler
 from p5 import *
-from file_reader import read_track_files
 from populations import Population
 
 space = None
 cars = []
-walls = []
 ctrl_key_pressed = False  # l for now
-wall_to_add = []
 pop = None
 lifespan = 500
 life_counter = 0
-checkpoint_polys = None
 display_checkpoint_polys = False
-num_of_walls = 0
-
-end_points = []
+m_handler = None
 
 
 def setup():
     global cars
     global space
     global pop
-    global walls
-    global checkpoint_polys
-    global num_of_walls
+    global m_handler
 
     rect_mode('CENTER')
 
@@ -34,37 +26,21 @@ def setup():
     space = pm.Space(threaded=True)
     space.threads = 2
 
-    # Invisible wall between start and finish so that the cars wouldn't
-    # go backwards
-    map_handler.create_wall_segments(space, ((363, 519), (363, 591)))
+    m_handler = Map_handler(space, 'track.txt', 10)
 
-    # Load and create the track
-    # TODO refactor the map reading to map_handler
-    wall_segs = read_track_files('track.txt')
-    for i in range(0, len(wall_segs), 2):
-        walls += map_handler.create_wall_segments(space, (wall_segs[i], wall_segs[i + 1]))
-
-    # For displaying the checkpoints
-    checkpoint_polys = map_handler.create_checkpoint_polys(wall_segs)
-
-    num_of_walls = len(space.bodies)
-
-    starting_line, finish_line = map_handler.create_finish_start_lines([wall_segs[-2], wall_segs[-1]], 10)
-
-    pop = Population(space, lifespan, checkpoint_polys, starting_line, finish_line, 0.3, 20)
+    pop = Population(lifespan, m_handler, 0.3, 20)
 
 
 def draw():
     global cars
     global life_counter
-    global end_points
 
     life_counter += 1
-    if life_counter == lifespan or len(space.bodies) == num_of_walls:
+    if life_counter == lifespan or len(space.bodies) == m_handler.num_of_walls:
         life_counter = 0
         pop.calculate_fitness()
         pop.natural_selection()
-        end_points.append(pop.evaluate())
+        m_handler.add_endpoint(pop.evaluate())
         pop.generate()
 
     space.step(1 / 100.0)
@@ -72,13 +48,10 @@ def draw():
     background(255)
 
     # Draw walls
-    map_handler.draw_walls(walls)
-
+    m_handler.draw_walls()
+    
     # draw ends points
-    end_points = end_points[-5:]
-    for point in end_points:
-        fill(255, 204, 0)
-        circle(point, 5)
+    m_handler.draw_endpoints(5)
 
     pop.draw_cars(mouse_x, mouse_y)
 
@@ -86,7 +59,7 @@ def draw():
 
     # Draws black boxes to indicate the checkpoint area
     if display_checkpoint_polys:
-        map_handler.draw_checkpoint_polys(checkpoint_polys)
+        m_handler.draw_checkpoint_polys()
 
 
 def mouse_pressed():
@@ -100,12 +73,10 @@ def mouse_pressed():
 
 def mouse_released():
     global wall_to_add
-    global walls
+
     if ctrl_key_pressed:
         wall_to_add.append((mouse_x, mouse_y))
-        walls += map_handler.create_wall_segments(space, wall_to_add)
-        for wall in wall_to_add:
-            print(wall)
+        m_handler.add_wall(wall_to_add)
 
 
 def key_pressed(event):

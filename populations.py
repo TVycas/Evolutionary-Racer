@@ -1,30 +1,27 @@
-import math
 import logging
-from p5 import *
 from cars import Car
 from random import randrange
 
-logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO)
+logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO, format='%(message)s')
 
 
 class Population:
 
-    def __init__(self, space, lifespan, checkpoint_polys, start_line, finish_line, mut, num):
+    def __init__(self, lifespan, m_handler, mut, num):
         self.population = []            # Array to hold the current population
         self.mating_pool = []           # ArrayList which we will use for our "mating pool"
         self.generations = 0            # Number of generations
         self.finished = False           # Are we finished evolving?
-        self.finish_line = finish_line  # Finish line
+
+        self.m_handler = m_handler
         self.mutation_rate = mut        # Mutation rate
-        self.start_line = start_line
-        self.start_point = self.pick_start_point(start_line)
-        self.space = space
         self.lifespan = lifespan
-        self.checkpoint_polys = checkpoint_polys
+
+        self.start_point = self.pick_start_point(self.m_handler.starting_line)
 
         for id in range(0, num):
             self.population.append(
-                Car(self.checkpoint_polys, self.start_point, finish_line, space, self.lifespan, id))
+                Car(self.m_handler, self.start_point, self.lifespan, id))
 
     # Finds the midpoint of the line
     def pick_start_point(self, start_line):
@@ -34,7 +31,7 @@ class Population:
 
     def calculate_fitness(self):
         for car in self.population:
-            car.calculate_fitness(self.start_line)
+            car.calculate_fitness()
 
     def natural_selection(self):
         # Clear the ArrayList
@@ -67,7 +64,9 @@ class Population:
     def generate(self):
         # Refill the population with children from the mating pool
         for i in range(len(self.population)):
-            logging.debug("\nnew dna for car - " + str(self.population[i].id) + "\n")
+            logging.debug("\nnew dna for car - " +
+                          str(self.population[i].id) + "\n")
+
             a = randrange(0, len(self.mating_pool))
             b = randrange(0, len(self.mating_pool))
 
@@ -76,8 +75,7 @@ class Population:
 
             child = partnerA.crossover(partnerB, self.mutation_rate)
 
-            self.population[i] = Car(self.checkpoint_polys, self.start_point, self.finish_line,
-                                     self.space, self.lifespan, self.population[i].id, child)
+            self.population[i] = Car(self.m_handler, self.start_point, self.lifespan, self.population[i].id, child)
 
         self.generations += 1
 
@@ -94,6 +92,7 @@ class Population:
                 best_car = car
 
         pos = (best_car.body.position.x, best_car.body.position.y)
+
         logging.info("best fitness" + str(best_fitness))
         return pos
 

@@ -5,22 +5,19 @@
 #      -- calculate DNA's "fitness"
 #      -- mate DNA with another set of DNA
 #      -- mutate DNA
-import math
-import map_handler
 import logging
+import math
 from p5 import *
 from random import randrange, choice
 from shapely.geometry import Point
-from file_reader import read_track_files
 
-logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO)
+logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO, format='%(message)s')
 
 
 class DNA:
 
     def __init__(self, checkpoint_polys, num, genes=None, id=-1):
         self.fitness = 0
-        # TODO I can crate them or send them over
         self.polys = checkpoint_polys
         self.path_list = []
         self.farthest_poly_reached = 0
@@ -42,6 +39,7 @@ class DNA:
         else:
             self.genes = genes
 
+    # TODO i dont think I need this
     def get_genes(self):
         return self.genes
 
