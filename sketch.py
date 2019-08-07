@@ -18,6 +18,7 @@ num_of_walls = 0
 
 end_points = []
 
+
 def setup():
     global cars
     global space
@@ -38,6 +39,7 @@ def setup():
     map_handler.create_wall_segments(space, ((363, 519), (363, 591)))
 
     # Load and create the track
+    # TODO refactor the map reading to map_handler
     wall_segs = read_track_files('track.txt')
     for i in range(0, len(wall_segs), 2):
         walls += map_handler.create_wall_segments(space, (wall_segs[i], wall_segs[i + 1]))
@@ -49,7 +51,7 @@ def setup():
 
     starting_line, finish_line = map_handler.create_finish_start_lines([wall_segs[-2], wall_segs[-1]], 10)
 
-    pop = Population(space, lifespan, starting_line, finish_line, 0.3, 20)
+    pop = Population(space, lifespan, checkpoint_polys, starting_line, finish_line, 0.3, 20)
 
 
 def draw():

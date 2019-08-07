@@ -11,7 +11,7 @@ collision_types = {
 
 class Car:
 
-    def __init__(self, start_point, target_line, space, num_of_forces, id, dna=None):
+    def __init__(self, checkpoint_polys, start_point, target_line, space, num_of_forces, id, dna=None):
         self.space = space
 
         self.target_line = target_line
@@ -26,7 +26,7 @@ class Car:
         self.max_force = 1000
 
         if dna is None:
-            self.dna = DNA(num_of_forces, id=id)
+            self.dna = DNA(checkpoint_polys, num_of_forces, id=id)
         else:
             self.dna = dna
             self.dna.id = self.id

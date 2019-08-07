@@ -18,12 +18,10 @@ logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO)
 
 class DNA:
 
-    # makes a random DNA
-    def __init__(self, num, genes=None, id=-1):
+    def __init__(self, checkpoint_polys, num, genes=None, id=-1):
         self.fitness = 0
         # TODO I can crate them or send them over
-        self.polys = map_handler.create_checkpoint_polys(read_track_files(
-            'track.txt'))
+        self.polys = checkpoint_polys
         self.path_list = []
         self.farthest_poly_reached = 0
         self.id = id
@@ -163,8 +161,7 @@ class DNA:
             for gene in new_genes:
                 logging.debug(gene)
 
-
-        return DNA(len(self.genes), new_genes)
+        return DNA(self.polys, len(self.genes), new_genes)
 
     # Based on a mutation probability, picks a new random character
     def mutate(self, new_genes, mutation_rate):

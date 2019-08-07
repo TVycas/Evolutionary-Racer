@@ -9,21 +9,22 @@ logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO)
 
 class Population:
 
-    def __init__(self, space, lifespan, start_line, target_line, mut, num):
+    def __init__(self, space, lifespan, checkpoint_polys, start_line, finish_line, mut, num):
         self.population = []            # Array to hold the current population
         self.mating_pool = []           # ArrayList which we will use for our "mating pool"
         self.generations = 0            # Number of generations
         self.finished = False           # Are we finished evolving?
-        self.target_line = target_line  # Finish line
+        self.finish_line = finish_line  # Finish line
         self.mutation_rate = mut        # Mutation rate
         self.start_line = start_line
         self.start_point = self.pick_start_point(start_line)
         self.space = space
         self.lifespan = lifespan
+        self.checkpoint_polys = checkpoint_polys
 
         for id in range(0, num):
             self.population.append(
-                Car(self.start_point, target_line, space, self.lifespan, id))
+                Car(self.checkpoint_polys, self.start_point, finish_line, space, self.lifespan, id))
 
     # Finds the midpoint of the line
     def pick_start_point(self, start_line):
@@ -75,14 +76,11 @@ class Population:
 
             child = partnerA.crossover(partnerB, self.mutation_rate)
 
-            # child.mutate(self.mutation_rate)
-
-            self.population[i] = Car(self.start_point, self.target_line,
+            self.population[i] = Car(self.checkpoint_polys, self.start_point, self.finish_line,
                                      self.space, self.lifespan, self.population[i].id, child)
-            # car.set_dna(child)
-            # car.reset_to_start()
 
         self.generations += 1
+
         logging.info("\ngeneration #" + str(self.generations))
 
     # Compute the current "most fit" member of the population
