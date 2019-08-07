@@ -18,7 +18,6 @@ num_of_walls = 0
 
 end_points = []
 
-
 def setup():
     global cars
     global space
@@ -48,10 +47,9 @@ def setup():
 
     num_of_walls = len(space.bodies)
 
-    # Create the population
-    finish_line = [(360, 519), (360, 591)]
-    starting_line = [(375, 519), (375, 591)]
-    pop = Population(space, lifespan, starting_line, finish_line, 0.3, 1)
+    starting_line, finish_line = map_handler.create_finish_start_lines([wall_segs[-2], wall_segs[-1]], 10)
+
+    pop = Population(space, lifespan, starting_line, finish_line, 0.3, 2)
 
 
 def draw():

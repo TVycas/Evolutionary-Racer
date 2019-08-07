@@ -2,6 +2,32 @@ import pymunk as pm
 from p5 import *
 from cars import collision_types
 
+
+def create_finish_start_lines(finish_line_on_map, offset):
+    if len(finish_line_on_map) < 2:
+        return []
+
+    first_point = list(finish_line_on_map[0])
+    second_point = list(finish_line_on_map[1])
+
+    for i in range(len(first_point)):
+        first_point[i] += offset
+        second_point[i] += offset
+
+    start_line = [tuple(first_point), tuple(second_point)]
+
+    for i in range(len(first_point)):
+        first_point[i] -= offset * 2
+        second_point[i] -= offset * 2
+
+    finish_line = [tuple(first_point), tuple(second_point)]
+
+    print(start_line)
+    print(finish_line)
+
+    return start_line, finish_line
+
+
 def draw_walls(walls):
     if len(walls) < 1:
         return
@@ -15,11 +41,6 @@ def draw_walls(walls):
 
         fill(0)
         line(p1, p2)
-
-    #TODO this shouldn't be hard-codded
-    # finish line
-    fill(0)
-    line((364, 519), (364, 591))
 
 
 def draw_checkpoint_blocks(checkpoint_blocks):

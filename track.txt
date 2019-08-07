@@ -1,3 +1,5 @@
+# If we image the track as a tunnel ===, every upper line needs to have a correlating lower line
+
 366, 706 
 643, 711 
 
@@ -65,10 +67,10 @@
 280, 590 
 
 159, 658 
-368, 708 
+366, 706 
 
 280, 590 
-371, 626 
+371, 624 
 
 #start/finish
 479, 625 
