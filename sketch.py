@@ -51,7 +51,7 @@ def setup():
     # Create the population
     finish_line = [(360, 519), (360, 591)]
     starting_line = [(375, 519), (375, 591)]
-    pop = Population(space, lifespan, starting_line, finish_line, 0.3, 20)
+    pop = Population(space, lifespan, starting_line, finish_line, 0.3, 1)
 
 
 def draw():
@@ -108,7 +108,7 @@ def mouse_released():
     global walls
     if ctrl_key_pressed:
         wall_to_add.append((mouse_x, mouse_y))
-        walls += map_handler.create_wall_segments(wall_to_add)
+        walls += map_handler.create_wall_segments(space, wall_to_add)
         print("new wall")
         for wall in wall_to_add:
             print(wall)
