@@ -9,8 +9,9 @@ import math
 from p5 import *
 from random import randrange, choice
 from shapely.geometry import Point
-from shapely.geometry.polygon import Polygon
+# from shapely.geometry.polygon import Polygon
 from file_reader import read_track_files
+import map_handler
 
 
 class DNA:
@@ -19,8 +20,9 @@ class DNA:
     def __init__(self, num, genes=None, id=-1):
         # print("dna num = " + str(num))
         self.fitness = 0
-        self.polys = self.create_checkpoint_polys(read_track_files(
-            'checkpoints.txt'))
+        # TODO I can crate them or send them over
+        self.polys = map_handler.create_checkpoint_polys(read_track_files(
+            'track.txt'))
         self.path_list = []
         self.farthest_poly_reached = 0
         self.id = id
@@ -56,22 +58,6 @@ class DNA:
 
     def get_genes(self):
         return self.genes
-
-    def create_checkpoint_polys(self, checkpoints):
-        # todo refactor to sketch?
-        polys = []
-
-        points = []
-        for checkpoint in checkpoints:
-            points.append(checkpoint)
-
-            if len(points) == 4:
-                polys.append(
-                    Polygon([points[0], points[1], points[2], points[3]]))
-
-                points = points[2:]
-
-        return polys
 
     @staticmethod
     def vector_from_two_points(point1, point2):

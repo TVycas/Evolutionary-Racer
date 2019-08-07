@@ -1,6 +1,7 @@
 import pymunk as pm
 from p5 import *
 from cars import collision_types
+from shapely.geometry.polygon import Polygon
 
 
 def create_finish_start_lines(finish_line_on_map, offset):
@@ -22,10 +23,27 @@ def create_finish_start_lines(finish_line_on_map, offset):
 
     finish_line = [tuple(first_point), tuple(second_point)]
 
-    print(start_line)
-    print(finish_line)
-
     return start_line, finish_line
+
+
+def draw_checkpoint_polys(polys):
+    for poly in polys:
+        poly_coords = list(poly.exterior.coords)
+
+        fill(0)
+        quad(poly_coords[0], poly_coords[1], poly_coords[2], poly_coords[3])
+
+
+def create_checkpoint_polys(map_segs):
+    polys = []
+    points = []
+    for checkpoint in map_segs:
+        points.append(checkpoint)
+        if len(points) == 4:
+            polys.append(
+                Polygon([points[1], points[0], points[2], points[3]]))
+            points = points[2:]
+    return polys
 
 
 def draw_walls(walls):
@@ -41,17 +59,6 @@ def draw_walls(walls):
 
         fill(0)
         line(p1, p2)
-
-
-def draw_checkpoint_blocks(checkpoint_blocks):
-    points = []
-    for checkpoint in checkpoint_blocks:
-        points.append(checkpoint)
-
-        if len(points) == 4:
-            fill(0)
-            quad(points[0], points[1], points[2], points[3])
-            points = points[2:]
 
 
 def create_wall_segments(space, points):

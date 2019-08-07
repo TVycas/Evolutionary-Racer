@@ -4,6 +4,8 @@ from p5 import *
 from file_reader import read_track_files
 from populations import Population
 
+from shapely.geometry.polygon import Polygon
+
 space = None
 cars = []
 walls = []
@@ -12,8 +14,8 @@ wall_to_add = []
 pop = None
 lifespan = 500
 life_counter = 0
-checkpoint_blocks = None
-display_checkpoint_blocks = False
+checkpoint_polys = None
+display_checkpoint_polys = False
 num_of_walls = 0
 
 end_points = []
@@ -23,7 +25,7 @@ def setup():
     global space
     global pop
     global walls
-    global checkpoint_blocks
+    global checkpoint_polys
     global num_of_walls
 
     rect_mode('CENTER')
@@ -37,19 +39,19 @@ def setup():
     # go backwards
     map_handler.create_wall_segments(space, ((363, 519), (363, 591)))
 
-    # For displaying the checkpoints
-    checkpoint_blocks = read_track_files('checkpoints.txt')
-
     # Load and create the track
     wall_segs = read_track_files('track.txt')
     for i in range(0, len(wall_segs), 2):
         walls += map_handler.create_wall_segments(space, (wall_segs[i], wall_segs[i + 1]))
 
+    # For displaying the checkpoints
+    checkpoint_polys = map_handler.create_checkpoint_polys(wall_segs)
+
     num_of_walls = len(space.bodies)
 
     starting_line, finish_line = map_handler.create_finish_start_lines([wall_segs[-2], wall_segs[-1]], 10)
 
-    pop = Population(space, lifespan, starting_line, finish_line, 0.3, 2)
+    pop = Population(space, lifespan, starting_line, finish_line, 0.3, 20)
 
 
 def draw():
@@ -78,18 +80,13 @@ def draw():
         fill(255, 204, 0)
         circle(point, 5)
 
-    # print((life_counter % 10))
-    # if (life_counter % 10) == 0:
-    #     print(life_counter)
-    #     pop.apply_force = True
-
     pop.draw_cars(mouse_x, mouse_y)
 
     title("Frame Rate: " + str(frame_rate))
 
     # Draws black boxes to indicate the checkpoint area
-    if display_checkpoint_blocks:
-        map_handler.draw_checkpoint_blocks(checkpoint_blocks)
+    if display_checkpoint_polys:
+        map_handler.draw_checkpoint_polys(checkpoint_polys)
 
 
 def mouse_pressed():
@@ -114,14 +111,14 @@ def mouse_released():
 
 def key_pressed(event):
     global ctrl_key_pressed
-    global display_checkpoint_blocks
+    global display_checkpoint_polys
 
     if event.key == 'L':
         print("Drawing walls toggled")
         ctrl_key_pressed = not ctrl_key_pressed
     elif event.key == 'C':
         print("Display checkpoint blocks toggled")
-        display_checkpoint_blocks = not display_checkpoint_blocks
+        display_checkpoint_polys = not display_checkpoint_polys
 
 
 if __name__ == "__main__":
