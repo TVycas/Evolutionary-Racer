@@ -101,13 +101,15 @@ class DNA:
             return
 
     def remove_from_path_list(self, num_vec_to_remove):
+        pb_to_remove_from = self.farthest_poly_reached
         for i in range(num_vec_to_remove):
-            if(len(self.path_list[self.farthest_poly_reached]) != 0):
-                self.path_list[self.farthest_poly_reached].pop()
+            if(len(self.path_list[pb_to_remove_from]) != 0):
+                self.path_list[pb_to_remove_from].pop()
+            elif (pb_to_remove_from - 1) >= 0:
+                pb_to_remove_from -= 1
             else:
                 break
 
-    # Crossover
     def crossover(self, partner, mutation_rate):
         new_genes = []
 
