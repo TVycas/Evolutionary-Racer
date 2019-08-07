@@ -38,10 +38,8 @@ class Car:
         mass = 1
         self.points = [(-self.w / 2, -self.h / 2),
                        (0, self.h / 2), (self.w / 2, -self.h / 2)]
-        # self.points_fake = [(-1, -1), (0, 1), (1, -1)]
 
         moment = pymunk.moment_for_poly(mass, self.points)
-        # moment = 32.0
 
         self.body = pymunk.Body(mass, moment)
         self.body.position = start_point[0], start_point[1]
@@ -70,11 +68,6 @@ class Car:
         space.remove(car_body)
         return True
 
-    # # Set new dna and ID
-    # def set_dna(self, dna):
-    #     self.dna = dna
-    #     self.dna.id = self.id
-
     def calculate_fitness(self, start_line):
         pos = (self.body.position.x, self.body.position.y)
         self.dna.calculate_fitness(pos)
@@ -91,22 +84,6 @@ class Car:
             fill(175)
             triangle(self.points[0], self.points[1], self.points[2])
 
-        # reset_matrix()
-
-    # When the lifecycle ends, the car's position is set to the start line and velocity is
-    # set to 0
-    # def reset_to_start(self):
-    #     self.body.position = self.start_point[0] + 5, self.start_point[1] + 5
-
-    #     self.force_count = 0
-
-    #     self.body.velocity = 0, 0
-
-    #     if self.body not in self.space.bodies:
-    #         self.space.add(self.body)
-
-    #     self.is_dead = False
-
     # forces:
     # [+, 0] - right; [-, 0] - left
     # [0, +] - down; [0, -] - up
@@ -121,7 +98,6 @@ class Car:
             genes = self.dna.get_genes()
 
             if self.force_count < len(genes):
-                # print(genes[self.force_count])
                 self.apply_force(genes[self.force_count])
 
                 pos = (self.body.position.x, self.body.position.y)

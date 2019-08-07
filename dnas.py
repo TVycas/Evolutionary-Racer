@@ -6,19 +6,20 @@
 #      -- mate DNA with another set of DNA
 #      -- mutate DNA
 import math
+import map_handler
+import logging
 from p5 import *
 from random import randrange, choice
 from shapely.geometry import Point
-# from shapely.geometry.polygon import Polygon
 from file_reader import read_track_files
-import map_handler
+
+logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO)
 
 
 class DNA:
 
     # makes a random DNA
     def __init__(self, num, genes=None, id=-1):
-        # print("dna num = " + str(num))
         self.fitness = 0
         # TODO I can crate them or send them over
         self.polys = map_handler.create_checkpoint_polys(read_track_files(
@@ -26,19 +27,6 @@ class DNA:
         self.path_list = []
         self.farthest_poly_reached = 0
         self.id = id
-
-        # if self.id == 0:
-        #     self.genes = read_track_files('vectors0.txt')
-        # elif self.id == 1:
-        #     self.genes = read_track_files('vectors1.txt')
-        # elif self.id == 2:
-        #     self.genes = read_track_files('vectors2.txt')
-        # elif self.id == 3:
-        #     self.genes = read_track_files('vectors3.txt')
-        # for i, vec in enumerate(self.genes):
-        #     self.genes[i] = Vector(vec[0], vec[1])
-
-
 
         # Add enough empty lists to the path_list so that the vectors in genes could be
         # devided to seperate to each polygon
@@ -104,7 +92,7 @@ class DNA:
             self.fitness += 1 - remap(dist_to_next_chpt, (0, 500), (0, 1))
             self.fitness *= self.fitness * self.fitness
 
-        # print("fitness = " + str(self.fitness))
+        logging.debug("fitness = " + str(self.fitness))
 
     def add_to_path_list(self, pos, current_vector):
         current_pos = self.find_current_polygon(pos)
@@ -127,55 +115,53 @@ class DNA:
     def crossover(self, partner, mutation_rate):
         new_genes = []
 
-        print("\nMy id = " + str(self.id) + " my partner's id = " + str(partner.id))
+        logging.info("\nMy id = " + str(self.id) + " my partner's id = " + str(partner.id))
 
-        # print("\nmy_path_list - " + str(self.id) + "\n")
-        # for i, lst in enumerate(self.path_list):
-        #     print("#" + str(i))
-        #     for gene in lst:
-        #         print(gene)
+        if logging.getLogger().getEffectiveLevel() == "DEBUG":
+            logging.debug("\nmy_path_list - " + str(self.id) + "\n")
+            for i, lst in enumerate(self.path_list):
+                logging.debug("#" + str(i))
+                for gene in lst:
+                    logging.debug(gene)
 
-        # print("\npartner_path_list - " + str(partner.id) + "\n")
-        # for i, lst in enumerate(partner.path_list):
-        #     print("#" + str(i))
-        #     for gene in lst:
-        #         print(gene)
+            logging.debug("\npartner_path_list - " + str(partner.id) + "\n")
+            for i, lst in enumerate(partner.path_list):
+                logging.debugint("#" + str(i))
+                for gene in lst:
+                    logging.debug(gene)
 
-        # print("\nboth genes \n")
-        # for i, gene in enumerate(self.genes):
-        #     print(str(gene) + " - " + str(partner.genes[i]))
+            logging.debug("\nboth genes \n")
+        for i, gene in enumerate(self.genes):
+            logging.debug(str(gene) + " - " + str(partner.genes[i]))
 
         for i, gene_block in enumerate(self.path_list):
             if len(partner.path_list[i]) == 0 and len(gene_block) == 0:
                 break
 
             new_genes.extend(choice([gene_block, partner.path_list[i]]))
-            # if self.fitness > partner.fitness:
-            #     new_genes.extend(gene_block)
-            # else:
-            #     new_genes.extend(partner.path_list[i])
 
             if new_genes == gene_block:
-                print("chosen block from id = " + str(self.id))
+                logging.info("chosen block from id = " + str(self.id))
             else:
-                print("chosen block from id = " + str(partner.id))
+                logging.info("chosen block from id = " + str(partner.id))
 
         self.mutate(new_genes, mutation_rate)
 
         # Pad the rest of the genes with random vectors
         while len(new_genes) < len(self.genes):
-            # print("adds random vector")
+            logging.debug("adds random vector")
             vec = Vector.random_2D()
             vec.limit(5000, 3000)
             new_genes.append(vec)
 
         while len(new_genes) > len(self.genes):
-            # print("removes vector")
+            logging.debug("removes vector")
             new_genes.pop()
 
-        # print("\nnew_genes\n")
-        # for gene in new_genes:
-        #     print(gene)
+        if logging.getLogger().getEffectiveLevel() == "DEBUG":
+            logging.debug("\nnew_genes\n")
+            for gene in new_genes:
+                logging.debug(gene)
 
 
         return DNA(len(self.genes), new_genes)
@@ -184,7 +170,7 @@ class DNA:
     def mutate(self, new_genes, mutation_rate):
         mutation_rate *= 100
         if randrange(0, 101) < mutation_rate:
-            print("mutated")
+            logging.info("mutated")
             # mutation only affects the end of the genes
             start_of_mutation = math.floor(len(self.genes) - (len(self.genes) * 0.2))
             for i in range(start_of_mutation, len(new_genes)):
