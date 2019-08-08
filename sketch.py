@@ -28,7 +28,7 @@ def setup():
 
     m_handler = Map_handler(space, 'track.txt', 10)
 
-    pop = Population(lifespan, m_handler, 60, 0.3, 25)
+    pop = Population(lifespan, m_handler, 50, 0.3, 25)
 
 
 def draw():

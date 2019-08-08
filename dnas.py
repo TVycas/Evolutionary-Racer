@@ -17,13 +17,14 @@ logging.basicConfig(filename='log.txt', filemode='w',
 
 class DNA:
 
-    def __init__(self, checkpoint_polys, num, genes=None, id=-1):
+    def __init__(self, checkpoint_polys, num, genes=None, mutated=False, id=-1):
         self.fitness = 0
         self.polys = checkpoint_polys
         self.path_list = []
         self.farthest_poly_reached = 0
         self.id = id
         self.num_of_genes = num
+        self.mutated = mutated
 
         self.max_checkpnt_len = width if width > height else height
 
@@ -91,7 +92,7 @@ class DNA:
         if self.fitness != -1:
             dist_to_next_chpt = self.find_dist_to_next_poly(
                 pos, self.polys[self.fitness])
-                
+
             self.fitness += 1 - remap(dist_to_next_chpt, (0, self.max_checkpnt_len), (0, 1))
             self.fitness *= self.fitness * self.fitness
 
@@ -136,10 +137,6 @@ class DNA:
                 for gene in lst:
                     logging.debug(gene)
 
-            # logging.debug("\nboth genes \n")
-            # for i, gene in enumerate(self.genes):
-            #     logging.debug(str(gene) + " - " + str(partner.genes[i]))
-
         for i, gene_block in enumerate(self.path_list):
             if len(partner.path_list[i]) == 0 and len(gene_block) == 0:
                 break
@@ -151,7 +148,7 @@ class DNA:
             else:
                 logging.info("chosen block from id = " + str(partner.id))
 
-        self.mutate(new_genes, mutation_rate)
+        mutated, new_genes = self.mutate(new_genes, mutation_rate)
 
         # Pad the rest of the genes with random vectors
         while len(new_genes) < self.num_of_genes:
@@ -169,7 +166,7 @@ class DNA:
             for gene in new_genes:
                 logging.debug(gene)
 
-        return DNA(self.polys, self.num_of_genes, new_genes)
+        return DNA(self.polys, self.num_of_genes, new_genes, mutated)
 
     # Based on a mutation probability, picks a new random character
     def mutate(self, new_genes, mutation_rate):
@@ -178,10 +175,12 @@ class DNA:
             logging.info("mutated")
             # mutation only affects the end of the genes
             start_of_mutation = math.floor(
-                self.num_of_genes - (self.num_of_genes * 0.2))
+                len(new_genes) - (len(new_genes) * 0.2))
             for i in range(start_of_mutation, len(new_genes)):
                 vec = Vector.random_2D()
                 vec.limit(5000, 3000)
                 new_genes[i] = vec
 
-            return new_genes
+            return True, new_genes
+        else:
+            return False, new_genes

@@ -79,7 +79,12 @@ class Car:
             # Using the Vector position and float angle to translate and rotate the shape
             translate(pos.x, pos.y)
             rotate(angle)
-            fill(175)
+
+            if self.dna.mutated:
+                fill(255, 100, 100)
+            else:
+                fill(175)
+
             triangle(self.points[0], self.points[1], self.points[2])
 
     # forces:
