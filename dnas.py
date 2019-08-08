@@ -12,7 +12,7 @@ from random import randrange, choice
 from shapely.geometry import Point
 
 logging.basicConfig(filename='log.txt', filemode='w',
-                    level=logging.DEBUG, format='%(message)s')
+                    level=logging.INFO, format='%(message)s')
 
 
 class DNA:
@@ -24,6 +24,8 @@ class DNA:
         self.farthest_poly_reached = 0
         self.id = id
         self.num_of_genes = num
+
+        self.max_checkpnt_len = width if width > height else height
 
         # Add enough empty lists to the path_list so that the vectors in genes could be
         # devided to seperate to each polygon
@@ -89,8 +91,8 @@ class DNA:
         if self.fitness != -1:
             dist_to_next_chpt = self.find_dist_to_next_poly(
                 pos, self.polys[self.fitness])
-            # TODO not sure how to remap this
-            self.fitness += 1 - remap(dist_to_next_chpt, (0, 500), (0, 1))
+                
+            self.fitness += 1 - remap(dist_to_next_chpt, (0, self.max_checkpnt_len), (0, 1))
             self.fitness *= self.fitness * self.fitness
 
         # logging.debug("fitness = " + str(self.fitness))
