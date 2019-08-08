@@ -10,11 +10,12 @@ collision_types = {
 
 class Car:
 
-    def __init__(self, m_handler, start_point, num_of_forces, id, dna=None):
+    def __init__(self, m_handler, start_point, num_of_forces, end_spread, id, dna=None):
         self.space = m_handler.space
 
         self.finish_line = m_handler.finish_line
         self.start_point = start_point
+        self.end_spread = end_spread
 
         self.id = id
 
@@ -30,7 +31,6 @@ class Car:
             self.dna = dna
             self.dna.id = self.id
 
-        self.force_count = 0
         self.is_dead = False
 
         # Create the body with shape and add them to the space
@@ -59,10 +59,9 @@ class Car:
 
         if self.body.position == car_body.position:
             self.is_dead = True
-            # TODO maybe this should be a variable
             # removes the specified amount of vectors from the path list to
             # make the car possibly not hit the wall next time
-            self.dna.remove_from_path_list(60)
+            self.dna.remove_from_path_list(self.end_spread)
 
         space.remove(car_body)
         return True
@@ -91,18 +90,18 @@ class Car:
             (force.x, force.y), self.body.position)
 
     def next_force(self):
-        # TODO maybe in the DNA we should just pop the first item each time instead of this
-        # force_count
         if not self.is_dead:
-            genes = self.dna.get_genes()
-
-            if self.force_count < len(genes):
-                self.apply_force(genes[self.force_count])
+            gene = self.dna.get_next_gene()
+            if gene is not None:
+                self.apply_force(gene)
 
                 pos = (self.body.position.x, self.body.position.y)
-                self.dna.add_to_path_list(pos, genes[self.force_count])
+                self.dna.add_to_path_list(pos, gene)
+            # else:
+            #     self.is_dead = True
+            #     self.space.remove(self.shape)
+            #     self.space.remove(self.body)
 
-                self.force_count += 1
 
 # #############################Unused#################################################
     def seek(self, target):

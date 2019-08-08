@@ -7,7 +7,7 @@ logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO, format
 
 class Population:
 
-    def __init__(self, lifespan, m_handler, mut, num):
+    def __init__(self, lifespan, m_handler, end_spread, mut, num):
         self.population = []            # Array to hold the current population
         self.mating_pool = []           # ArrayList which we will use for our "mating pool"
         self.generations = 0            # Number of generations
@@ -16,12 +16,13 @@ class Population:
         self.m_handler = m_handler
         self.mutation_rate = mut        # Mutation rate
         self.lifespan = lifespan
+        self.end_spread = end_spread
 
         self.start_point = self.pick_start_point(self.m_handler.starting_line)
 
         for id in range(0, num):
             self.population.append(
-                Car(self.m_handler, self.start_point, self.lifespan, id))
+                Car(self.m_handler, self.start_point, self.lifespan, self.end_spread, id))
 
     # Finds the midpoint of the line
     def pick_start_point(self, start_line):
@@ -75,7 +76,7 @@ class Population:
 
             child = partnerA.crossover(partnerB, self.mutation_rate)
 
-            self.population[i] = Car(self.m_handler, self.start_point, self.lifespan, self.population[i].id, child)
+            self.population[i] = Car(self.m_handler, self.start_point, self.lifespan, self.end_spread, self.population[i].id, child)
 
         self.generations += 1
 
@@ -93,7 +94,7 @@ class Population:
 
         pos = (best_car.body.position.x, best_car.body.position.y)
 
-        logging.info("best fitness" + str(best_fitness))
+        logging.info("best fitness - " + str(best_fitness))
         return pos
 
     # Updates and draws the cars

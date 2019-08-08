@@ -11,7 +11,8 @@ from p5 import *
 from random import randrange, choice
 from shapely.geometry import Point
 
-logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO, format='%(message)s')
+logging.basicConfig(filename='log.txt', filemode='w',
+                    level=logging.DEBUG, format='%(message)s')
 
 
 class DNA:
@@ -22,6 +23,7 @@ class DNA:
         self.path_list = []
         self.farthest_poly_reached = 0
         self.id = id
+        self.num_of_genes = num
 
         # Add enough empty lists to the path_list so that the vectors in genes could be
         # devided to seperate to each polygon
@@ -39,9 +41,11 @@ class DNA:
         else:
             self.genes = genes
 
-    # TODO i dont think I need this
-    def get_genes(self):
-        return self.genes
+    def get_next_gene(self):
+        if len(self.genes) > 0:
+            return self.genes.pop(0)
+        else:
+            return None
 
     @staticmethod
     def vector_from_two_points(point1, point2):
@@ -53,7 +57,8 @@ class DNA:
     def find_dist_to_next_poly(self, pos, current_polygon):
         current_poly_coords = list(current_polygon.exterior.coords)
         if len(current_poly_coords) > 3:
-            ab = DNA.vector_from_two_points(current_poly_coords[2], current_poly_coords[3])
+            ab = DNA.vector_from_two_points(
+                current_poly_coords[2], current_poly_coords[3])
 
             ac = DNA.vector_from_two_points(current_poly_coords[2], pos)
 
@@ -88,7 +93,7 @@ class DNA:
             self.fitness += 1 - remap(dist_to_next_chpt, (0, 500), (0, 1))
             self.fitness *= self.fitness * self.fitness
 
-        logging.debug("fitness = " + str(self.fitness))
+        # logging.debug("fitness = " + str(self.fitness))
 
     def add_to_path_list(self, pos, current_vector):
         current_pos = self.find_current_polygon(pos)
@@ -113,9 +118,10 @@ class DNA:
     def crossover(self, partner, mutation_rate):
         new_genes = []
 
-        logging.info("\nMy id = " + str(self.id) + " my partner's id = " + str(partner.id))
+        logging.info("\nMy id = " + str(self.id) +
+                     " my partner's id = " + str(partner.id))
 
-        if logging.getLogger().getEffectiveLevel() == "DEBUG":
+        if logging.getLogger().getEffectiveLevel() == logging.DEBUG:
             logging.debug("\nmy_path_list - " + str(self.id) + "\n")
             for i, lst in enumerate(self.path_list):
                 logging.debug("#" + str(i))
@@ -124,13 +130,13 @@ class DNA:
 
             logging.debug("\npartner_path_list - " + str(partner.id) + "\n")
             for i, lst in enumerate(partner.path_list):
-                logging.debugint("#" + str(i))
+                logging.debug("#" + str(i))
                 for gene in lst:
                     logging.debug(gene)
 
-            logging.debug("\nboth genes \n")
-        for i, gene in enumerate(self.genes):
-            logging.debug(str(gene) + " - " + str(partner.genes[i]))
+            # logging.debug("\nboth genes \n")
+            # for i, gene in enumerate(self.genes):
+            #     logging.debug(str(gene) + " - " + str(partner.genes[i]))
 
         for i, gene_block in enumerate(self.path_list):
             if len(partner.path_list[i]) == 0 and len(gene_block) == 0:
@@ -146,22 +152,22 @@ class DNA:
         self.mutate(new_genes, mutation_rate)
 
         # Pad the rest of the genes with random vectors
-        while len(new_genes) < len(self.genes):
-            logging.debug("adds random vector")
+        while len(new_genes) < self.num_of_genes:
+            # logging.debug("adds random vector")
             vec = Vector.random_2D()
             vec.limit(5000, 3000)
             new_genes.append(vec)
 
-        while len(new_genes) > len(self.genes):
-            logging.debug("removes vector")
+        while len(new_genes) > self.num_of_genes:
+            # logging.debug("removes vector")
             new_genes.pop()
 
-        if logging.getLogger().getEffectiveLevel() == "DEBUG":
+        if logging.getLogger().getEffectiveLevel() == logging.DEBUG:
             logging.debug("\nnew_genes\n")
             for gene in new_genes:
                 logging.debug(gene)
 
-        return DNA(self.polys, len(self.genes), new_genes)
+        return DNA(self.polys, self.num_of_genes, new_genes)
 
     # Based on a mutation probability, picks a new random character
     def mutate(self, new_genes, mutation_rate):
@@ -169,7 +175,8 @@ class DNA:
         if randrange(0, 101) < mutation_rate:
             logging.info("mutated")
             # mutation only affects the end of the genes
-            start_of_mutation = math.floor(len(self.genes) - (len(self.genes) * 0.2))
+            start_of_mutation = math.floor(
+                self.num_of_genes - (self.num_of_genes * 0.2))
             for i in range(start_of_mutation, len(new_genes)):
                 vec = Vector.random_2D()
                 vec.limit(5000, 3000)

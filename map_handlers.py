@@ -14,13 +14,15 @@ class Map_handler:
         self.endpoints = []
 
         for i in range(0, len(self.wall_segs), 2):
-            self.walls += self.create_wall_segments((self.wall_segs[i], self.wall_segs[i + 1]))
+            self.walls += self.create_wall_segments(
+                (self.wall_segs[i], self.wall_segs[i + 1]))
 
         self.checkpoint_polys = self.create_checkpoint_polys()
 
         self.num_of_walls = len(self.space.bodies)
 
-        self.starting_line, self.finish_line = self.create_finish_start_lines(start_finish_offset)
+        self.starting_line, self.finish_line = self.create_finish_start_lines(
+            start_finish_offset)
 
     def create_finish_start_lines(self, offset):
         finish_line_on_map = [self.wall_segs[-2], self.wall_segs[-1]]
