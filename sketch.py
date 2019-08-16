@@ -7,10 +7,11 @@ space = None
 cars = []
 ctrl_key_pressed = False  # l for now
 pop = None
-lifespan = 500
+lifespan = 1500
 life_counter = 0
 display_checkpoint_polys = False
 m_handler = None
+finished = False
 
 
 def setup():
@@ -34,9 +35,10 @@ def setup():
 def draw():
     global cars
     global life_counter
+    global finished
 
     life_counter += 1
-    if life_counter == lifespan or len(space.bodies) == m_handler.num_of_walls:
+    if (life_counter == lifespan or len(space.bodies) == m_handler.num_of_walls) and not finished:
         life_counter = 0
         pop.calculate_fitness()
         pop.natural_selection()
@@ -53,7 +55,7 @@ def draw():
     # draw ends points
     m_handler.draw_endpoints(5)
 
-    pop.draw_cars(mouse_x, mouse_y)
+    finished = pop.draw_cars(mouse_x, mouse_y)
 
     title("Frame Rate: " + str(frame_rate))
 
@@ -77,6 +79,8 @@ def mouse_released():
     if ctrl_key_pressed:
         wall_to_add.append((mouse_x, mouse_y))
         m_handler.add_wall(wall_to_add)
+        print(wall_to_add[0])
+        print(wall_to_add[1])
 
 
 def key_pressed(event):

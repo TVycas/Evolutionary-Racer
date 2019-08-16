@@ -1,10 +1,15 @@
 from p5 import *
 import pymunk
 from dnas import DNA
+import logging
+
+logging.basicConfig(filename='log.txt', filemode='w',
+                    level=logging.INFO, format='%(message)s')
 
 collision_types = {
     "car": 1,
-    "wall": 2
+    "wall": 2,
+    "finish_line": 3
 }
 
 
@@ -16,6 +21,7 @@ class Car:
         self.finish_line = m_handler.finish_line
         self.start_point = start_point
         self.end_spread = end_spread
+        self.finished = False
 
         self.id = id
 
@@ -50,8 +56,11 @@ class Car:
 
         self.space.add(self.body, self.shape)
 
-        handler = self.space.add_collision_handler(collision_types["car"], collision_types["wall"])
-        handler.begin = self.touched_wall
+        handler_wall = self.space.add_collision_handler(collision_types["car"], collision_types["wall"])
+        handler_wall.begin = self.touched_wall
+
+        handler_fin = self.space.add_collision_handler(collision_types["car"], collision_types["finish_line"])
+        handler_fin.begin = self.reached_finish
 
     # If the car touches the wall, it's dead and no longer moves in the lifecycle
     def touched_wall(self, arbiter, space, data):
@@ -59,11 +68,24 @@ class Car:
 
         if self.body.position == car_body.position:
             self.is_dead = True
+
             # removes the specified amount of vectors from the path list to
             # make the car possibly not hit the wall next time
             self.dna.remove_from_path_list(self.end_spread)
 
         space.remove(car_body)
+        return True
+
+    def reached_finish(self, arbiter, space, data):
+        car_body = arbiter.shapes[0].body
+
+        self.finished = True
+        self.is_dead = True
+
+        space.remove(car_body)
+
+        print("\n\nFinished!\n\n")
+
         return True
 
     def calculate_fitness(self):
@@ -102,10 +124,6 @@ class Car:
 
                 pos = (self.body.position.x, self.body.position.y)
                 self.dna.add_to_path_list(pos, gene)
-            # else:
-            #     self.is_dead = True
-            #     self.space.remove(self.shape)
-            #     self.space.remove(self.body)
 
 
 # #############################Unused#################################################
@@ -127,28 +145,3 @@ class Car:
     @staticmethod
     def vec2d_to_vector(vec2d):
         return Vector(vec2d.x, vec2d.y)
-
-    # def arrive(self, target):
-    #     pos = self.body.position
-    #     position_vec = car.vec2d_to_vector(pos)
-
-    #     velocity = car.vec2d_to_vector(self.body.velocity_at_world_point(pos))
-    #     velocity_mag = velocity.magnitude
-
-    #     desired = Vector(target[0], target[1]) - position_vec
-    #     desired_mag = desired.magnitude
-    #     desired.normalize()
-
-    #     if desired_mag < 100:
-    #         m = remap(desired_mag, (0, 99), (0, -velocity_mag))
-
-    #         desired *= m
-    #     else:
-    #         desired *= self.max_speed
-
-    #     vel = car.vec2d_to_vector(self.body.velocity_at_world_point(pos))
-
-    #     steer = desired - vel
-    #     steer.limit(self.max_force)
-
-    #     car.apply_force(self, [steer.x, steer.y])

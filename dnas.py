@@ -152,13 +152,13 @@ class DNA:
 
         # Pad the rest of the genes with random vectors
         while len(new_genes) < self.num_of_genes:
-            # logging.debug("adds random vector")
+            logging.debug("adds random vector")
             vec = Vector.random_2D()
             vec.limit(5000, 3000)
             new_genes.append(vec)
 
         while len(new_genes) > self.num_of_genes:
-            # logging.debug("removes vector")
+            logging.debug("removes vector")
             new_genes.pop()
 
         if logging.getLogger().getEffectiveLevel() == logging.DEBUG:

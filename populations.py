@@ -1,4 +1,5 @@
 import logging
+import pymunk
 from cars import Car
 from random import randrange
 
@@ -103,3 +104,12 @@ class Population:
             car.next_force()
             # car.seek((mouse_x, mouse_y))
             car.display()
+
+            if not self.finished and car.finished:
+                self.finished = True
+                for body in self.m_handler.space.bodies:
+                    if body.body_type == pymunk.Body.DYNAMIC:
+                        self.m_handler.space.remove(body)
+                break
+
+        return self.finished

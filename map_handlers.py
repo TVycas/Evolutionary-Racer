@@ -15,7 +15,7 @@ class Map_handler:
 
         for i in range(0, len(self.wall_segs), 2):
             self.walls += self.create_wall_segments(
-                (self.wall_segs[i], self.wall_segs[i + 1]))
+                (self.wall_segs[i], self.wall_segs[i + 1]), collision_types["wall"])
 
         self.checkpoint_polys = self.create_checkpoint_polys()
 
@@ -23,6 +23,12 @@ class Map_handler:
 
         self.starting_line, self.finish_line = self.create_finish_start_lines(
             start_finish_offset)
+
+        # creates invisible finish line
+        self.create_invisible_line(self.finish_line)
+
+    def create_invisible_line(self, line):
+        self.create_wall_segments(line, collision_types["finish_line"])
 
     def create_finish_start_lines(self, offset):
         finish_line_on_map = [self.wall_segs[-2], self.wall_segs[-1]]
@@ -77,7 +83,7 @@ class Map_handler:
             fill(0)
             line(p1, p2)
 
-    def create_wall_segments(self, points):
+    def create_wall_segments(self, points, coll_type):
         """Create a number of wall segments connecting the points"""
         walls = []
         if len(points) < 2:
@@ -91,7 +97,7 @@ class Map_handler:
             wall_body = pm.Body(body_type=pm.Body.STATIC)
             wall_shape = pm.Segment(wall_body, v1, v2, .0)
             wall_shape.friction = 0.5
-            wall_shape.collision_type = collision_types["wall"]
+            wall_shape.collision_type = coll_type
 
             self.space.add(wall_shape)
             walls.append(wall_shape)
@@ -99,7 +105,7 @@ class Map_handler:
         return walls
 
     def add_wall(self, wall_to_add):
-        self.walls += self.create_wall_segments(wall_to_add)
+        self.walls += self.create_wall_segments(wall_to_add, collision_types["wall"])
 
     def add_endpoint(self, endpoint):
         self.endpoints.append(endpoint)
