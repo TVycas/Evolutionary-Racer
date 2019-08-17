@@ -1,4 +1,5 @@
 import pymunk as pm
+import datetime
 from map_handlers import Map_handler
 from p5 import *
 from populations import Population
@@ -12,12 +13,16 @@ life_counter = 0
 display_checkpoint_polys = False
 m_handler = None
 finished = False
+start_time = 0
+end_time = 0
+time_taken = 0
 
 
 def setup():
     global cars
     global space
     global pop
+    global start_time
     global m_handler
 
     rect_mode('CENTER')
@@ -31,10 +36,14 @@ def setup():
 
     pop = Population(lifespan, m_handler, 50, 0.3, 25)
 
+    start_time = datetime.datetime.now()
+
 
 def draw():
     global cars
     global life_counter
+    global end_time
+    global time_taken
     global finished
 
     life_counter += 1
@@ -56,6 +65,13 @@ def draw():
     m_handler.draw_endpoints(5)
 
     finished = pop.draw_cars(mouse_x, mouse_y)
+
+    if finished:
+        if end_time == 0:
+            end_time = datetime.datetime.now()
+            time_taken = end_time - start_time
+
+        text('Time taken to finish the track - ' + str(time_taken).split('.', 2)[0], (width / 2, height / 2), 25)
 
     title("Frame Rate: " + str(frame_rate))
 
