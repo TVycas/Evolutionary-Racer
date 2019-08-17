@@ -47,6 +47,7 @@ class Map_handler:
             second_point[i] -= offset * 2
 
         finish_line = [tuple(first_point), tuple(second_point)]
+        finish_line = [(640, 626), (646, 711)]
 
         return start_line, finish_line
 

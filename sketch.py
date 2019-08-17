@@ -72,7 +72,7 @@ def draw():
             time_taken = end_time - start_time
 
         text('Time taken to finish the track - ' + str(time_taken).split('.', 2)
-             [0] + '\n' + 'Generations taken - ' + str(pop.generations), (width / 2, height / 2), 20)
+             [0] + ' Generations - ' + str(pop.generations), ((width / 2) - 20, height / 2), 25)
 
     title("Frame Rate: " + str(frame_rate))
 
