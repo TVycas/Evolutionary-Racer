@@ -21,15 +21,18 @@ time_taken = 0
 # Default values
 mut_rate = 0.3
 pop_size = 20
+track_file = 'track.txt'
 
 
 def parse_args():
     global mut_rate
     global pop_size
+    global track_file
 
     argv = sys.argv[1:]
     try:
-        opts, args = getopt.getopt(argv, "m:p:", ["mut_rate=", "pop_size="])
+        opts, args = getopt.getopt(
+            argv, "m:p:t:", ["mut_rate=", "pop_size=", "track_file="])
     except getopt.GetoptError:
         print('usage: sketch.py -p <population_size> -m <mutation_rate>')
         sys.exit(2)
@@ -44,8 +47,11 @@ def parse_args():
                 pop_size = int(arg)
             except:
                 print("\nPopulation size needs to be an integer")
+        elif opt in ("-t", "--track_file"):
+            track_file = arg
 
-    print("\nRunning with - \nPoplation size = " + str(pop_size) + "\nMutation rate = " + str(mut_rate))
+    print("\nRunning with - \nPoplation size = " + str(pop_size) +
+          "\nMutation rate = " + str(mut_rate) + "\nTrack file = " + track_file)
 
 
 def setup():
@@ -63,7 +69,7 @@ def setup():
     space = pm.Space(threaded=True)
     space.threads = 2
 
-    m_handler = Map_handler(space, 'track.txt', 10)
+    m_handler = Map_handler(space, track_file, 10)
 
     pop = Population(lifespan, m_handler, 50, mut_rate, pop_size)
 

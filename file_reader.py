@@ -1,9 +1,14 @@
 import numpy as np
+import sys
 
 # TODO move to map_handler?
 def read_track_files(file):
     read_walls = []
-    track_walls = np.genfromtxt(file, delimiter=',', comments='#')
+    try:
+        track_walls = np.genfromtxt(file, delimiter=',', comments='#')
+    except:
+        print("Track file is not working")
+        sys.exit(2)
 
     read_wall_points = []
     count = 0
