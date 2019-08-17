@@ -60,7 +60,7 @@ def draw():
 
     # Draw walls
     m_handler.draw_walls()
-    
+
     # draw ends points
     m_handler.draw_endpoints(5)
 
@@ -71,7 +71,8 @@ def draw():
             end_time = datetime.datetime.now()
             time_taken = end_time - start_time
 
-        text('Time taken to finish the track - ' + str(time_taken).split('.', 2)[0], (width / 2, height / 2), 25)
+        text('Time taken to finish the track - ' + str(time_taken).split('.', 2)
+             [0] + '\n' + 'Generations taken - ' + str(pop.generations), (width / 2, height / 2), 20)
 
     title("Frame Rate: " + str(frame_rate))
 
