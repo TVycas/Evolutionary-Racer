@@ -96,7 +96,7 @@ class DNA:
             self.fitness += 1 - remap(dist_to_next_chpt, (0, self.max_checkpnt_len), (0, 1))
             self.fitness *= self.fitness * self.fitness
 
-        # logging.debug("fitness = " + str(self.fitness))
+        logging.debug("fitness = " + str(self.fitness))
 
     def add_to_path_list(self, pos, current_vector):
         current_pos = self.find_current_polygon(pos)

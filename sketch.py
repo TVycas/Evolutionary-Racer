@@ -1,5 +1,7 @@
 import pymunk as pm
 import datetime
+import sys
+import getopt
 from map_handlers import Map_handler
 from p5 import *
 from populations import Population
@@ -16,6 +18,34 @@ finished = False
 start_time = 0
 end_time = 0
 time_taken = 0
+# Default values
+mut_rate = 0.3
+pop_size = 20
+
+
+def parse_args():
+    global mut_rate
+    global pop_size
+
+    argv = sys.argv[1:]
+    try:
+        opts, args = getopt.getopt(argv, "m:p:", ["mut_rate=", "pop_size="])
+    except getopt.GetoptError:
+        print('usage: sketch.py -p <population_size> -m <mutation_rate>')
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt in ("-m", "--mut_rate"):
+            try:
+                mut_rate = float(arg)
+            except:
+                print("\nMutation rate needs to be a float")
+        elif opt in ("-p", "--pop_size"):
+            try:
+                pop_size = int(arg)
+            except:
+                print("\nPopulation size needs to be an integer")
+
+    print("\nRunning with - \nPoplation size = " + str(pop_size) + "\nMutation rate = " + str(mut_rate))
 
 
 def setup():
@@ -25,6 +55,7 @@ def setup():
     global start_time
     global m_handler
 
+    parse_args()
     rect_mode('CENTER')
 
     size(1000, 800)
@@ -34,7 +65,7 @@ def setup():
 
     m_handler = Map_handler(space, 'track.txt', 10)
 
-    pop = Population(lifespan, m_handler, 50, 0.3, 25)
+    pop = Population(lifespan, m_handler, 50, mut_rate, pop_size)
 
     start_time = datetime.datetime.now()
 
@@ -73,6 +104,8 @@ def draw():
 
         text('Time taken to finish the track - ' + str(time_taken).split('.', 2)
              [0] + ' Generations - ' + str(pop.generations), ((width / 2) - 20, height / 2), 25)
+
+        no_loop()
 
     title("Frame Rate: " + str(frame_rate))
 
