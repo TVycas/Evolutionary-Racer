@@ -3,12 +3,13 @@
 
 ## Description
 
-My attempt at creating a genetic algorithm that over many generations manages to reach the end of the given track. Based on a book "The Nature of Code" by  Daniel Shiffman.
-   
-The simulation is displayed using p5py and collions are handled by pumynk physics engine.
-
+My attempt at creating a genetic algorithm that over many generations manages to reach the end of the given track.
   
+The algorithm is applied to a population of "cars", that each begins with a set of random vectors or "genes". After each epoch, a new car generation is calculated by randomly reallocating the genes, with a preference to the genes have the best "fitness" (that made the car get furthest in the track). Also, there is a small chance that the genes will mutate, changing the last part of the genes array to random vectors. 
+   
+The simulation is displayed using p5py and collisions are handled by pumynk physics engine.
 
+Based on the book "The Nature of Code" by  Daniel Shiffman.
 #### Technologies
 
 - Python 3.6
@@ -19,11 +20,14 @@ The simulation is displayed using p5py and collions are handled by pumynk physic
 
 ## How To Use
 
-Run the sketch.py file to run with default parameters.
-Or use addition flags to indicate custom parameters:  
+Run the sketch.py file to run with default parameters, or use addition flags to indicate custom parameters:  
 -p \<Population size>  
 -m \<Mutation rate>  
 -t \<Track file>
+  
+To add additonal walls to the track in real time, press 'l' and start drawing new walls.
+  
+To see the track used to calculate the fitness of the cars, press 'c'. 
 
 ---
 
