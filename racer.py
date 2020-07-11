@@ -16,6 +16,7 @@ display_checkpoint_polys = False
 map_handler = None
 start_time = 0
 end_time = 0
+finished = False
 # Default parameters
 mut_rate = 0.3
 pop_size = 20
@@ -79,6 +80,7 @@ def setup():
 def draw():
     global life_counter
     global end_time
+    global finished
 
     # Check if the conditions for the end of an epoch are met, and if so, run the genetic algorithm
     life_counter += 1
@@ -133,11 +135,13 @@ def mouse_pressed():
 def mouse_released():
     global wall_to_add
 
-    if ctrl_key_pressed:
-        wall_to_add.append((mouse_x, mouse_y))
+    wall_end_tpl = (mouse_x, mouse_y)
+
+    if ctrl_key_pressed and not wall_to_add[0] == wall_end_tpl:
+        wall_to_add.append(wall_end_tpl)
         map_handler.add_wall(wall_to_add)
-        print(wall_to_add[0])
-        print(wall_to_add[1])
+
+        print(f"New wall added at coods: {wall_to_add[0]} - {wall_end_tpl}")
 
 
 def key_pressed(event):
