@@ -14,8 +14,8 @@ class Map_handler:
         self.endpoints = []
 
         for i in range(0, len(self.wall_segs), 2):
-            self.walls += self.create_wall_segments(
-                (self.wall_segs[i], self.wall_segs[i + 1]), collision_types["wall"])
+            wall_points = (self.wall_segs[i], self.wall_segs[i + 1])
+            self.walls += self.create_wall_segments(wall_points, collision_types["wall"])
 
         self.checkpoint_polys = self.create_checkpoint_polys()
 
@@ -24,11 +24,8 @@ class Map_handler:
         self.starting_line, self.finish_line = self.create_finish_start_lines(
             start_finish_offset)
 
-        # creates invisible finish line
-        self.create_invisible_line(self.finish_line)
-
-    def create_invisible_line(self, line):
-        self.create_wall_segments(line, collision_types["finish_line"])
+        # Creates an invisible finish line
+        self.create_wall_segments(self.finish_line, collision_types["finish_line"])   
 
     def create_finish_start_lines(self, offset):
         finish_line_on_map = [self.wall_segs[-2], self.wall_segs[-1]]
@@ -52,12 +49,15 @@ class Map_handler:
         return start_line, finish_line
 
     def draw_checkpoint_polys(self):
+        # TODO not sure if I'll keep this + not working currently
+
         for poly in self.checkpoint_polys:
             poly_coords = list(poly.exterior.coords)
 
             fill(0)
-            quad(poly_coords[0], poly_coords[1],
-                 poly_coords[2], poly_coords[3])
+            # quad(poly_coords[0], poly_coords[1],
+            #      poly_coords[2], poly_coords[3])
+            quad((643.0, 711.0), (479.0, 708.0), (479.0, 625.0), (639.0, 624.0))
 
     def create_checkpoint_polys(self):
         polys = []
@@ -107,9 +107,6 @@ class Map_handler:
 
     def add_wall(self, wall_to_add):
         self.walls += self.create_wall_segments(wall_to_add, collision_types["wall"])
-
-    def add_endpoint(self, endpoint):
-        self.endpoints.append(endpoint)
 
     def draw_endpoints(self, num_endpoints_to_draw):
         self.endpoints = self.endpoints[-num_endpoints_to_draw:]

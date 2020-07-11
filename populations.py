@@ -8,21 +8,21 @@ logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO, format
 
 class Population:
 
-    def __init__(self, lifespan, map_handler, end_spread, mut, num):
+    def __init__(self, lifespan, map_handler, end_spread, mutations, pop_size):
         self.population = []            # Array to hold the current population
         self.mating_pool = []           # List which we will use for our "mating pool"
         self.generations = 0            # Number of generations
         self.finished = False           # Are we finished evolving?
 
         self.map_handler = map_handler
-        self.mutation_rate = mut        
+        self.mutation_rate = mutations        
         self.lifespan = lifespan
         self.end_spread = end_spread
 
         self.start_point = self.pick_start_point(self.map_handler.starting_line)
 
         # Creates the population of cars with random genes
-        for id in range(0, num):
+        for id in range(0, pop_size):
             self.population.append(
                 Car(self.map_handler, self.start_point, self.lifespan, self.end_spread, id))
 

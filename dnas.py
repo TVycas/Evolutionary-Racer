@@ -82,6 +82,7 @@ class DNA:
         return current_polygon
 
     # Fitness is calculated
+    
     def calculate_fitness(self, pos):
         self.fitness = self.find_current_polygon(pos)
 
