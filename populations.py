@@ -8,23 +8,23 @@ logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO, format
 
 class Population:
 
-    def __init__(self, lifespan, m_handler, end_spread, mut, num):
+    def __init__(self, lifespan, map_handler, end_spread, mut, num):
         self.population = []            # Array to hold the current population
         self.mating_pool = []           # List which we will use for our "mating pool"
         self.generations = 0            # Number of generations
         self.finished = False           # Are we finished evolving?
 
-        self.m_handler = m_handler
+        self.map_handler = map_handler
         self.mutation_rate = mut        
         self.lifespan = lifespan
         self.end_spread = end_spread
 
-        self.start_point = self.pick_start_point(self.m_handler.starting_line)
+        self.start_point = self.pick_start_point(self.map_handler.starting_line)
 
         # Creates the population of cars with random genes
         for id in range(0, num):
             self.population.append(
-                Car(self.m_handler, self.start_point, self.lifespan, self.end_spread, id))
+                Car(self.map_handler, self.start_point, self.lifespan, self.end_spread, id))
 
     # Finds the midpoint of the line
     def pick_start_point(self, start_line):
@@ -81,7 +81,7 @@ class Population:
             child = partnerA.crossover(partnerB, self.mutation_rate)
 
             # Create a new member of the population by overriding the old one
-            self.population[i] = Car(self.m_handler, self.start_point, self.lifespan, self.end_spread, self.population[i].id, child)
+            self.population[i] = Car(self.map_handler, self.start_point, self.lifespan, self.end_spread, self.population[i].id, child)
 
         self.generations += 1
 
@@ -114,9 +114,9 @@ class Population:
             # Stops the simulation if a car has finished the track
             if not self.finished and car.finished:
                 self.finished = True
-                for body in self.m_handler.space.bodies:
+                for body in self.map_handler.space.bodies:
                     if body.body_type == pymunk.Body.DYNAMIC:
-                        self.m_handler.space.remove(body)
+                        self.map_handler.space.remove(body)
                 break
 
         return self.finished

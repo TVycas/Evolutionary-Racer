@@ -13,7 +13,7 @@ pop = None
 lifespan = 1500
 life_counter = 0
 display_checkpoint_polys = False
-m_handler = None
+map_handler = None
 start_time = 0
 end_time = 0
 # Default parameters
@@ -56,7 +56,7 @@ def setup():
     global space
     global pop
     global start_time
-    global m_handler
+    global map_handler
 
     parse_args()
     # Set up the screen
@@ -68,10 +68,10 @@ def setup():
     space.threads = 2
 
     # Set up the map_handler for map-related calculations and drawing
-    m_handler = Map_handler(space, track_file, 10)
+    map_handler = Map_handler(space, track_file, 10)
 
     # Set up the population object to run the algorithm
-    pop = Population(lifespan, m_handler, 50, mut_rate, pop_size)
+    pop = Population(lifespan, map_handler, 50, mut_rate, pop_size)
 
     start_time = datetime.datetime.now()
 
@@ -82,11 +82,11 @@ def draw():
 
     # Check if the conditions for the end of an epoch are met, and if so, run the genetic algorithm
     life_counter += 1
-    if (life_counter == lifespan or len(space.bodies) == m_handler.num_of_walls) and not finished:
+    if (life_counter == lifespan or len(space.bodies) == map_handler.num_of_walls) and not finished:
         life_counter = 0
         pop.calculate_fitness()
         pop.natural_selection()
-        m_handler.add_endpoint(pop.evaluate())
+        map_handler.add_endpoint(pop.evaluate())
         pop.generate()
 
     # Update the physics
@@ -96,10 +96,10 @@ def draw():
     background(255)
 
     # Draw walls
-    m_handler.draw_walls()
+    map_handler.draw_walls()
 
     # Draw endpoints (the n best positions reached so far)
-    m_handler.draw_endpoints(5)
+    map_handler.draw_endpoints(5)
 
     # Draw and update the cars
     finished = pop.update_and_draw_cars()
@@ -119,7 +119,7 @@ def draw():
 
     # Draws black boxes to indicate checkpoints areas
     if display_checkpoint_polys:
-        m_handler.draw_checkpoint_polys()
+        map_handler.draw_checkpoint_polys()
 
 
 def mouse_pressed():
@@ -135,7 +135,7 @@ def mouse_released():
 
     if ctrl_key_pressed:
         wall_to_add.append((mouse_x, mouse_y))
-        m_handler.add_wall(wall_to_add)
+        map_handler.add_wall(wall_to_add)
         print(wall_to_add[0])
         print(wall_to_add[1])
 
