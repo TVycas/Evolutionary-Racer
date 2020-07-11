@@ -14,10 +14,8 @@ lifespan = 1500
 life_counter = 0
 display_checkpoint_polys = False
 m_handler = None
-finished = False
 start_time = 0
 end_time = 0
-time_taken = 0
 # Default parameters
 mut_rate = 0.3
 pop_size = 20
@@ -55,7 +53,6 @@ def parse_args():
 
 
 def setup():
-    global cars
     global space
     global pop
     global start_time
@@ -80,11 +77,8 @@ def setup():
 
 
 def draw():
-    global cars
     global life_counter
     global end_time
-    global time_taken
-    global finished
 
     # Check if the conditions for the end of an epoch are met, and if so, run the genetic algorithm
     life_counter += 1
@@ -129,7 +123,6 @@ def draw():
 
 
 def mouse_pressed():
-    global ctrl_key_pressed
     global wall_to_add
 
     if ctrl_key_pressed:
