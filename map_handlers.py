@@ -24,7 +24,7 @@ class Map_handler:
             start_finish_offset)
 
         # Creates an invisible finish line
-        self.create_wall_segments(self.finish_line, collision_types["finish_line"])   
+        self.create_wall_segments(self.finish_line, collision_types["finish_line"])
 
     def create_finish_start_lines(self, offset):
         finish_line_on_map = [self.wall_segs[-2], self.wall_segs[-1]]

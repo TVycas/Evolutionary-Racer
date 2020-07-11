@@ -1,5 +1,6 @@
 import logging
 import math
+import random
 from p5 import *
 from random import randrange, choice
 from shapely.geometry import Point
@@ -10,26 +11,36 @@ logging.basicConfig(filename='log.txt', filemode='w',
 
 class DNA:
 
-    def __init__(self, checkpoint_polys, num, genes=None, mutated=False, id=-1):
+    def __init__(self, checkpoint_polys, number_of_genes, genes=None, mutated=False, id=-1):
+        """The init can either create a random or specific DNA object
+
+        Args:
+            checkpoint_polys (list of Polygon obj): A list of polygons describing the checkpoints in the track.
+            number_of_genes (int): The number of genes for the DNA to have.
+            genes (list of Vector obj, optional): A list of genes to create the DNA obj from. Defaults to None.
+            mutated (bool, optional): A bool to note if the DNA muteted. Defaults to False.
+            id (int, optional): The id of the DNA obj. Defaults to -1.
+        """
+
         self.fitness = 0
         self.polys = checkpoint_polys
         self.path_list = []
         self.farthest_poly_reached = 0
         self.id = id
-        self.num_of_genes = num
+        self.num_of_genes = number_of_genes
         self.mutated = mutated
 
         self.max_checkpnt_len = width if width > height else height
 
         # Add enough empty lists to the path_list so that the vectors in genes could be
-        # devided to each polygon
+        # divided to each polygon
         for i in range(0, len(self.polys)):
             self.path_list.append([])
 
         if genes is None:
             # The genetic sequence
             self.genes = []
-            for x in range(0, int(num)):
+            for x in range(0, int(number_of_genes)):
                 vec = Vector.random_2D()
                 # TODO these should be variables
                 vec.limit(5000, 3000)
@@ -37,6 +48,81 @@ class DNA:
         else:
             self.genes = genes
 
+    def calculate_fitness(self, pos):
+        """Calculates the fitness of the DNA. The fitness is calculated based
+        on the distance to the next checkpoint of the map.
+
+        Args:
+            pos (tuple): A tuple cooresponding to the possition of the car.
+        """
+        
+        # First, the number checkpoints reached so far is calculated, then
+        # the distance to the next checkpoint line is added. For greater differences between
+        # fitnesses, the resulting number is cubed.
+
+        self.fitness = self.find_current_checkpoint(pos)
+
+        if self.fitness != -1:
+            dist_to_next_chpt = self.find_dist_to_next_chpt(
+                pos, self.polys[self.fitness])
+
+            self.fitness += 1 - remap(dist_to_next_chpt, (0, self.max_checkpnt_len), (0, 1))
+            self.fitness *= self.fitness * self.fitness
+
+        logging.debug("fitness = " + str(self.fitness))
+
+    def find_current_checkpoint(self, pos):
+        """Finds the checkpoint polygon that the car is in.
+
+        Args:
+            pos (tuple): A tuple cooresponding to the possition of the car.
+
+        Returns:
+            [int]: The ID of the checkpoint polygon in witch he car is in.
+        """
+
+        position = Point(pos)
+
+        current_checkpoint_id = -1
+        for i, poly in enumerate(self.polys):
+            if poly.contains(position):
+                current_checkpoint_id = i
+
+        return current_checkpoint_id
+
+    def find_dist_to_next_chpt(self, pos, current_polygon):
+        """Calculates the distance to the next checkpoint polygon
+
+        Args:
+            pos (tuple): tuple describing the current car position
+            current_polygon (int): the ID of the polygon in witch the car is in
+
+        Returns:
+            float: The distance to the next checkpoint polygon
+        """
+
+        # |AC x AB| / |AB| where AB is the line and C is the point
+        # Calculates the distace to the next checkpoint polygon using the formula above.
+        current_poly_coords = list(current_polygon.exterior.coords)
+
+        if len(current_poly_coords) > 3:
+            ab = DNA.vector_from_two_points(
+                current_poly_coords[2], current_poly_coords[3])
+
+            ac = DNA.vector_from_two_points(current_poly_coords[2], pos)
+
+            ac_ab_cross = ac.cross(ab)
+
+            magnitude_of_ac_ab_cross = ac_ab_cross.magnitude
+            magnitude_of_ab = ab.magnitude
+
+            distance = magnitude_of_ac_ab_cross / magnitude_of_ab
+
+            return distance
+        else:
+            return 0
+
+    # TODO should be a property
     def get_next_gene(self):
         if len(self.genes) > 0:
             return self.genes.pop(0)
@@ -49,63 +135,31 @@ class DNA:
         y = point2[1] - point1[1]
         return Vector(x, y)
 
-    # |AC x AB| / |AB| where AB is the line and C is the point
-    # Calculates the distace to the next checkpoint polygon using the formula above.
-    def find_dist_to_next_poly(self, pos, current_polygon):
-        current_poly_coords = list(current_polygon.exterior.coords)
-        if len(current_poly_coords) > 3:
-            ab = DNA.vector_from_two_points(
-                current_poly_coords[2], current_poly_coords[3])
+    def add_to_path_list(self, pos, current_gene):
+        """Update the path list to track the possition of the car, if the car has not turned around.
 
-            ac = DNA.vector_from_two_points(current_poly_coords[2], pos)
+        Args:
+            pos (tuple): The current position of the car
+            current_vector (Vector object): The gene that the car was just moved by
+        """
 
-            ac_ab_cross = ac.cross(ab)
+        current_checkpoint = self.find_current_checkpoint(pos)
 
-            mag_of_ac_ab_cross = ac_ab_cross.magnitude
-            mag_of_ab = ab.magnitude
-
-            distance = mag_of_ac_ab_cross / mag_of_ab
-
-            return distance
-        else:
-            return 0
-
-    # Finds the checkpoint polygon that the car is in
-    def find_current_polygon(self, pos):
-        position = Point(pos)
-
-        current_polygon = -1
-        for i, poly in enumerate(self.polys):
-            if poly.contains(position):
-                current_polygon = i
-
-        return current_polygon
-
-    # Fitness is calculated
-    
-    def calculate_fitness(self, pos):
-        self.fitness = self.find_current_polygon(pos)
-
-        if self.fitness != -1:
-            dist_to_next_chpt = self.find_dist_to_next_poly(
-                pos, self.polys[self.fitness])
-
-            self.fitness += 1 - remap(dist_to_next_chpt, (0, self.max_checkpnt_len), (0, 1))
-            self.fitness *= self.fitness * self.fitness
-
-        logging.debug("fitness = " + str(self.fitness))
-
-    def add_to_path_list(self, pos, current_vector):
-        current_pos = self.find_current_polygon(pos)
-
-        if self.farthest_poly_reached <= current_pos:
-            self.farthest_poly_reached = current_pos
-            self.path_list[current_pos].append(current_vector)
-        # If the car turns around we don't want to save that
-        elif self.farthest_poly_reached > current_pos:
+        if self.farthest_poly_reached <= current_checkpoint:
+            self.farthest_poly_reached = current_checkpoint
+            self.path_list[current_checkpoint].append(current_gene)
+        # If the car turns around, we don't want to save that
+        elif self.farthest_poly_reached > current_checkpoint:
             return
 
     def remove_from_path_list(self, num_vec_to_remove):
+        """Removes a specified amount of genes from the end of the gene list
+        to help map exploration.
+
+        Args:
+            num_vec_to_remove (int): number of genes to remove
+        """
+
         pb_to_remove_from = self.farthest_poly_reached
         for i in range(num_vec_to_remove):
             if(len(self.path_list[pb_to_remove_from]) != 0):
@@ -118,66 +172,93 @@ class DNA:
     def crossover(self, partner, mutation_rate):
         new_genes = []
 
-        logging.info("\nMy id = " + str(self.id) +
-                     " my partner's id = " + str(partner.id))
+        # logging.info("\nMy id = " + str(self.id) +
+        #              " my partner's id = " + str(partner.id))
 
-        if logging.getLogger().getEffectiveLevel() == logging.DEBUG:
-            logging.debug("\nmy_path_list - " + str(self.id) + "\n")
-            for i, lst in enumerate(self.path_list):
-                logging.debug("#" + str(i))
-                for gene in lst:
-                    logging.debug(gene)
+        # if logging.getLogger().getEffectiveLevel() == logging.DEBUG:
+        #     logging.debug("\nmy_path_list - " + str(self.id) + "\n")
+        #     for i, lst in enumerate(self.path_list):
+        #         logging.debug("#" + str(i))
+        #         for gene in lst:
+        #             logging.debug(gene)
 
-            logging.debug("\npartner_path_list - " + str(partner.id) + "\n")
-            for i, lst in enumerate(partner.path_list):
-                logging.debug("#" + str(i))
-                for gene in lst:
-                    logging.debug(gene)
+        #     logging.debug("\npartner_path_list - " + str(partner.id) + "\n")
+        #     for i, lst in enumerate(partner.path_list):
+        #         logging.debug("#" + str(i))
+        #         for gene in lst:
+        #             logging.debug(gene)
 
         for i, gene_block in enumerate(self.path_list):
             if len(partner.path_list[i]) == 0 and len(gene_block) == 0:
+                # If both of the parters don't have genes for the current gene block, top the crossover.
                 break
 
+            # Chose the parent of the next gene block randomly.
             new_genes.extend(choice([gene_block, partner.path_list[i]]))
 
-            if new_genes == gene_block:
-                logging.info("chosen block from id = " + str(self.id))
-            else:
-                logging.info("chosen block from id = " + str(partner.id))
+            # if new_genes == gene_block:
+            #     logging.info("chosen block from id = " + str(self.id))
+            # else:
+            #     logging.info("chosen block from id = " + str(partner.id))
 
         mutated, new_genes = self.mutate(new_genes, mutation_rate)
 
-        # Pad the rest of the genes with random vectors
-        while len(new_genes) < self.num_of_genes:
-            logging.debug("adds random vector")
-            vec = Vector.random_2D()
-            vec.limit(5000, 3000)
-            new_genes.append(vec)
+        new_genes = self.normalize_gene_list(new_genes)
 
-        while len(new_genes) > self.num_of_genes:
-            logging.debug("removes vector")
-            new_genes.pop()
-
-        if logging.getLogger().getEffectiveLevel() == logging.DEBUG:
-            logging.debug("\nnew_genes\n")
-            for gene in new_genes:
-                logging.debug(gene)
+        # if logging.getLogger().getEffectiveLevel() == logging.DEBUG:
+        #     logging.debug("\nnew_genes\n")
+        #     for gene in new_genes:
+        #         logging.debug(gene)
 
         return DNA(self.polys, self.num_of_genes, new_genes, mutated)
 
-    # Based on a mutation probability, picks a new random character
-    def mutate(self, new_genes, mutation_rate):
+    def normalize_gene_list(self, genes):
+        """Add or remove additional genes if the length of the gene list
+        is too big or small.
+
+        Args:
+            genes (list of Vector obj): The list of genes
+
+        Returns:
+            (list of Vector obj): The list of genes at the correct length
+        """
+
+        while len(genes) < self.num_of_genes:
+            # logging.debug("adds random vector")
+            vec = Vector.random_2D()
+            vec.limit(5000, 3000)
+            genes.append(vec)
+
+        while len(genes) > self.num_of_genes:
+            # logging.debug("removes vector")
+            genes.pop()
+
+        return genes
+
+    def mutate(self, genes, mutation_rate):
+        """Mutate 10 to 30 percent of the last genes in the genes by replacing
+        the genes with new random values.
+
+        Args:
+            genes (list of Vector obj): The list of genes
+            mutation_rate (float): The rate of mutation
+
+        Returns:
+            (bool): Whether the mutation happened.
+            (list of Vector obj): The list of new, possibly mutated, genes
+        """
+
         mutation_rate *= 100
         if randrange(0, 101) < mutation_rate:
-            logging.info("mutated")
+            # logging.info("mutated")
             # mutation only affects the end of the genes
-            start_of_mutation = math.floor(
-                len(new_genes) - (len(new_genes) * 0.2))
-            for i in range(start_of_mutation, len(new_genes)):
+            affected_genes = random.uniform(0.1, 0.3)
+            start_of_mutation = math.floor(len(genes) - (len(genes) * affected_genes))
+            for i in range(start_of_mutation, len(genes)):
                 vec = Vector.random_2D()
                 vec.limit(5000, 3000)
-                new_genes[i] = vec
+                genes[i] = vec
 
-            return True, new_genes
+            return True, genes
         else:
-            return False, new_genes
+            return False, genes
