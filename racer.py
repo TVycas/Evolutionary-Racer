@@ -88,7 +88,7 @@ def draw():
         life_counter = 0
         pop.calculate_fitness()
         pop.natural_selection()
-        map_handler.add_endpoint(pop.evaluate())
+        map_handler.endpoints.append(pop.evaluate())
         pop.generate()
 
     # Update the physics
