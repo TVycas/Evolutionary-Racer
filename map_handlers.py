@@ -2,14 +2,13 @@ import pymunk as pm
 from p5 import *
 from cars import collision_types
 from shapely.geometry.polygon import Polygon
-from file_reader import read_track_files
 
 
 class Map_handler:
 
     def __init__(self, space, track_file, start_finish_offset):
         self.space = space
-        self.wall_segs = read_track_files(track_file)
+        self.wall_segs = self.read_track_files(track_file)
         self.walls = []
         self.endpoints = []
 
@@ -115,7 +114,31 @@ class Map_handler:
             circle(point, 5)
 
     # Finds the midpoint of the starting line line
+    # TODO could be static
     def find_line_midpoint(self, start_line):
         xs_avg = (start_line[0][0] + start_line[1][0]) / 2
         ys_avg = (start_line[0][1] + start_line[1][1]) / 2
         return (xs_avg, ys_avg)
+
+    # TODO could be static
+    def read_track_files(self, file):
+        read_walls = []
+        try:
+            track_walls = np.genfromtxt(file, delimiter=',', comments='#')
+        except:
+            print("Track file is not working")
+            sys.exit(2)
+
+        read_wall_points = []
+        count = 0
+        for wall in track_walls:
+            count += 1
+
+            read_wall_points.append((wall[0], wall[1]))
+
+            if count == 2:
+                read_walls += read_wall_points
+                read_wall_points = []
+                count = 0
+
+        return read_walls
