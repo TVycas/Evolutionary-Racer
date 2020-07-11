@@ -25,6 +25,7 @@ class Car:
 
         self.id = id
 
+        # Parameters of the car in the physics space
         self.w = 16
         self.h = 16
 
@@ -56,6 +57,7 @@ class Car:
 
         self.space.add(self.body, self.shape)
 
+        # Add collision handlers to the car
         handler_wall = self.space.add_collision_handler(collision_types["car"], collision_types["wall"])
         handler_wall.begin = self.touched_wall
 
@@ -69,7 +71,7 @@ class Car:
         if self.body.position == car_body.position:
             self.is_dead = True
 
-            # removes the specified amount of vectors from the path list to
+            # removes the specified amount of genes from the path list to
             # make the car possibly not hit the wall next time
             self.dna.remove_from_path_list(self.end_spread)
 
@@ -122,26 +124,27 @@ class Car:
             if gene is not None:
                 self.apply_force(gene)
 
+                # Used to know which part of the genes were activated in which part of the track
                 pos = (self.body.position.x, self.body.position.y)
                 self.dna.add_to_path_list(pos, gene)
 
-
+# TODO remove this
 # #############################Unused#################################################
-    def seek(self, target):
-        pos = self.body.position
-        position_vec = self.vec2d_to_vector(pos)
+    # def seek(self, target):
+    #     pos = self.body.position
+    #     position_vec = self.vec2d_to_vector(pos)
 
-        desired = Vector(target[0], target[1]) - position_vec
-        desired.normalize()
-        desired *= self.max_speed
+    #     desired = Vector(target[0], target[1]) - position_vec
+    #     desired.normalize()
+    #     desired *= self.max_speed
 
-        vel = self.vec2d_to_vector(self.body.velocity_at_world_point(pos))
+    #     vel = self.vec2d_to_vector(self.body.velocity_at_world_point(pos))
 
-        steer = desired - vel
-        steer.limit(self.max_force)
+    #     steer = desired - vel
+    #     steer.limit(self.max_force)
 
-        self.apply_force(steer)
+    #     self.apply_force(steer)
 
-    @staticmethod
-    def vec2d_to_vector(vec2d):
-        return Vector(vec2d.x, vec2d.y)
+    # @staticmethod
+    # def vec2d_to_vector(vec2d):
+    #     return Vector(vec2d.x, vec2d.y)

@@ -18,7 +18,7 @@ finished = False
 start_time = 0
 end_time = 0
 time_taken = 0
-# Default values
+# Default parameters
 mut_rate = 0.3
 pop_size = 20
 track_file = 'track.txt'
@@ -62,15 +62,18 @@ def setup():
     global m_handler
 
     parse_args()
+    # Set up the screen
     rect_mode('CENTER')
-
     size(1000, 800)
 
+    # Set up the physics space
     space = pm.Space(threaded=True)
     space.threads = 2
 
+    # Set up the map_handler for map-related calculations and drawing
     m_handler = Map_handler(space, track_file, 10)
 
+    # Set up the population object to run the algorithm
     pop = Population(lifespan, m_handler, 50, mut_rate, pop_size)
 
     start_time = datetime.datetime.now()
@@ -83,6 +86,7 @@ def draw():
     global time_taken
     global finished
 
+    # Check if the conditions for the end of an epoch are met, and if so, run the genetic algorithm
     life_counter += 1
     if (life_counter == lifespan or len(space.bodies) == m_handler.num_of_walls) and not finished:
         life_counter = 0
@@ -91,18 +95,22 @@ def draw():
         m_handler.add_endpoint(pop.evaluate())
         pop.generate()
 
+    # Update the physics
     space.step(1 / 100.0)
 
+    # Draw background
     background(255)
 
     # Draw walls
     m_handler.draw_walls()
 
-    # draw ends points
+    # Draw endpoints (the n best positions reached so far)
     m_handler.draw_endpoints(5)
 
-    finished = pop.draw_cars(mouse_x, mouse_y)
+    # Draw and update the cars
+    finished = pop.update_and_draw_cars()
 
+    # If finished, display info about the run (time and the number of generations it took)
     if finished:
         if end_time == 0:
             end_time = datetime.datetime.now()
@@ -115,7 +123,7 @@ def draw():
 
     title("Frame Rate: " + str(frame_rate))
 
-    # Draws black boxes to indicate the checkpoint area
+    # Draws black boxes to indicate checkpoints areas
     if display_checkpoint_polys:
         m_handler.draw_checkpoint_polys()
 

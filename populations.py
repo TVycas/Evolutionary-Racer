@@ -10,17 +10,18 @@ class Population:
 
     def __init__(self, lifespan, m_handler, end_spread, mut, num):
         self.population = []            # Array to hold the current population
-        self.mating_pool = []           # ArrayList which we will use for our "mating pool"
+        self.mating_pool = []           # List which we will use for our "mating pool"
         self.generations = 0            # Number of generations
         self.finished = False           # Are we finished evolving?
 
         self.m_handler = m_handler
-        self.mutation_rate = mut        # Mutation rate
+        self.mutation_rate = mut        
         self.lifespan = lifespan
         self.end_spread = end_spread
 
         self.start_point = self.pick_start_point(self.m_handler.starting_line)
 
+        # Creates the population of cars with random genes
         for id in range(0, num):
             self.population.append(
                 Car(self.m_handler, self.start_point, self.lifespan, self.end_spread, id))
@@ -36,7 +37,7 @@ class Population:
             car.calculate_fitness()
 
     def natural_selection(self):
-        # Clear the ArrayList
+        # Clear the list
         self.mating_pool = []
 
         fitness_sum = 0
@@ -56,7 +57,8 @@ class Population:
 
             logging.info("\nFor car id - " + str(car.id) + ", with fitness " +
                          str(car.dna.fitness) + " we add " + str(n) + " dnas in the mating_pool")
-
+            
+            # Create the mating pool where each car will get a number of slots corresponding their fitness
             for x in range(0, n):
                 self.mating_pool.append(car.dna)
 
@@ -69,6 +71,7 @@ class Population:
             logging.debug("\nnew dna for car - " +
                           str(self.population[i].id) + "\n")
 
+            # Pick two parents from the mating pool
             a = randrange(0, len(self.mating_pool))
             b = randrange(0, len(self.mating_pool))
 
@@ -77,6 +80,7 @@ class Population:
 
             child = partnerA.crossover(partnerB, self.mutation_rate)
 
+            # Create a new member of the population by overriding the old one
             self.population[i] = Car(self.m_handler, self.start_point, self.lifespan, self.end_spread, self.population[i].id, child)
 
         self.generations += 1
@@ -99,12 +103,15 @@ class Population:
         return pos
 
     # Updates and draws the cars
-    def draw_cars(self, mouse_x, mouse_y):
+    def update_and_draw_cars(self):
         for car in self.population:
+            # Updated the car with the next gene vector
             car.next_force()
-            # car.seek((mouse_x, mouse_y))
+
+            # Displays the car
             car.display()
 
+            # Stops the simulation if a car has finished the track
             if not self.finished and car.finished:
                 self.finished = True
                 for body in self.m_handler.space.bodies:

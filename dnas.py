@@ -1,10 +1,3 @@
-# A class to describe a pseudo-DNA, i.e. genotype
-#   Here, a virtual organism's DNA is an array of character.
-#   Functionality:
-#      -- convert DNA into a string
-#      -- calculate DNA's "fitness"
-#      -- mate DNA with another set of DNA
-#      -- mutate DNA
 import logging
 import math
 from p5 import *
@@ -29,7 +22,7 @@ class DNA:
         self.max_checkpnt_len = width if width > height else height
 
         # Add enough empty lists to the path_list so that the vectors in genes could be
-        # devided to seperate to each polygon
+        # devided to each polygon
         for i in range(0, len(self.polys)):
             self.path_list.append([])
 
@@ -40,7 +33,7 @@ class DNA:
                 vec = Vector.random_2D()
                 # TODO these should be variables
                 vec.limit(5000, 3000)
-                self.genes.append(vec)    # Pick from range of forces
+                self.genes.append(vec)
         else:
             self.genes = genes
 
@@ -57,6 +50,7 @@ class DNA:
         return Vector(x, y)
 
     # |AC x AB| / |AB| where AB is the line and C is the point
+    # Calculates the distace to the next checkpoint polygon using the formula above.
     def find_dist_to_next_poly(self, pos, current_polygon):
         current_poly_coords = list(current_polygon.exterior.coords)
         if len(current_poly_coords) > 3:
@@ -76,6 +70,7 @@ class DNA:
         else:
             return 0
 
+    # Finds the checkpoint polygon that the car is in
     def find_current_polygon(self, pos):
         position = Point(pos)
 
@@ -86,6 +81,7 @@ class DNA:
 
         return current_polygon
 
+    # Fitness is calculated
     def calculate_fitness(self, pos):
         self.fitness = self.find_current_polygon(pos)
 
