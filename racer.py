@@ -49,8 +49,8 @@ def parse_args():
         elif opt in ("-t", "--track_file"):
             track_file = arg
 
-    print("\nRunning with - \nPoplation size = " + str(pop_size) +
-          "\nMutation rate = " + str(mut_rate) + "\nTrack file = " + track_file)
+    print(f"\nRunning with - \nPoplation size = {pop_size}" +
+          f"\nMutation rate = {mut_rate}\nTrack file = {track_file}")
 
 
 def setup():
@@ -117,7 +117,7 @@ def draw():
 
         no_loop()
 
-    title("Frame Rate: " + str(frame_rate))
+    title(f"Frame Rate: {frame_rate}")
 
     # Draws black boxes to indicate checkpoints areas
     if display_checkpoint_polys:
