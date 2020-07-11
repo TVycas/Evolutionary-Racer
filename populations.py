@@ -15,22 +15,16 @@ class Population:
         self.finished = False           # Are we finished evolving?
 
         self.map_handler = map_handler
-        self.mutation_rate = mutations        
+        self.mutation_rate = mutations  
         self.lifespan = lifespan
         self.end_spread = end_spread
 
-        self.start_point = self.pick_start_point(self.map_handler.starting_line)
+        self.start_point = map_handler.find_line_midpoint(self.map_handler.starting_line)
 
         # Creates the population of cars with random genes
         for id in range(0, pop_size):
             self.population.append(
                 Car(self.map_handler, self.start_point, self.lifespan, self.end_spread, id))
-
-    # Finds the midpoint of the line
-    def pick_start_point(self, start_line):
-        xs_avg = (start_line[0][0] + start_line[1][0]) / 2
-        ys_avg = (start_line[0][1] + start_line[1][1]) / 2
-        return (xs_avg, ys_avg)
 
     def calculate_fitness(self):
         for car in self.population:

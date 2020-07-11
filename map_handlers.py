@@ -113,3 +113,9 @@ class Map_handler:
         for point in self.endpoints:
             fill(255, 204, 0)
             circle(point, 5)
+
+    # Finds the midpoint of the starting line line
+    def find_line_midpoint(self, start_line):
+        xs_avg = (start_line[0][0] + start_line[1][0]) / 2
+        ys_avg = (start_line[0][1] + start_line[1][1]) / 2
+        return (xs_avg, ys_avg)
