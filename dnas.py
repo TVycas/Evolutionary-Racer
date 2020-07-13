@@ -55,7 +55,7 @@ class DNA:
         Args:
             pos (tuple): A tuple cooresponding to the possition of the car.
         """
-        
+
         # First, the number checkpoints reached so far is calculated, then
         # the distance to the next checkpoint line is added. For greater differences between
         # fitnesses, the resulting number is cubed.
@@ -69,7 +69,7 @@ class DNA:
             self.fitness += 1 - remap(dist_to_next_chpt, (0, self.max_checkpnt_len), (0, 1))
             self.fitness *= self.fitness * self.fitness
 
-        logging.debug("fitness = " + str(self.fitness))
+        # logging.debug("fitness = " + str(self.fitness))
 
     def find_current_checkpoint(self, pos):
         """Finds the checkpoint polygon that the car is in.
