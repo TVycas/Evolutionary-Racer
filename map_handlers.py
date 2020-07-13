@@ -4,7 +4,7 @@ from cars import collision_types
 from shapely.geometry.polygon import Polygon
 
 
-class Map_handler:
+class MapHandler:
 
     def __init__(self, space, track_file, start_finish_offset):
         self.space = space

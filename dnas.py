@@ -9,17 +9,17 @@ logging.basicConfig(filename='log.txt', filemode='w',
                     level=logging.INFO, format='%(message)s')
 
 
-class DNA:
+class Dna:
 
     def __init__(self, checkpoint_polys, number_of_genes, genes=None, mutated=False, id=-1):
-        """The init can either create a random or specific DNA object
+        """The init can either create a random or specific Dna object
 
         Args:
             checkpoint_polys (list of Polygon obj): A list of polygons describing the checkpoints in the track.
-            number_of_genes (int): The number of genes for the DNA to have.
-            genes (list of Vector obj, optional): A list of genes to create the DNA obj from. Defaults to None.
-            mutated (bool, optional): A bool to note if the DNA muteted. Defaults to False.
-            id (int, optional): The id of the DNA obj. Defaults to -1.
+            number_of_genes (int): The number of genes for the Dna to have.
+            genes (list of Vector obj, optional): A list of genes to create the Dna obj from. Defaults to None.
+            mutated (bool, optional): A bool to note if the Dna muteted. Defaults to False.
+            id (int, optional): The id of the Dna obj. Defaults to -1.
         """
 
         self.fitness = 0
@@ -49,7 +49,7 @@ class DNA:
             self.genes = genes
 
     def calculate_fitness(self, pos):
-        """Calculates the fitness of the DNA. The fitness is calculated based
+        """Calculates the fitness of the Dna. The fitness is calculated based
         on the distance to the next checkpoint of the map.
 
         Args:
@@ -106,10 +106,10 @@ class DNA:
         current_poly_coords = list(current_polygon.exterior.coords)
 
         if len(current_poly_coords) > 3:
-            ab = DNA.vector_from_two_points(
+            ab = Dna.vector_from_two_points(
                 current_poly_coords[2], current_poly_coords[3])
 
-            ac = DNA.vector_from_two_points(current_poly_coords[2], pos)
+            ac = Dna.vector_from_two_points(current_poly_coords[2], pos)
 
             ac_ab_cross = ac.cross(ab)
 
@@ -210,7 +210,7 @@ class DNA:
         #     for gene in new_genes:
         #         logging.debug(gene)
 
-        return DNA(self.polys, self.num_of_genes, new_genes, mutated)
+        return Dna(self.polys, self.num_of_genes, new_genes, mutated)
 
     def normalize_gene_list(self, genes):
         """Add or remove additional genes if the length of the gene list

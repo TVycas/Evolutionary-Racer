@@ -1,6 +1,6 @@
 from p5 import *
 import pymunk
-from dnas import DNA
+from dnas import Dna
 import logging
 
 logging.basicConfig(filename='log.txt', filemode='w',
@@ -16,15 +16,15 @@ collision_types = {
 class Car:
 
     def __init__(self, map_handler, start_point, lifespan, end_spread, id, dna=None):
-        """Creates a new car with either a given or a new DNA.
+        """Creates a new car with either a given or a new Dna.
 
         Args:
-            map_handler (Map_handler obj ): Object describing the map of the track.
+            map_handler (MapHandler obj ): Object describing the map of the track.
             start_point (tuple): A tuple with x and y coords used to set the initial car location.
-            lifespan (int): The number of genes in the DNA.
+            lifespan (int): The number of genes in the Dna.
             end_spread (int): The number of genes to remove and replace from the end of the gene list.
             id (int): Car id.
-            dna (DNA obj, optional): Object used to coordinate the evolution process. Defaults to None.
+            dna (Dna obj, optional): Object used to coordinate the evolution process. Defaults to None.
         """
         self.space = map_handler.space
         self.end_spread = end_spread
@@ -33,7 +33,7 @@ class Car:
         self.id = id
 
         if dna is None:
-            self.dna = DNA(map_handler.checkpoint_polys, lifespan, id=id)
+            self.dna = Dna(map_handler.checkpoint_polys, lifespan, id=id)
         else:
             self.dna = dna
             self.dna.id = self.id
@@ -124,8 +124,7 @@ class Car:
         return True
 
     def calculate_fitness(self):
-        """Calculates the fitness of the car using it's DNA object
-        """
+        """Calculates the fitness of the car using it's Dna object"""
         pos = (self.body.position.x, self.body.position.y)
         self.dna.calculate_fitness(pos)
 
@@ -162,8 +161,7 @@ class Car:
             (force.x, force.y), self.body.position)
 
     def next_force(self):
-        """Moves the car based on its DNA and saves its current position to the path list.
-        """
+        """Moves the car based on its Dna and saves its current position to the path list."""
         if not self.is_dead:
             gene = self.dna.get_next_gene()
             if gene is not None:

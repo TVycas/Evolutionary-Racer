@@ -2,7 +2,7 @@ import pymunk as pm
 import datetime
 import sys
 import getopt
-from map_handlers import Map_handler
+from map_handlers import MapHandler
 from p5 import *
 from populations import Population
 
@@ -69,7 +69,7 @@ def setup():
     space.threads = 2
 
     # Set up the map_handler for map-related calculations and drawing
-    map_handler = Map_handler(space, track_file, 10)
+    map_handler = MapHandler(space, track_file, 10)
 
     # Set up the population object to run the algorithm
     pop = Population(lifespan, map_handler, 50, mut_rate, pop_size)
