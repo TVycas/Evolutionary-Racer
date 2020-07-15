@@ -23,6 +23,12 @@ map_file = 'track.txt'
 
 
 def parse_args():
+    """Parses the arguments from command line interface.
+
+    Raises:
+        argparse.ArgumentTypeError: Raises exception if the mutation rate is out of range.
+    """
+
     global mut_rate
     global pop_size
     global map_file
@@ -50,6 +56,8 @@ def parse_args():
 
 
 def setup():
+    """Overrides p5 setup() method. Sets up the map, physics nad population of cars."""
+
     global space
     global pop
     global start_time
@@ -73,6 +81,8 @@ def setup():
 
 
 def draw():
+    """Overrides p5 draw() method. Is called every tick to draw the map and handle the cars."""
+
     global life_counter
     global end_time
     global finished
@@ -120,6 +130,10 @@ def draw():
 
 
 def mouse_pressed():
+    """Overrides p5 mouse_pressed(). If wall drawing option is selected, notes where to draw the wall from
+    when the user clicks on the map.
+    """
+
     global wall_to_add
 
     if ctrl_key_pressed:
@@ -128,6 +142,10 @@ def mouse_pressed():
 
 
 def mouse_released():
+    """Overrides p5 mouse_released() method. If wall drawing option is selected, and when the user releases the mouse
+    to stops drawing a new wall, adds that wall to the list of walls in the map.
+    """
+
     global wall_to_add
 
     wall_end_tpl = (mouse_x, mouse_y)
@@ -140,6 +158,11 @@ def mouse_released():
 
 
 def key_pressed(event):
+    """Overrides p5 key_pressed() method. Handles keyboard user options selection.
+
+    Args:
+        event (Event obj): Key pressed event object, specifying which key was clicked.
+    """
     global ctrl_key_pressed
     global display_checkpoint_polys
 
