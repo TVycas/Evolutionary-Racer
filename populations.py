@@ -8,15 +8,24 @@ logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO, format
 
 class Population:
 
-    def __init__(self, lifespan, map_handler, end_spread, mutations, pop_size):
+    def __init__(self, num_of_genes, map_handler, end_spread, mutation_rate, pop_size):
+        """Sets up the object and creates the initial population of Car objects.
+
+        Args:
+            num_of_genes (int): The number of genes per car.
+            map_handler (MapHandler obj): An object for controlling the map.
+            end_spread (int): The number of genes to remove and replace from the end of the gene list.
+            mutation_rate (float): The chance of the Dna to mutate.
+            pop_size (int): The number of Cars in the population.
+        """
         self.population = []            # Array to hold the current population
         self.mating_pool = []           # List which we will use for our "mating pool"
         self.generations = 0            # Number of generations
         self.finished = False           # Are we finished evolving?
 
         self.map_handler = map_handler
-        self.mutation_rate = mutations  
-        self.lifespan = lifespan
+        self.mutation_rate = mutation_rate
+        self.num_of_genes = num_of_genes
         self.end_spread = end_spread
 
         self.start_point = map_handler.find_line_midpoint(self.map_handler.starting_line)
@@ -24,14 +33,20 @@ class Population:
         # Creates the population of cars with random genes
         for id in range(0, pop_size):
             self.population.append(
-                Car(self.map_handler, self.start_point, self.lifespan, self.end_spread, id))
+                Car(self.map_handler, self.start_point, self.num_of_genes, self.end_spread, id))
 
     def calculate_fitness(self):
+        """Calculates the fitness of each Car in the population."""
         for car in self.population:
             car.calculate_fitness()
 
-    def natural_selection(self):
-        # Clear the list
+    def fitness_proportionate_selection(self):
+        """Fitness proportionate selection done over the entire population.
+        Creates a "mating pool" where the higher the fitness value of the Car, the
+        more entries in the pool it gets. This way, it gets better chances to get
+        picked when constructing new generation.
+        """
+
         self.mating_pool = []
 
         fitness_sum = 0
@@ -45,25 +60,23 @@ class Population:
 
         for car in self.population:
             n = int(round(car.dna.fitness / fitness_sum))
-            # Add weight to the best performing dna
-            if car.dna.fitness == max_fitness:
-                n += 25
 
-            logging.info("\nFor car id - " + str(car.id) + ", with fitness " +
-                         str(car.dna.fitness) + " we add " + str(n) + " dnas in the mating_pool")
+            # logging.info("\nFor car id - " + str(car.id) + ", with fitness " +
+            #              str(car.dna.fitness) + " we add " + str(n) + " dnas in the mating_pool")
             
-            # Create the mating pool where each car will get a number of slots corresponding their fitness
+            # Create the mating pool where each car will get a number of entries corresponding their fitness
             for x in range(0, n):
                 self.mating_pool.append(car.dna)
 
-        logging.info("size of mating_pool = " + str(len(self.mating_pool)))
+        # logging.info("size of mating_pool = " + str(len(self.mating_pool)))
 
-    # Create a new generation
-    def generate(self):
+    def crossover(self):
+        """Constructs a new generation using the mating pool."""
+
         # Refill the population with children from the mating pool
         for i in range(len(self.population)):
-            logging.debug("\nnew dna for car - " +
-                          str(self.population[i].id) + "\n")
+            # logging.debug("\nnew dna for car - " +
+            #               str(self.population[i].id) + "\n")
 
             # Pick two parents from the mating pool
             a = randrange(0, len(self.mating_pool))
@@ -75,14 +88,19 @@ class Population:
             child = partnerA.crossover(partnerB, self.mutation_rate)
 
             # Create a new member of the population by overriding the old one
-            self.population[i] = Car(self.map_handler, self.start_point, self.lifespan, self.end_spread, self.population[i].id, child)
+            self.population[i] = \
+                Car(self.map_handler, self.start_point, self.num_of_genes, self.end_spread, self.population[i].id, child)
 
         self.generations += 1
 
-        logging.info("\ngeneration #" + str(self.generations))
+        # logging.info("\ngeneration #" + str(self.generations))
 
-    # Compute the current "most fit" member of the population
     def evaluate(self):
+        """Computes the current "most fit" member of the population.
+
+        Returns:
+            [tuple]: The position of the most fit member of the population.
+        """
         best_fitness = 0
         best_car = None
 
@@ -93,11 +111,15 @@ class Population:
 
         pos = (best_car.body.position.x, best_car.body.position.y)
 
-        logging.info("best fitness - " + str(best_fitness))
+        # logging.info("best fitness - " + str(best_fitness))
         return pos
 
-    # Updates and draws the cars
-    def update_and_draw_cars(self):
+    def move_and_draw_cars(self):
+        """Moves and draws each of the Cars in the population.
+
+        Returns:
+            bool: Returns True if any of the cars finished.
+        """
         for car in self.population:
             # Updated the car with the next gene vector
             car.next_force()
@@ -108,9 +130,12 @@ class Population:
             # Stops the simulation if a car has finished the track
             if not self.finished and car.finished:
                 self.finished = True
-                for body in self.map_handler.space.bodies:
-                    if body.body_type == pymunk.Body.DYNAMIC:
-                        self.map_handler.space.remove(body)
+                self._stop_simulation()
                 break
 
         return self.finished
+
+    def _stop_simulation(self):
+        for body in self.map_handler.space.bodies:
+            if body.body_type == pymunk.Body.DYNAMIC:
+                self.map_handler.space.remove(body)

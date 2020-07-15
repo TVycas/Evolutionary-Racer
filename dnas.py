@@ -11,12 +11,12 @@ logging.basicConfig(filename='log.txt', filemode='w',
 
 class Dna:
 
-    def __init__(self, checkpoint_polys, number_of_genes, genes=None, mutated=False, id=-1):
+    def __init__(self, checkpoint_polys, num_of_genes, genes=None, mutated=False, id=-1):
         """The init can either create a random or specific Dna object
 
         Args:
             checkpoint_polys (list of Polygon obj): A list of polygons describing the checkpoints in the track.
-            number_of_genes (int): The number of genes for the Dna to have.
+            num_of_genes (int): The number of genes for the Dna to have.
             genes (list of Vector obj, optional): A list of genes to create the Dna obj from. Defaults to None.
             mutated (bool, optional): A bool to note if the Dna muteted. Defaults to False.
             id (int, optional): The id of the Dna obj. Defaults to -1.
@@ -27,7 +27,7 @@ class Dna:
         self.path_list = []
         self.farthest_poly_reached = 0
         self.id = id
-        self.num_of_genes = number_of_genes
+        self.num_of_genes = num_of_genes
         self.mutated = mutated
 
         self.max_checkpnt_len = width if width > height else height
@@ -40,7 +40,7 @@ class Dna:
         if genes is None:
             # The genetic sequence
             self.genes = []
-            for x in range(0, int(number_of_genes)):
+            for x in range(0, int(num_of_genes)):
                 vec = Vector.random_2D()
                 # TODO these should be variables
                 vec.limit(5000, 3000)

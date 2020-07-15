@@ -15,13 +15,13 @@ collision_types = {
 
 class Car:
 
-    def __init__(self, map_handler, start_point, lifespan, end_spread, id, dna=None):
+    def __init__(self, map_handler, start_point, num_of_genes, end_spread, id, dna=None):
         """Creates a new car with either a given or a new Dna.
 
         Args:
             map_handler (MapHandler obj ): Object describing the map of the track.
             start_point (tuple): A tuple with x and y coords used to set the initial car location.
-            lifespan (int): The number of genes in the Dna.
+            num_of_genes (int): The number of genes in the Dna.
             end_spread (int): The number of genes to remove and replace from the end of the gene list.
             id (int): Car id.
             dna (Dna obj, optional): Object used to coordinate the evolution process. Defaults to None.
@@ -33,7 +33,7 @@ class Car:
         self.id = id
 
         if dna is None:
-            self.dna = Dna(map_handler.checkpoint_polys, lifespan, id=id)
+            self.dna = Dna(map_handler.checkpoint_polys, num_of_genes, id=id)
         else:
             self.dna = dna
             self.dna.id = self.id

@@ -87,9 +87,9 @@ def draw():
     if (life_counter == lifespan or len(space.bodies) == map_handler.num_of_walls) and not finished:
         life_counter = 0
         pop.calculate_fitness()
-        pop.natural_selection()
+        pop.fitness_proportionate_selection()
         map_handler.endpoints.append(pop.evaluate())
-        pop.generate()
+        pop.crossover()
 
     # Update the physics
     space.step(1 / 100.0)
@@ -104,7 +104,7 @@ def draw():
     map_handler.draw_endpoints(5)
 
     # Draw and update the cars
-    finished = pop.update_and_draw_cars()
+    finished = pop.move_and_draw_cars()
 
     # If finished, display info about the run (time and the number of generations it took)
     if finished:
