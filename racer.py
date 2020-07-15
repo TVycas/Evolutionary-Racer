@@ -1,7 +1,6 @@
 import pymunk as pm
 import datetime
-import sys
-import getopt
+import argparse
 from map_handlers import MapHandler
 from p5 import *
 from populations import Population
@@ -20,37 +19,34 @@ finished = False
 # Default parameters
 mut_rate = 0.3
 pop_size = 20
-track_file = 'track.txt'
+map_file = 'track.txt'
 
 
 def parse_args():
     global mut_rate
     global pop_size
-    global track_file
+    global map_file
 
-    argv = sys.argv[1:]
-    try:
-        opts, args = getopt.getopt(
-            argv, "m:p:t:", ["mut_rate=", "pop_size=", "track_file="])
-    except getopt.GetoptError:
-        print('usage: sketch.py -p <population_size> -m <mutation_rate>')
-        sys.exit(2)
-    for opt, arg in opts:
-        if opt in ("-m", "--mut_rate"):
-            try:
-                mut_rate = float(arg)
-            except:
-                print("\nMutation rate needs to be a float")
-        elif opt in ("-p", "--pop_size"):
-            try:
-                pop_size = int(arg)
-            except:
-                print("\nPopulation size needs to be an integer")
-        elif opt in ("-t", "--track_file"):
-            track_file = arg
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("-m", "--mut_rate", type=int, default=mut_rate, metavar="[0-100]",
+                        help="The mutation rate from 0 to 100 percent.")
+    parser.add_argument("-p", "--pop_size", type=int, default=pop_size, metavar="Integer",
+                        help="The population or the number of cars in the simulation.")
+    parser.add_argument("-mf", "--map_file", type=str, default=map_file, metavar="String",
+                        help="The location of the map.")
+
+    args = parser.parse_args()
+
+    if args.mut_rate < 0 or args.mut_rate > 100:
+        raise argparse.ArgumentTypeError(f"The number {args.mut_rate} is not in the range of [0-100].")
+
+    mut_rate = args.mut_rate
+    pop_size = args.pop_size
+    map_file = args.map_file
 
     print(f"\nRunning with - \nPoplation size = {pop_size}" +
-          f"\nMutation rate = {mut_rate}\nTrack file = {track_file}")
+          f"\nMutation rate = {mut_rate}\nTrack file = {map_file}")
 
 
 def setup():
@@ -59,7 +55,6 @@ def setup():
     global start_time
     global map_handler
 
-    parse_args()
     # Set up the screen
     rect_mode('CENTER')
     size(1000, 800)
@@ -69,7 +64,7 @@ def setup():
     space.threads = 2
 
     # Set up the map_handler for map-related calculations and drawing
-    map_handler = MapHandler(space, track_file, 10)
+    map_handler = MapHandler(space, map_file, 10)
 
     # Set up the population object to run the algorithm
     pop = Population(lifespan, map_handler, 50, mut_rate, pop_size)
@@ -157,4 +152,5 @@ def key_pressed(event):
 
 
 if __name__ == "__main__":
+    parse_args()
     run()
