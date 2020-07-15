@@ -1,4 +1,5 @@
 import pymunk as pm
+import sys
 from p5 import *
 from cars import collision_types
 from shapely.geometry.polygon import Polygon
@@ -6,9 +7,9 @@ from shapely.geometry.polygon import Polygon
 
 class MapHandler:
 
-    def __init__(self, space, track_file, start_finish_offset):
+    def __init__(self, space, map_file, start_finish_offset):
         self.space = space
-        self.wall_segs = self.read_track_files(track_file)
+        self.wall_segs = MapHandler.read_map_file(map_file)
         self.walls = []
         self.endpoints = []
 
@@ -27,6 +28,16 @@ class MapHandler:
         self.create_wall_segments(self.finish_line, collision_types["finish_line"])
 
     def create_finish_start_lines(self, offset):
+        """Calculates the start and finish lines of the track. The finish line is
+        calculated by subtracting the offset from the start line.
+
+        Args:
+            offset (int): The offset of pixels the finish line is before the start line.
+
+        Returns:
+            tuple: Start line of the track.
+            tuple: Finish line of the track.
+        """
         finish_line_on_map = [self.wall_segs[-2], self.wall_segs[-1]]
 
         first_point = list(finish_line_on_map[0])
@@ -43,7 +54,6 @@ class MapHandler:
             second_point[i] -= offset * 2
 
         finish_line = [tuple(first_point), tuple(second_point)]
-        # finish_line = [(640, 626), (646, 711)]
 
         return start_line, finish_line
 
@@ -59,17 +69,27 @@ class MapHandler:
             quad((643.0, 711.0), (479.0, 708.0), (479.0, 625.0), (639.0, 624.0))
 
     def create_checkpoint_polys(self):
+        """Calculates a list of Polygon objects that describe the checkpoints of the track
+        based on the wall connections in the map file.
+
+        Returns:
+            list: List of Polygon objects
+        """
         polys = []
         points = []
+
         for checkpoint in self.wall_segs:
             points.append(checkpoint)
             if len(points) == 4:
                 polys.append(
                     Polygon([points[1], points[0], points[2], points[3]]))
                 points = points[2:]
+
         return polys
 
     def draw_walls(self):
+        """Draws the walls on the map."""
+
         if len(self.walls) < 1:
             return
 
@@ -84,7 +104,7 @@ class MapHandler:
             line(p1, p2)
 
     def create_wall_segments(self, points, coll_type):
-        """Create a number of wall segments connecting the points"""
+        """Creates a number of wall segments connecting the wal points in the map file."""
         walls = []
         if len(points) < 2:
             return []
@@ -105,27 +125,54 @@ class MapHandler:
         return walls
 
     def add_wall(self, wall_to_add):
+        """Adds a wall to the map.
+
+        Args:
+            wall_to_add (tuple): A tuple of points describing a new wall. 
+        """
         self.walls += self.create_wall_segments(wall_to_add, collision_types["wall"])
 
     def draw_endpoints(self, num_endpoints_to_draw):
+        """Draws a number of cirles indicating the furthest location the cars reached
+        over previous generations.
+
+        Args:
+            num_endpoints_to_draw (int): The number of endpoints to draw.
+        """
         self.endpoints = self.endpoints[-num_endpoints_to_draw:]
         for point in self.endpoints:
             fill(255, 204, 0)
             circle(point, 5)
 
-    # Finds the midpoint of the starting line line
-    # TODO could be static
-    def find_line_midpoint(self, start_line):
-        xs_avg = (start_line[0][0] + start_line[1][0]) / 2
-        ys_avg = (start_line[0][1] + start_line[1][1]) / 2
+    @staticmethod
+    def find_line_midpoint(line):
+        """A helper method that calculates the midpoint of a line.
+
+        Args:
+            line (tuple): A tuple of points describing a line.
+
+        Returns:
+            tuple: A tuple of coords that are the middle of the line on the map. 
+        """
+        xs_avg = (line[0][0] + line[1][0]) / 2
+        ys_avg = (line[0][1] + line[1][1]) / 2
         return (xs_avg, ys_avg)
 
-    # TODO could be static
-    def read_track_files(self, file):
+    @staticmethod
+    def read_map_file(file):
+        """Reads the map from a given file.
+
+        Args:
+            file (str): The location and name of the map file.
+
+        Returns:
+            list: list of points describing the walls read.
+        """
+
         read_walls = []
         try:
             track_walls = np.genfromtxt(file, delimiter=',', comments='#')
-        except:
+        except IOError:
             print("Track file is not working")
             sys.exit(2)
 

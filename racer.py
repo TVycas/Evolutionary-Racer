@@ -154,7 +154,7 @@ def mouse_released():
         wall_to_add.append(wall_end_tpl)
         map_handler.add_wall(wall_to_add)
 
-        print(f"New wall added at coods: {wall_to_add[0]} - {wall_end_tpl}")
+        print(f"New wall added at coords: {wall_to_add[0]} - {wall_end_tpl}")
 
 
 def key_pressed(event):
