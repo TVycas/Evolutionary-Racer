@@ -159,31 +159,10 @@ class Car:
     def next_force(self):
         """Moves the car based on its Dna and saves its current position to the path list."""
         if not self.is_dead:
-            gene = self.dna.get_next_gene()
+            gene = self.dna.next_gene
             if gene is not None:
                 self.apply_force(gene)
 
                 # Used to know which part of the genes were activated in which part of the track
                 pos = (int(self.body.position.x), int(self.body.position.y))
                 self.dna.add_to_path_list(pos, gene)
-
-# TODO remove this
-# #############################Unused#################################################
-    # def seek(self, target):
-    #     pos = self.body.position
-    #     position_vec = self.vec2d_to_vector(pos)
-
-    #     desired = Vector(target[0], target[1]) - position_vec
-    #     desired.normalize()
-    #     desired *= self.max_speed
-
-    #     vel = self.vec2d_to_vector(self.body.velocity_at_world_point(pos))
-
-    #     steer = desired - vel
-    #     steer.limit(self.max_force)
-
-    #     self.apply_force(steer)
-
-    # @staticmethod
-    # def vec2d_to_vector(vec2d):
-    #     return Vector(vec2d.x, vec2d.y)

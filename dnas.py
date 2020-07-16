@@ -38,7 +38,6 @@ class Dna:
             self.genes = []
             for x in range(0, int(num_of_genes)):
                 vec = Vector.random_2D()
-                # TODO these should be variables
                 vec.limit(5000, 3000)
                 self.genes.append(vec)
         else:
@@ -114,8 +113,8 @@ class Dna:
 
         return distance
 
-    # TODO should be a property
-    def get_next_gene(self):
+    @property
+    def next_gene(self):
         if len(self.genes) > 0:
             return self.genes.pop(0)
         else:
