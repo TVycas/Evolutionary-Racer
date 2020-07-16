@@ -2,6 +2,7 @@ import pymunk
 from cars import Car
 from random import randrange
 
+
 class Population:
 
     def __init__(self, num_of_genes, map_handler, end_spread, mutation_rate, pop_size):
@@ -77,7 +78,8 @@ class Population:
 
             # Create a new member of the population by overriding the old one
             self.population[i] = \
-                Car(self.map_handler, self.start_point, self.num_of_genes, self.end_spread, self.population[i].id, child)
+                Car(self.map_handler, self.start_point, self.num_of_genes,
+                    self.end_spread, self.population[i].id, child)
 
         self.generations += 1
 

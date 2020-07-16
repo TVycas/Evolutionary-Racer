@@ -3,7 +3,6 @@ import sys
 from p5 import *
 from cars import collision_types
 from shapely.geometry.polygon import Polygon
-from shapely.affinity import scale
 
 
 class MapHandler:
@@ -129,7 +128,7 @@ class MapHandler:
         """Adds a wall to the map.
 
         Args:
-            wall_to_add (tuple): A tuple of points describing a new wall. 
+            wall_to_add (tuple): A tuple of points describing a new wall.
         """
         self.walls += self.create_wall_segments(wall_to_add, collision_types["wall"])
 
@@ -153,7 +152,7 @@ class MapHandler:
             line (tuple): A tuple of points describing a line.
 
         Returns:
-            tuple: A tuple of coords that are the middle of the line on the map. 
+            tuple: A tuple of coords that are the middle of the line on the map.
         """
         xs_avg = (line[0][0] + line[1][0]) / 2
         ys_avg = (line[0][1] + line[1][1]) / 2

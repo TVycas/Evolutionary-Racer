@@ -1,9 +1,10 @@
 
 import math
 import random
-from p5 import *
+from p5 import width, height, Vector, remap
 from random import randrange, choice
 from shapely.geometry import Point
+
 
 class Dna:
 
