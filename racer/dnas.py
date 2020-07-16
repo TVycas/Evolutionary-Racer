@@ -1,7 +1,7 @@
 
 import math
 import random
-from p5 import width, height, Vector, remap
+from p5 import *
 from random import randrange, choice
 from shapely.geometry import Point
 

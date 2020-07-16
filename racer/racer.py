@@ -6,16 +6,16 @@ from p5 import *
 from populations import Population
 
 space = None
-cars = []
 ctrl_key_pressed = False  # l for now
 pop = None
-num_of_genes = 1500
+NUM_OF_GENES = 1500
 life_counter = 0
 display_checkpoint_polys = False
 map_handler = None
 start_time = 0
 end_time = 0
 finished = False
+
 # Default parameters
 mut_rate = 0.3
 pop_size = 20
@@ -52,7 +52,7 @@ def parse_args():
     map_file = args.map_file
 
     print(f"\nRunning with - \nPoplation size = {pop_size}" +
-          f"\nMutation rate = {mut_rate}\nTrack file = {map_file}")
+          f"\nMutation rate = {int(mut_rate * 100)}%\nTrack file = {map_file}")
 
 
 def setup():
@@ -75,7 +75,7 @@ def setup():
     map_handler = MapHandler(space, map_file, 10)
 
     # Set up the population object to run the algorithm
-    pop = Population(num_of_genes, map_handler, 50, mut_rate, pop_size)
+    pop = Population(NUM_OF_GENES, map_handler, 50, mut_rate, pop_size)
 
     start_time = datetime.datetime.now()
 
@@ -89,7 +89,7 @@ def draw():
 
     # Check if the conditions for the end of an epoch are met, and if so, run the genetic algorithm
     life_counter += 1
-    if (life_counter == num_of_genes or len(space.bodies) == map_handler.num_of_walls) and not finished:
+    if (life_counter == NUM_OF_GENES or len(space.bodies) == map_handler.num_of_walls) and not finished:
         life_counter = 0
         pop.calculate_fitness()
         pop.fitness_proportionate_selection()

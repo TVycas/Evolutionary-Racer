@@ -1,5 +1,2 @@
-log.txt
-/__pycache__
+/racer/__pycache__
 /.vscode
-Pipfile
-Pipfile.lock
