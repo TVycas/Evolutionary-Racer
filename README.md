@@ -31,10 +31,10 @@ The cars drawn in red carry "genes" that have mutated over the last generation.
 The small yellow dots indicate 5 furthest points the cars have ever reached.
 
   <p align="left">
-    <img src="../screenshots/1.png" alt="search" width="200" style="padding-left: 10px"/>
-    <img src="../screenshots/2.png" alt="search" width="200" style="padding-left: 10px"/>
-    <img src="../screenshots/3.png" alt="search" width="200" style="padding-left: 10px"/>
-    <img src="../screenshots/4.png" alt="search" width="200" style="padding-left: 10px"/>
+    <img src="../screenshots/1.png" alt="search" width="500" style="padding-left: 10px"/>
+    <img src="../screenshots/2.png" alt="search" width="500" style="padding-left: 10px"/>
+    <img src="../screenshots/3.png" alt="search" width="500" style="padding-left: 10px"/>
+    <img src="../screenshots/4.png" alt="search" width="500" style="padding-left: 10px"/>
   </p>
 
 ---
