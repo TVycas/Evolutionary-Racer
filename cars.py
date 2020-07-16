@@ -1,10 +1,6 @@
 from p5 import *
 import pymunk
 from dnas import Dna
-import logging
-
-logging.basicConfig(filename='log.txt', filemode='w',
-                    level=logging.INFO, format='%(message)s')
 
 collision_types = {
     "car": 1,
@@ -125,7 +121,7 @@ class Car:
 
     def calculate_fitness(self):
         """Calculates the fitness of the car using it's Dna object"""
-        pos = (self.body.position.x, self.body.position.y)
+        pos = (int(self.body.position.x), int(self.body.position.y))
         self.dna.calculate_fitness(pos)
 
     def display(self):
@@ -168,7 +164,7 @@ class Car:
                 self.apply_force(gene)
 
                 # Used to know which part of the genes were activated in which part of the track
-                pos = (self.body.position.x, self.body.position.y)
+                pos = (int(self.body.position.x), int(self.body.position.y))
                 self.dna.add_to_path_list(pos, gene)
 
 # TODO remove this

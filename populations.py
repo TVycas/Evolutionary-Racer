@@ -1,10 +1,6 @@
-import logging
 import pymunk
 from cars import Car
 from random import randrange
-
-logging.basicConfig(filename='log.txt', filemode='w', level=logging.INFO, format='%(message)s')
-
 
 class Population:
 
@@ -61,23 +57,15 @@ class Population:
         for car in self.population:
             n = int(round(car.dna.fitness / fitness_sum))
 
-            # logging.info("\nFor car id - " + str(car.id) + ", with fitness " +
-            #              str(car.dna.fitness) + " we add " + str(n) + " dnas in the mating_pool")
-            
             # Create the mating pool where each car will get a number of entries corresponding their fitness
             for x in range(0, n):
                 self.mating_pool.append(car.dna)
-
-        # logging.info("size of mating_pool = " + str(len(self.mating_pool)))
 
     def crossover(self):
         """Constructs a new generation using the mating pool."""
 
         # Refill the population with children from the mating pool
         for i in range(len(self.population)):
-            # logging.debug("\nnew dna for car - " +
-            #               str(self.population[i].id) + "\n")
-
             # Pick two parents from the mating pool
             a = randrange(0, len(self.mating_pool))
             b = randrange(0, len(self.mating_pool))
@@ -92,8 +80,6 @@ class Population:
                 Car(self.map_handler, self.start_point, self.num_of_genes, self.end_spread, self.population[i].id, child)
 
         self.generations += 1
-
-        # logging.info("\ngeneration #" + str(self.generations))
 
     def evaluate(self):
         """Computes the current "most fit" member of the population.
@@ -111,7 +97,6 @@ class Population:
 
         pos = (best_car.body.position.x, best_car.body.position.y)
 
-        # logging.info("best fitness - " + str(best_fitness))
         return pos
 
     def move_and_draw_cars(self):

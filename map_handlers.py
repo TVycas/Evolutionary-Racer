@@ -3,19 +3,20 @@ import sys
 from p5 import *
 from cars import collision_types
 from shapely.geometry.polygon import Polygon
+from shapely.affinity import scale
 
 
 class MapHandler:
 
     def __init__(self, space, map_file, start_finish_offset):
         self.space = space
-        self.wall_segs = MapHandler.read_map_file(map_file)
+        self.wall_points = MapHandler.read_map_file(map_file)
         self.walls = []
         self.endpoints = []
 
-        for i in range(0, len(self.wall_segs), 2):
-            wall_points = (self.wall_segs[i], self.wall_segs[i + 1])
-            self.walls += self.create_wall_segments(wall_points, collision_types["wall"])
+        for i in range(0, len(self.wall_points), 2):
+            wall = (self.wall_points[i], self.wall_points[i + 1])
+            self.walls += self.create_wall_segments(wall, collision_types["wall"])
 
         self.checkpoint_polys = self.create_checkpoint_polys()
 
@@ -38,7 +39,7 @@ class MapHandler:
             tuple: Start line of the track.
             tuple: Finish line of the track.
         """
-        finish_line_on_map = [self.wall_segs[-2], self.wall_segs[-1]]
+        finish_line_on_map = [self.wall_points[-2], self.wall_points[-1]]
 
         first_point = list(finish_line_on_map[0])
         second_point = list(finish_line_on_map[1])
@@ -58,15 +59,17 @@ class MapHandler:
         return start_line, finish_line
 
     def draw_checkpoint_polys(self):
-        # TODO not sure if I'll keep this + not working currently
+        num_of_colours = int(255 / len(self.checkpoint_polys))
 
-        for poly in self.checkpoint_polys:
+        for index, poly in enumerate(self.checkpoint_polys):
             poly_coords = list(poly.exterior.coords)
 
-            fill(0)
-            # quad(poly_coords[0], poly_coords[1],
-            #      poly_coords[2], poly_coords[3])
-            quad((643.0, 711.0), (479.0, 708.0), (479.0, 625.0), (639.0, 624.0))
+            colour = Color(index * num_of_colours)
+            colour.alpha = 100
+            fill(colour)
+
+            quad(poly_coords[0], poly_coords[3],
+                 poly_coords[2], poly_coords[1])
 
     def create_checkpoint_polys(self):
         """Calculates a list of Polygon objects that describe the checkpoints of the track
@@ -76,14 +79,12 @@ class MapHandler:
             list: List of Polygon objects
         """
         polys = []
-        points = []
 
-        for checkpoint in self.wall_segs:
-            points.append(checkpoint)
-            if len(points) == 4:
-                polys.append(
-                    Polygon([points[1], points[0], points[2], points[3]]))
-                points = points[2:]
+        for point_index in range(0, len(self.wall_points) - 2, 4):  # We don't want to include the finish/start line
+            polys.append(Polygon([self.wall_points[point_index],
+                                 self.wall_points[point_index + 2],
+                                 self.wall_points[point_index + 3],
+                                 self.wall_points[point_index + 1]]))
 
         return polys
 
@@ -142,7 +143,7 @@ class MapHandler:
         self.endpoints = self.endpoints[-num_endpoints_to_draw:]
         for point in self.endpoints:
             fill(255, 204, 0)
-            circle(point, 5)
+            circle((point), 5)
 
     @staticmethod
     def find_line_midpoint(line):
